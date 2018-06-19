@@ -1,0 +1,57 @@
+.page {
+  margin: 5;
+}
+.action-bar {
+  background-color: #ED1C24;
+  color: white;
+}
+
+.hidden {
+  opacity: 0;
+}
+.load {
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.progress-section {
+  margin: 10 5;
+}
+.progress-bar {
+  border-color: gray;
+  border-width: 1;
+  border-radius: 5;
+  height: 20;
+}
+.progress-section Label {
+  margin-left: 5;
+  font-size: 14;
+  text-align: center;
+}
+.progress-fill {
+  background-color: #ED1C24;
+}
+
+.card {
+  border-color: gray;
+  border-width: 1;
+  border-radius: 10;
+  margin: 5;
+}
+.card Label {
+  font-size: 12;
+  text-align: center;
+}
+.check {
+  height: 20;
+  margin-left: 10;
+  margin-bottom: 10;
+}
+.sprite {
+  height: 80;
+  margin-bottom: 20;
+  margin-right: 5;
+}
