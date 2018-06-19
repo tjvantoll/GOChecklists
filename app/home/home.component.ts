@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
   }
 
   share() {
-    let message = "My ShinyDex status: " + this.ownedCount + " / " + this.shinies.length + "\n" + "My shinies: ";
+    let message = "My ShinyDex status: " + this.ownedCount + " / " + this.shinies.length + "\n\n" + "My shinies: ";
     let ownedShinies = [];
 
     this.shinies.forEach((shiny) => {
