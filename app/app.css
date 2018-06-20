@@ -28,6 +28,9 @@
   border-radius: 10;
   margin: 5;
 }
+.selected {
+  background-color: #F5F5F5;
+}
 .card Label {
   font-size: 12;
   text-align: left;
