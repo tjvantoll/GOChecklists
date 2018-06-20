@@ -1,8 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import * as SocialShare from "nativescript-social-share";
-import { isIOS } from "tns-core-modules/platform";
+import { isIOS, screen } from "tns-core-modules/platform";
 import { alert } from "tns-core-modules/ui/dialogs";
 import { topmost } from "tns-core-modules/ui/frame";
+import { Page } from "tns-core-modules/ui/page";
 
 import { Shiny } from "./shiny.model";
 import { ShinyService } from "./shiny.service";
@@ -21,12 +22,18 @@ export class HomeComponent implements OnInit {
   percentOwned;
   progressbarColor;
 
-  constructor(private shinyService: ShinyService) { }
+  constructor(private page: Page, private shinyService: ShinyService) { }
 
   ngOnInit(): void {
     if (isIOS) {
       let navigationBar = topmost().ios.controller.navigationBar;
       navigationBar.barStyle = UIBarStyle.UIBarStyleBlack;
+
+      let height = screen.mainScreen.heightPixels;
+      let width = screen.mainScreen.widthPixels;
+      if ((height == 2436 && width == 1125) || (height == 1125 && width == 2436)) {
+        this.page.addCss(".page { margin-bottom: -30; }");
+      }
     }
 
     this.shinyService.getShinies().subscribe(
