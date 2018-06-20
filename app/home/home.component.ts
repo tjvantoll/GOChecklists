@@ -16,6 +16,7 @@ declare var UIBarStyle: any;
   templateUrl: "./home.component.html",
 })
 export class HomeComponent implements OnInit {
+  isAndroid;
   loaded = false;
   shinies: Shiny[];
   ownedCount;
@@ -25,6 +26,7 @@ export class HomeComponent implements OnInit {
   constructor(private page: Page, private shinyService: ShinyService) { }
 
   ngOnInit(): void {
+    this.isAndroid = !isIOS;
     if (isIOS) {
       let navigationBar = topmost().ios.controller.navigationBar;
       navigationBar.barStyle = UIBarStyle.UIBarStyleBlack;
@@ -97,3 +99,4 @@ export class HomeComponent implements OnInit {
     SocialShare.shareText(message, "My ShinyDex");
   }
 }
+

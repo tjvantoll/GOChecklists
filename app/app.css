@@ -1,20 +1,10 @@
 .page {
   margin: 5;
+  font-family: "Varela", "varela-regular";
 }
 .action-bar {
   background-color: #445BA1;
   color: white;
-}
-
-.hidden {
-  opacity: 0;
-}
-.load {
-  animation: fadein 3s;
-}
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 .progress-section {
@@ -41,13 +31,22 @@
 .card Label {
   font-size: 12;
   text-align: left;
-  margin-left: 5;
+  margin-left: 7;
+  margin-top: 7;
+}
+.android .card Label {
+  font-size: 14;
 }
 .check {
   font-size: 30;
+  text-align: right;
+  height: 20;
+  margin-top: 7;
 }
 .sprite {
+  height: 100;
+}
+.ios .sprite {
   height: 80;
-  margin-bottom: 20;
-  margin-right: 5;
+  margin-bottom: 200;
 }

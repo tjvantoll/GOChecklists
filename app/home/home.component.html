@@ -1,10 +1,10 @@
 <ActionBar flat="true" title="ShinyDex" class="action-bar">
-  <ActionItem (tap)="share()" ios.systemIcon="9" ios.position="right"></ActionItem>
+  <ActionItem (tap)="share()" ios.systemIcon="9" ios.position="right" android.systemIcon="ic_menu_share" android.position="actionBar"></ActionItem>
 </ActionBar>
 
-<GridLayout rows="auto, *" class="page">
+<GridLayout rows="auto, *" class="page" [class.android]="isAndroid" [class.ios]="!isAndroid">
 
-  <GridLayout *ngIf="loaded" class="hidden" [class.load]="loaded" columns="5*, *" class="progress-section">
+  <GridLayout *ngIf="loaded" columns="5*, *" class="progress-section">
     <GridLayout [columns]="percentOwned" col="0" class="progress-bar">
       <StackLayout col="0" [backgroundColor]="progressbarColor"></StackLayout>
       <StackLayout col="1"></StackLayout>
@@ -12,16 +12,17 @@
     <Label col="1" [text]="ownedCount + ' / ' + shinies.length"></Label>
   </GridLayout>
 
-  <RadListView *ngIf="loaded" class="hidden" [class.load]="loaded" row="1" [items]="shinies" class="list-group" (itemTap)="toggleShinyOwned($event)">
+  <RadListView *ngIf="loaded" row="1" [items]="shinies" class="list-group" (itemTap)="toggleShinyOwned($event)">
     <ng-template tkListItemTemplate let-item="item">
-      <GridLayout columns="*, 20" rows="30, 80" class="card">
+      <GridLayout columns="*, auto" rows="auto, auto" class="card" [backgroundColor]="item.owned ? '#F5F5F5' : 'white'">
         <Label col="0" row="0" [text]="item.name"></Label>
         <Image col="1" row="0" class="check" [src]="item.owned ? 'res://checked' : 'res://unchecked'"></Image>
         <Image colSpan="2" row="1" class="sprite" [src]="item.getImage()"></Image>
       </GridLayout>
     </ng-template>
 
-    <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" ios:itemHeight="110" spanCount="3"></ListViewGridLayout>
+    <ListViewGridLayout tkListViewLayout scrollDirection="Vertical"
+      ios:itemHeight="120" spanCount="3"></ListViewGridLayout>
   </RadListView>
 
   <ActivityIndicator rowSpan="2" [busy]="!loaded"></ActivityIndicator>
