@@ -4,9 +4,9 @@
 
 <GridLayout rows="auto, *" class="page">
 
-  <GridLayout *ngIf="loaded" class="hidden" [class.load]="loaded" columns="6*, *" class="progress-section">
+  <GridLayout *ngIf="loaded" class="hidden" [class.load]="loaded" columns="5*, *" class="progress-section">
     <GridLayout [columns]="percentOwned" col="0" class="progress-bar">
-      <StackLayout col="0" class="progress-fill"></StackLayout>
+      <StackLayout col="0" [backgroundColor]="progressbarColor"></StackLayout>
       <StackLayout col="1"></StackLayout>
     </GridLayout>
     <Label col="1" [text]="ownedCount + ' / ' + shinies.length"></Label>
