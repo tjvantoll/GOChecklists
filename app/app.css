@@ -36,19 +36,18 @@
 }
 
 .card {
-  border-color: gray;
+  border-color: #DCE7DC;
   border-width: 1;
   border-radius: 10;
   margin: 5;
 }
 .card Label {
   font-size: 12;
-  text-align: center;
+  text-align: left;
+  margin-left: 5;
 }
 .check {
-  height: 20;
-  margin-left: 10;
-  margin-bottom: 10;
+  font-size: 30;
 }
 .sprite {
   height: 80;

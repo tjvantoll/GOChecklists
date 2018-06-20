@@ -14,10 +14,10 @@
 
   <RadListView *ngIf="loaded" class="hidden" [class.load]="loaded" row="1" [items]="shinies" class="list-group" (itemTap)="toggleShinyOwned($event)">
     <ng-template tkListItemTemplate let-item="item">
-      <GridLayout columns="auto, *" rows="30, 80" class="card">
-        <Label colspan="2" row="0" [text]="item.name"></Label>
-        <Image col="0" row="1" class="check" [src]="item.owned ? 'res://checked' : 'res://unchecked'"></Image>
-        <Image col="1" row="1" class="sprite" [src]="item.getImage()"></Image>
+      <GridLayout columns="*, 20" rows="30, 80" class="card">
+        <Label col="0" row="0" [text]="item.name"></Label>
+        <Image col="1" row="0" class="check" [src]="item.owned ? 'res://checked' : 'res://unchecked'"></Image>
+        <Image colSpan="2" row="1" class="sprite" [src]="item.getImage()"></Image>
       </GridLayout>
     </ng-template>
 
