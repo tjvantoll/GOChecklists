@@ -1,4 +1,6 @@
-<ActionBar flat="true" title="ShinyDex" class="action-bar">
+<ActionBar flat="true" title="Dex" class="action-bar">
+  <NavigationButton visibility="collapsed"></NavigationButton>
+  <ActionItem (tap)="toggleMenu()" icon="res://menu" ios.position="left"></ActionItem>
   <ActionItem (tap)="share()" ios.systemIcon="9" ios.position="right" android.systemIcon="ic_menu_share" android.position="actionBar"></ActionItem>
 </ActionBar>
 

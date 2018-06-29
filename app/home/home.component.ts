@@ -1,19 +1,22 @@
 import { Component, OnInit } from "@angular/core";
 import * as SocialShare from "nativescript-social-share";
+import { RadSideDrawer } from "nativescript-ui-sidedrawer";
+import { getRootView } from "tns-core-modules/application";
 import { isIOS, screen } from "tns-core-modules/platform";
 import { alert } from "tns-core-modules/ui/dialogs";
 import { topmost } from "tns-core-modules/ui/frame";
 import { Page } from "tns-core-modules/ui/page";
 
-import { Shiny } from "./shiny.model";
-import { ShinyService } from "./shiny.service";
+import { Shiny } from "../shared/shiny.model";
+import { ShinyService } from "../shared/shiny.service";
 
 declare var UIBarStyle: any;
 
 @Component({
   selector: "ns-home",
   moduleId: module.id,
-  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"],
+  templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
   isAndroid;
@@ -29,7 +32,7 @@ export class HomeComponent implements OnInit {
     this.isAndroid = !isIOS;
     if (isIOS) {
       let navigationBar = topmost().ios.controller.navigationBar;
-      navigationBar.barStyle = UIBarStyle.UIBarStyleBlack;
+      navigationBar.barStyle = UIBarStyle.UIBarStyleDefault;
 
       let height = screen.mainScreen.heightPixels;
       let width = screen.mainScreen.widthPixels;
@@ -83,6 +86,11 @@ export class HomeComponent implements OnInit {
   toggleShinyOwned(args) {
     this.shinyService.toggleShinyOwned(args.index);
     this.determineOwnedCounts();
+  }
+
+  toggleMenu() {
+    const sideDrawer = <RadSideDrawer>getRootView();
+    sideDrawer.toggleDrawerState();
   }
 
   share() {

@@ -1,2 +1,12 @@
-<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
-<page-router-outlet></page-router-outlet>
+<RadSideDrawer>
+  <GridLayout tkDrawerContent class="sidedrawer sidedrawer-left">
+    <StackLayout class="sidedrawer-content">
+      <Image src="res://icon"></Image>
+      <Label class="h1" text="ShinyDex"></Label>
+      <Label class="sidedrawer-list-item" text="— Dex" (tap)="navigate('/home')"></Label>
+      <Label class="sidedrawer-list-item" text="— Odds" (tap)="navigate('/odds')"></Label>
+    </StackLayout>
+  </GridLayout>
+
+  <page-router-outlet tkMainContent></page-router-outlet>
+</RadSideDrawer>

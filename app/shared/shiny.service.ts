@@ -23,6 +23,7 @@ export class ShinyService {
         let shinies = <Shiny[]>data;
         let ownedArray = this.getOwnedData();
         this.rearrangeBabies(shinies);
+        this.shinies = [];
 
         shinies.forEach((shiny) => {
           let owned = false;
