@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nativescript.ShinyChecklist"  
+    applicationId = "com.tjvantoll.ShinyDex"  
   }  
   aaptOptions {  
     additionalParameters "--no-version-vectors"  

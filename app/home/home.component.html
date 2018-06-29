@@ -14,7 +14,11 @@
 
   <RadListView *ngIf="loaded" row="1" [items]="shinies" class="list-group" (itemTap)="toggleShinyOwned($event)">
     <ng-template tkListItemTemplate let-item="item">
-      <GridLayout columns="*, auto" rows="auto, auto" class="card" [class.selected]="item.owned">
+      <GridLayout columns="*, auto" rows="auto, auto" class="card">
+
+        <!-- lol hack-->
+        <GridLayout colSpan="2" rowSpan="2" backgroundColor="#F5F5F5" [opacity]="item.owned ? 1 : 0"></GridLayout>
+
         <Label col="0" row="0" [text]="item.name"></Label>
         <Image col="1" row="0" class="check" [src]="item.owned ? 'res://checked' : 'res://unchecked'"></Image>
         <Image colSpan="2" row="1" class="sprite" [src]="item.getImage()"></Image>

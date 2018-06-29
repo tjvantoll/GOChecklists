@@ -99,4 +99,3 @@ export class HomeComponent implements OnInit {
     SocialShare.shareText(message, "My ShinyDex");
   }
 }
-
