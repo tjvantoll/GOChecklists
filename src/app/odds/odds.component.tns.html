@@ -1,0 +1,24 @@
+<ActionBar flat="true" title="Odds" class="action-bar">
+  <NavigationButton visibility="collapsed"></NavigationButton>
+  <ActionItem (tap)="toggleMenu()" icon="res://menu" ios.position="left"></ActionItem>
+</ActionBar>
+
+<GridLayout class="page">
+  <StackLayout>
+    <Label class="h1" text="Wild Pokémon"></Label>
+    <Label class="body" textWrap="true">
+      <FormattedString>
+        <Span text="For wild Pokémon, the current established odds for a given encounter to be shiny are "></Span>
+        <Span class="font-weight-bold" text="1 in 450"></Span>
+        <Span text=". Enter the number of Pokémon you’ve encountered below to determine your odds of seeing a shiny."></Span>
+      </FormattedString>
+    </Label>
+
+    <TextField [(ngModel)]="encounters" hint="Enter number of encounters" class="input input-border" keyboardType="number"></TextField>
+    <Button class="btn btn-primary" text="Calculate odds" (tap)="calculate()"></Button>
+
+    <Label class="body result" [text]="result0"></Label>
+    <Label class="body result" [text]="result1"></Label>
+    <Label class="body result" [text]="result2"></Label>
+  </StackLayout>
+</GridLayout>

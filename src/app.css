@@ -1,0 +1,25 @@
+@import "~nativescript-theme-core/css/core.light.css";
+
+.page {
+  margin: 5 5 0 5;
+  font-family: "Varela", "varela-regular";
+}
+.action-bar {
+  background-color: #445BA1;
+  color: white;
+}
+
+.sidedrawer {
+  background: #546187;
+  font-size: 20;
+}
+.sidedrawer-list-item {
+  color: white;
+}
+.sidedrawer .h1 {
+  font-weight: bold;
+  font-size: 30;
+}
+.sidedrawer Label {
+  margin: 20;
+}

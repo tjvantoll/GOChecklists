@@ -1,0 +1,12 @@
+<RadSideDrawer>
+  <GridLayout tkDrawerContent class="sidedrawer sidedrawer-left">
+    <StackLayout class="sidedrawer-content">
+      <Image src="res://icon"></Image>
+      <Label class="h1" text="ShinyDex"></Label>
+      <Label class="sidedrawer-list-item" text="— Dex" (tap)="navigate('/dex')"></Label>
+      <Label class="sidedrawer-list-item" text="— Odds" (tap)="navigate('/odds')"></Label>
+    </StackLayout>
+  </GridLayout>
+
+  <page-router-outlet tkMainContent></page-router-outlet>
+</RadSideDrawer>
