@@ -62,8 +62,8 @@ export class DexComponent implements OnInit {
       (percent > 84 && percent <= 90) ? "#A9DC03" : "#9ADA00";
   }
 
-  toggleShinyOwned(args) {
-    this.shinyService.toggleShinyOwned(args.index);
+  toggleShinyOwned(index) {
+    this.shinyService.toggleShinyOwned(index);
     this.determineOwnedCounts();
   }
 

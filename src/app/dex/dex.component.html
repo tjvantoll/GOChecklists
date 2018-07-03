@@ -1,8 +1,13 @@
 <h1>ShinyDex</h1>
 
-<ul>
-  <li *ngFor="let shiny of shinies">
-    {{ shiny.name }}
-    <img src="/app/images/sprites/{{ shiny.id }}.png">
-  </li>
-</ul>
+<div class="page">
+  <ul>
+    <li (click)="toggleShinyOwned(i)" class="card" *ngFor="let shiny of shinies; index as i" [class.selected]="shiny.owned">
+      <span>{{ shiny.name }}</span>
+      <input type="checkbox" [checked]="shiny.owned">
+      <img src="/app/images/sprites/{{ shiny.id }}.png">
+    </li>
+  </ul>
+</div>
+
+<img *ngIf="isLoading" class="loading" src="/app/images/loading.gif">

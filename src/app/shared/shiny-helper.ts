@@ -1,13 +1,9 @@
 export class ShinyHelper {
-  static init() {
-    
-  }
-
   read(): string {
-    return "";
+    return localStorage.getItem("shinies");
   }
 
   save(saved) {
-
+    localStorage.setItem("shinies", JSON.stringify(saved));
   }
 }
