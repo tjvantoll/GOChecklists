@@ -3,7 +3,7 @@ import { HttpHeaders, HttpClient, HttpParams, HttpErrorResponse } from "@angular
 import { map } from "rxjs/operators";
 
 import { Shiny } from "./shiny.model";
-import { ShinyHelper } from "./shiny-helper.tns";
+import { ShinyHelper } from "./shiny-helper";
 
 @Injectable()
 export class ShinyService {

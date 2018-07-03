@@ -18,7 +18,7 @@ export class DexComponent implements OnInit {
   percentOwned;
   progressbarColor;
 
-  constructor(private shinyService: ShinyService) { }
+  constructor(private shinyService: ShinyService) {}
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();

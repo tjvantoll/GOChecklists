@@ -3,8 +3,8 @@ export class ShinyHelper {
     
   }
 
-  read() {
-    
+  read(): string {
+    return "";
   }
 
   save(saved) {

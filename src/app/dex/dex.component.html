@@ -1,3 +1,8 @@
-<p>
-  dex works!
-</p>
+<h1>ShinyDex</h1>
+
+<ul>
+  <li *ngFor="let shiny of shinies">
+    {{ shiny.name }}
+    <img src="/app/images/sprites/{{ shiny.id }}.png">
+  </li>
+</ul>
