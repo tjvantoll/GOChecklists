@@ -9,7 +9,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "deploy": "ng build --prod --base-href /ShinyDex/ && gh-pages -d dist --remote origin"
   },
   "private": true,
   "dependencies": {
