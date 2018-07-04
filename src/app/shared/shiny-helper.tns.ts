@@ -7,7 +7,7 @@ export class ShinyHelper {
     this.saveFile = this.saveFile = knownFolders.documents().getFile("shinies.json");
   }
 
-  read() {
+  read(): string {
     return this.saveFile.readTextSync();
   }
 

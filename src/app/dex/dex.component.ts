@@ -18,7 +18,7 @@ export class DexComponent implements OnInit {
   percentOwned;
   progressbarColor;
 
-  constructor(private shinyService: ShinyService) { }
+  constructor(private shinyService: ShinyService) {}
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();
@@ -62,8 +62,8 @@ export class DexComponent implements OnInit {
       (percent > 84 && percent <= 90) ? "#A9DC03" : "#9ADA00";
   }
 
-  toggleShinyOwned(args) {
-    this.shinyService.toggleShinyOwned(args.index);
+  toggleShinyOwned(index) {
+    this.shinyService.toggleShinyOwned(index);
     this.determineOwnedCounts();
   }
 

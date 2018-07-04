@@ -1,46 +1,44 @@
-.progress-section {
-  margin: 10 5;
+ul {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-.progress-bar {
-  border-color: gray;
-  border-width: 1;
-  border-radius: 5;
-  height: 20;
-}
-.progress-section Label {
-  margin-left: 5;
-  font-size: 14;
-  text-align: center;
-}
-
 .card {
-  border-color: #DCE7DC;
-  border-width: 1;
-  border-radius: 10;
-  margin: 5;
+  margin: 0.5em;
+  border: 1px solid #DCE7DC;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 9em;
+  height: 9em;
+  position: relative;
+  font-size: 0.9em;
 }
 .selected {
   background-color: #F5F5F5;
 }
-.card Label {
-  font-size: 12;
-  text-align: left;
-  margin-left: 7;
-  margin-top: 7;
+.card span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
-.android .card Label {
-  font-size: 14;
+.card input {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-.check {
-  font-size: 30;
-  text-align: right;
-  height: 20;
-  margin-top: 7;
+.card img {
+  position: absolute;
+  top: 30px;
+  left: 16px;
 }
-.sprite {
-  height: 100;
-}
-.ios .sprite {
-  height: 80;
-  margin-bottom: 200;
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
 }
