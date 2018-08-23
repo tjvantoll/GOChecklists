@@ -1,6 +1,14 @@
 <h1>ShinyDex</h1>
 
 <div class="page">
+  <div class="top-container">
+    <div class="progressbar">
+      <div class="progressbar-contents" [style.width]="percentOwned + '%'"
+        [style.backgroundColor]="progressbarColor"></div>
+    </div>
+    <span>{{ ownedCount + ' / ' + shinies.length }}</span>
+  </div>
+
   <ul>
     <li (click)="toggleShinyOwned(i)" class="card" *ngFor="let shiny of shinies; index as i" [class.selected]="shiny.owned">
       <span>{{ shiny.name }}</span>

@@ -43,7 +43,7 @@ export class DexComponent implements OnInit {
     this.ownedCount = owned;
 
     let percent = Math.round((owned / this.shinies.length) * 100);
-    this.percentOwned = percent + "*," + (100 - percent) + "*";
+    this.percentOwned = percent;
 
     this.progressbarColor = (percent <= 6) ? "#FB041E" :
       (percent > 6 && percent <= 12) ? "#FD2222" :

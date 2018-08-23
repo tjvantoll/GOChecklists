@@ -1,13 +1,34 @@
+.top-container {
+  display: flex;
+  margin: 0.5em;
+}
+.progressbar {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+}
+.progressbar-contents {
+  height: 20px;
+}
+.top-container > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 80px;
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
-  padding: 0.5em;
-  margin: 0;
+  padding: 0;
+  margin: 0.25em;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 .card {
-  margin: 0.5em;
+  flex: 1 0 25%;
+  margin: 0.25em;
   border: 1px solid #DCE7DC;
   border-radius: 10px;
   cursor: pointer;
