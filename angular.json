@@ -22,6 +22,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
+              "src/404.html",
               "src/manifest.json",
               "src/app/fonts",
               "src/app/images"
