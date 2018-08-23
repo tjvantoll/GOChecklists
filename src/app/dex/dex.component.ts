@@ -13,7 +13,7 @@ import { DexHelper } from "./dex-helper";
 export class DexComponent implements OnInit {
   isAndroid;
   loaded = false;
-  shinies: Shiny[];
+  shinies: Shiny[] = [];
   ownedCount;
   percentOwned;
   progressbarColor;

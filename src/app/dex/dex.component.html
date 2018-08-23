@@ -6,14 +6,14 @@
       <div class="progressbar-contents" [style.width]="percentOwned + '%'"
         [style.backgroundColor]="progressbarColor"></div>
     </div>
-    <span>{{ ownedCount + ' / ' + shinies.length }}</span>
+    <span *ngIf="shinies.length > 0">{{ ownedCount + ' / ' + shinies.length }}</span>
   </div>
 
   <ul>
     <li (click)="toggleShinyOwned(i)" class="card" *ngFor="let shiny of shinies; index as i" [class.selected]="shiny.owned">
       <span>{{ shiny.name }}</span>
-      <input type="checkbox" [checked]="shiny.owned">
-      <img src="app/images/sprites/{{ shiny.id }}.png">
+      <img class="checkbox" [src]="shiny.owned ? 'app/images/checked.png' : 'app/images/unchecked.png'">
+      <img class="sprite" src="app/images/sprites/{{ shiny.id }}.png">
     </li>
   </ul>
 </div>
