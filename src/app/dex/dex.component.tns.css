@@ -1,3 +1,7 @@
+.page > GridLayout {
+  margin: 5 5 0 5;
+}
+
 .progress-section {
   margin: 10 5;
 }
@@ -43,4 +47,13 @@
 .ios .sprite {
   height: 80;
   margin-bottom: 200;
+}
+
+.dialog {
+  border-width: 1 0 1 0;
+  border-color: black;
+  background-color: white;
+  width: 100%;
+  margin-top: 200;
+  padding: 20;
 }

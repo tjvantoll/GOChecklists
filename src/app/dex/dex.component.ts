@@ -14,11 +14,19 @@ export class DexComponent implements OnInit {
   isAndroid;
   loaded = false;
   shinies: Shiny[] = [];
+
   ownedCount;
   percentOwned;
   progressbarColor;
 
-  constructor(private shinyService: ShinyService) {}
+  sharing = false;
+  shareStatus = true;
+  shareOwned = false;
+  shareUnowned = false;
+
+  constructor(
+    private shinyService: ShinyService
+  ) {}
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();
@@ -72,16 +80,47 @@ export class DexComponent implements OnInit {
   }
 
   share() {
-    let message = "My ShinyDex status: " + this.ownedCount + " / " + this.shinies.length + "\n\n" + "My shinies: ";
-    let ownedShinies = [];
+    this.sharing = !this.sharing;
+  }
 
-    this.shinies.forEach((shiny) => {
-      if (shiny.owned) {
-        ownedShinies.push(shiny.name);
+  confirmShare() {
+    let message = "";
+    
+    if (this.shareStatus) {
+      message += "My ShinyDex status: " + this.ownedCount + " / " + this.shinies.length;
+    }
+
+    if (this.shareOwned) {
+      let ownedShinies = [];
+      this.shinies.forEach((shiny) => {
+        if (shiny.owned) {
+          ownedShinies.push(shiny.name);
+        }
+      });
+      if (this.shareStatus) {
+        message += "\n\n";
       }
-    });
-    message += ownedShinies.join(", ");
+      message += ("My shinies: " + ownedShinies.join(", "));
+    }
+
+    if (this.shareUnowned) {
+      let unownedShinies = [];
+      this.shinies.forEach((shiny) => {
+        if (!shiny.owned) {
+          unownedShinies.push(shiny.name);
+        }
+      });
+      if (this.shareStatus || this.shareOwned) {
+        message += "\n\n";
+      }
+      message += ("I need: " + unownedShinies.join(", "));
+    }
 
     DexHelper.shareText(message);
+    this.cancelShare();
+  }
+
+  cancelShare() {
+    this.sharing = false;
   }
 }

@@ -1,4 +1,7 @@
-<h1>ShinyDex</h1>
+<h1>
+  ShinyDex
+  <button (click)="share()">Share</button>
+</h1>
 
 <div class="page">
   <div class="top-container">
@@ -16,6 +19,28 @@
       <img class="sprite" src="app/images/sprites/{{ shiny.id }}.png">
     </li>
   </ul>
+</div>
+
+<div class="dialog" [style.display]="sharing ? 'block' : 'none'">
+  <span>What shiny data would you like to share?</span>
+
+  <div>
+    <!--<Switch [(ngModel)]="shareStatus" class="m-r-10"></Switch>-->
+    <span>My ShinyDex status</span>
+  </div>
+
+  <div>
+    <!--<Switch [(ngModel)]="shareOwned" class="m-r-10"></Switch>-->
+    <span>A list of shinies I have</span>
+  </div>>
+
+  <div>
+    <!--<Switch [(ngModel)]="shareUnowned" class="m-r-10"></Switch>-->
+    <span>A list of shinies I do NOT have</span>
+  </div>
+
+  <button (click)="confirmShare()">Share</button>
+  <button (click)="cancelShare()">Cancel</button>
 </div>
 
 <img *ngIf="!loaded" class="loading" src="app/images/loading.gif">

@@ -1,3 +1,21 @@
+h1 {
+  position: relative;
+}
+h1 button {
+  position: absolute;
+  right: 0.5em;
+  text-indent: -9999px;
+  white-space: nowrap;
+  border: none;
+  background-color: transparent;
+  background-image: url(/app/images/share.png);
+  background-repeat: no-repeat;
+  background-size: 2.5em;
+  height: 2.5em;
+  width: 2.5em;
+  outline: none;
+}
+
 .top-container {
   display: flex;
   margin: 0.5em 0.5em 0.25em 0.5em;
@@ -67,4 +85,15 @@ ul {
   left: 50%;
   margin-top: -60px;
   margin-left: -60px;
+}
+
+.dialog {
+  position: absolute;
+  top: 10em;
+  border-width: 3px 0;
+  padding: 1em;
+  border-color: black;
+  width: 100%;
+  background: white;
+  box-sizing: border-box;
 }

@@ -1,7 +1,6 @@
 @import "~nativescript-theme-core/css/core.light.css";
 
 .page {
-  margin: 5 5 0 5;
   font-family: "Varela", "varela-regular";
 }
 .action-bar {
