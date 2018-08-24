@@ -10,7 +10,7 @@
   </div>
 
   <ul>
-    <li (click)="toggleShinyOwned(i)" class="card" *ngFor="let shiny of shinies; index as i" [class.selected]="shiny.owned">
+    <li (click)="toggleShinyOwned(shiny)" class="card" *ngFor="let shiny of shinies" [class.selected]="shiny.owned">
       <span>{{ shiny.name }}</span>
       <img class="checkbox" [src]="shiny.owned ? 'app/images/checked.png' : 'app/images/unchecked.png'">
       <img class="sprite" src="app/images/sprites/{{ shiny.id }}.png">
