@@ -22,7 +22,6 @@ export class DexComponent implements OnInit {
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();
-    DexHelper.handleStatusBar();
 
     this.shinyService.getShinies().subscribe(
       () => {

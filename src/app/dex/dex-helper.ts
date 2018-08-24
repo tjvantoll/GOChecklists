@@ -3,17 +3,11 @@ export class DexHelper {
     return false;
   }
 
-  static handleStatusBar() {}
-
   static showError(message) {
     alert(message);
   }
 
-  static toggleMenu() {
+  static toggleMenu() {}
 
-  }
-
-  static shareText(message) {
-
-  }
+  static shareText(message) {}
 }
