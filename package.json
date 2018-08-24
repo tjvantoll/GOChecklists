@@ -4,13 +4,16 @@
     "id": "com.tjvantoll.ShinyDex",
     "tns-ios": {
       "version": "4.1.1"
+    },
+    "tns-android": {
+      "version": "4.2.0"
     }
   },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng build --prod --base-href /ShinyDex/ && gh-pages -d dist/ShinyDex --remote origin"
+    "deploy": "ng build --prod --base-href / && gh-pages -d dist/ShinyDex --remote origin"
   },
   "private": true,
   "dependencies": {
