@@ -19,14 +19,8 @@ export class DexHelper {
         text: message
       });
     } else {
-      // Copy to clipboard
-      var textarea = document.createElement("textarea");
-      textarea.innerHTML = message;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      textarea.parentNode.removeChild(textarea);
-      alert("Text copied to clipboard");
+      // This magic happens via ClipboardJS in index.html
+      alert("Copied to clipboard");
     }
   }
 }

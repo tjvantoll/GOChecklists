@@ -23,6 +23,7 @@ export class DexComponent implements OnInit {
   shareStatus = true;
   shareOwned = false;
   shareUnowned = false;
+  shareMessage;
 
   constructor(
     private shinyService: ShinyService
@@ -116,6 +117,7 @@ export class DexComponent implements OnInit {
       message += ("I need: " + unownedShinies.join(", "));
     }
 
+    this.shareMessage = message;
     DexHelper.shareText(message);
     this.cancelShare();
   }

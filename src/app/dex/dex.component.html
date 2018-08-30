@@ -45,7 +45,7 @@
     </label>
   </div>
 
-  <button class="primary" (click)="confirmShare()">Share</button>
+  <button class="primary" (click)="confirmShare()" [attr.data-clipboard-text]="shareMessage">Share</button>
   <button (click)="cancelShare()">Cancel</button>
 </div>
 
