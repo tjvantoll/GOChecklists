@@ -3,7 +3,7 @@
   <button (click)="share()">Share</button>
 </h1>
 
-<div class="page">
+<div class="page" [style.opacity]="sharing ? 0.2 : 1">
   <div class="top-container">
     <div class="progressbar">
       <div class="progressbar-contents" [style.width]="percentOwned + '%'"
