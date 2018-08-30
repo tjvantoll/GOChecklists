@@ -4,8 +4,4 @@ export class Shiny {
     public id: string,
     public owned: boolean = false
   ) {}
-
-  getImage() {
-    return "~/app/images/sprites/" + this.id + ".png";
-  }
 }

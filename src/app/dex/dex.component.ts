@@ -12,6 +12,8 @@ import { DexHelper } from "./dex-helper";
 })
 export class DexComponent implements OnInit {
   isAndroid;
+  imagePath;
+
   loaded = false;
   shinies: Shiny[] = [];
 
@@ -31,6 +33,7 @@ export class DexComponent implements OnInit {
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();
+    this.imagePath = "~/app/images/" + (this.isAndroid ? "sprites" : "sprites-black") + "/";
 
     this.shinyService.getShinies().subscribe(
       () => {
