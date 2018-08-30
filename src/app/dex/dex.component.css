@@ -3,7 +3,7 @@ h1 {
 }
 h1 button {
   position: absolute;
-  right: 0.5em;
+  right: 0.75em;
   text-indent: -9999px;
   white-space: nowrap;
   border: none;
@@ -90,10 +90,41 @@ ul {
 .dialog {
   position: absolute;
   top: 10em;
-  border-width: 3px 0;
-  padding: 1em;
   border-color: black;
+  border-width: 1px 0;
+  border-style: solid;
+  padding: 1em;
   width: 100%;
   background: white;
   box-sizing: border-box;
+}
+.dialog p {
+  margin: 0 0 1.5em 0;
+}
+.dialog > div {
+  margin: 1em 0;
+}
+.dialog input {
+  height: 2.5em;
+  width: 2.5em;
+}
+.dialog label span {
+  position: relative;
+  top: -0.5em;
+  padding-left: 0.3em;
+}
+.dialog button {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1em;
+  border: 1px solid #2AB3FF;
+  background: white;
+  color: #2AB3FF;
+  font-size: 0.9em;
+}
+.dialog .primary {
+  background-color: #2AB3FF;
+  color: white;
+  border: none;
+  margin-bottom: 1em;
 }

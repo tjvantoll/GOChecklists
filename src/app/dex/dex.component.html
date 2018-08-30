@@ -22,24 +22,30 @@
 </div>
 
 <div class="dialog" [style.display]="sharing ? 'block' : 'none'">
-  <span>What shiny data would you like to share?</span>
+  <p>What shiny data would you like to share?</p>
 
   <div>
-    <!--<Switch [(ngModel)]="shareStatus" class="m-r-10"></Switch>-->
-    <span>My ShinyDex status</span>
+    <label>
+      <input type="checkbox" [(ngModel)]="shareStatus">
+      <span>My completion rate—i.e. {{ ownedCount + ' / ' + shinies.length }}</span>
+    </label>
   </div>
 
   <div>
-    <!--<Switch [(ngModel)]="shareOwned" class="m-r-10"></Switch>-->
-    <span>A list of shinies I have</span>
-  </div>>
-
-  <div>
-    <!--<Switch [(ngModel)]="shareUnowned" class="m-r-10"></Switch>-->
-    <span>A list of shinies I do NOT have</span>
+    <label>
+      <input type="checkbox" [(ngModel)]="shareOwned">
+      <span>A list of shinies I have</span>
+    </label>
   </div>
 
-  <button (click)="confirmShare()">Share</button>
+  <div>
+    <label>
+      <input type="checkbox" [(ngModel)]="shareUnowned">
+      <span>A list of shinies I do NOT have</span>
+    </label>
+  </div>
+
+  <button class="primary" (click)="confirmShare()">Share</button>
   <button (click)="cancelShare()">Cancel</button>
 </div>
 

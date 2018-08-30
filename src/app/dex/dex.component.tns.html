@@ -1,6 +1,6 @@
 <ActionBar flat="true" title="ShinyDex" class="action-bar">
-  <NavigationButton ios:visibility="collapsed" (tap)="toggleMenu()" icon="res://menu"></NavigationButton>
-  <ActionItem android:visibility="collapsed" (tap)="toggleMenu()" icon="res://menu" ios.position="left"></ActionItem>
+  <!--<NavigationButton ios:visibility="collapsed" (tap)="toggleMenu()" icon="res://menu"></NavigationButton>
+  <ActionItem android:visibility="collapsed" (tap)="toggleMenu()" icon="res://menu" ios.position="left"></ActionItem>-->
   <ActionItem (tap)="share()" ios.systemIcon="9" ios.position="right" android.systemIcon="ic_menu_share" android.position="actionBar"></ActionItem>
 </ActionBar>
 
@@ -41,7 +41,7 @@
 
       <StackLayout orientation="horizontal" class="m-t-20 m-b-10">
         <Switch [(ngModel)]="shareStatus" class="m-r-10"></Switch>
-        <Label text="My ShinyDex status"></Label>
+        <Label [text]="'My completion rate—i.e. ' + ownedCount + ' / ' + shinies.length"></Label>
       </StackLayout>
 
       <StackLayout orientation="horizontal" class="m-b-10">

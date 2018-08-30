@@ -54,6 +54,9 @@
   border-color: black;
   background-color: white;
   width: 100%;
-  margin-top: 200;
+  margin-top: 150;
   padding: 20;
+}
+.android .dialog Label  {
+  margin-top: 3;
 }

@@ -87,7 +87,7 @@ export class DexComponent implements OnInit {
     let message = "";
     
     if (this.shareStatus) {
-      message += "My ShinyDex status: " + this.ownedCount + " / " + this.shinies.length;
+      message += "I have " + this.ownedCount + " / " + this.shinies.length + " shinies.";
     }
 
     if (this.shareOwned) {
