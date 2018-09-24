@@ -14,9 +14,13 @@ npm install -g nativescript
 npm install -g @nativescript/schematics
 ```
 
-If you want to build the app for iOS or Android, you’ll also need to install NativeScript’s requirements for building native apps. You can find instructions on how to do that on [the NativeScript documentation site](https://docs.nativescript.org/angular/start/quick-setup).
+If you want to build the app for iOS or Android, you’ll additionally need to install NativeScript’s requirements for building native apps. You can find instructions on how to do that on [the NativeScript documentation site](https://docs.nativescript.org/angular/start/quick-setup).
 
 ## Running the app
+
+ShinyDex runs on the web, on iOS, and on Android. Here are the commands you need to run the app on all three platforms.
+
+### Web
 
 To run the your app on the web use the Angular CLI’s `ng serve` command.
 
@@ -24,13 +28,17 @@ To run the your app on the web use the Angular CLI’s `ng serve` command.
 ng serve
 ```
 
-When the command finishes, visit `localhost:4200` in your browser to see your apps.
+When the command finishes, visit `localhost:4200` in your browser to see your app.
+
+### iOS
 
 To run your app for iOS use the following command.
 
 ```
 tns run ios --bundle
 ```
+
+### Android
 
 And finally, to run your app on Android use the following command.
 
