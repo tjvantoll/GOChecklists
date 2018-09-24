@@ -2,9 +2,7 @@
 
 ShinyDex is a multi-platform app built with NativeScript and the Angular CLI. The app is available on [Google Play](https://play.google.com/store/apps/details?id=com.tjvantoll.ShinyDex) and [the web](https://shinydex.app).
 
-<img src="assets/iPhone/screenshot_1.png" style="height: 450px;">
-<img src="assets/Nexus6P/screenshot_2.png" style="height: 450px;">
-<img src="assets/iPhone/screenshot_3.png" style="height: 450px;">
+![](assets/apps.png)
 
 ## Development
 
