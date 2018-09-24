@@ -1,27 +1,41 @@
 # ShinyDex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0-beta.0.
+ShinyDex is a multi-platform app built with NativeScript and the Angular CLI. The app is available on [Google Play](https://play.google.com/store/apps/details?id=com.tjvantoll.ShinyDex) and [the web](https://shinydex.app).
 
-## Development server
+<img src="assets/iPhone/screenshot_1.png" style="height: 450px;">
+<img src="assets/Nexus6P/screenshot_2.png" style="height: 450px;">
+<img src="assets/iPhone/screenshot_3.png" style="height: 450px;">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Development
 
-## Code scaffolding
+To run ShinyDex locally you need to install the Angular CLI, NativeScript, and NativeScript schematics. You can do so with the following commands.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+npm install -g @angular/cli
+npm install -g nativescript
+npm install -g @nativescript/schematics
+```
 
-## Build
+If you want to build the app for iOS or Android, you’ll also need to install NativeScript’s requirements for building native apps. You can find instructions on how to do that on [the NativeScript documentation site](https://docs.nativescript.org/angular/start/quick-setup).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running the app
 
-## Running unit tests
+To run the your app on the web use the Angular CLI’s `ng serve` command.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+ng serve
+```
 
-## Running end-to-end tests
+When the command finishes, visit `localhost:4200` in your browser to see your apps.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To run your app for iOS use the following command.
 
-## Further help
+```
+tns run ios --bundle
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+And finally, to run your app on Android use the following command.
+
+```
+tns run android --bundle
+```
