@@ -1,0 +1,9 @@
+<ListView [items]="items">
+    <ng-template let-item="item">
+      <FlexboxLayout [class.selected]="item.selected" (tap)="itemTapped(item)">
+        <Image [src]="item.image"></Image>
+        <Label [text]="item.name"></Label>
+      </FlexboxLayout>
+    </ng-template>
+  </ListView>
+  

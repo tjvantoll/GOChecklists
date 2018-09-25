@@ -2,9 +2,9 @@
 
 # compiled output
 /dist
-/hooks
 /tmp
 /out-tsc
+/hooks
 /platforms
 
 # dependencies

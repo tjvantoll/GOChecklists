@@ -1,7 +1,7 @@
 {
-  "name": "ShinyDex",
+  "name": "WorkInProgress",
   "nativescript": {
-    "id": "com.tjvantoll.ShinyDex",
+    "id": "org.nativescript.WorkInProgress",
     "tns-ios": {
       "version": "4.2.0"
     },
@@ -9,11 +9,16 @@
       "version": "4.2.0"
     }
   },
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng build --prod --base-href / && gh-pages -d dist/ShinyDex --remote origin"
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "android": "tns run android --bundle",
+    "ios": "tns run ios --bundle"
   },
   "private": true,
   "dependencies": {
@@ -28,10 +33,7 @@
     "@angular/router": "~6.1.0-rc.3",
     "core-js": "^2.5.4",
     "nativescript-angular": "next",
-    "nativescript-social-share": "^1.5.0",
     "nativescript-theme-core": "~1.0.4",
-    "nativescript-ui-listview": "^3.5.8",
-    "nativescript-ui-sidedrawer": "^4.1.1",
     "reflect-metadata": "~0.1.8",
     "rxjs": "^6.0.0",
     "tns-core-modules": "~4.1.0",
@@ -42,7 +44,17 @@
     "@angular/compiler-cli": "~6.0.3-rc.3",
     "@angular-devkit/build-angular": "~0.7.0-rc.3",
     "@nativescript/schematics": "~0.2.0",
+    "@types/jasmine": "~2.8.6",
+    "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "codelyzer": "~4.2.1",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~1.7.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.0",
+    "karma-jasmine": "~1.1.1",
+    "karma-jasmine-html-reporter": "^0.2.2",
     "nativescript-dev-typescript": "~0.7.0",
     "nativescript-dev-webpack": "^0.15.0",
     "protractor": "~5.3.0",

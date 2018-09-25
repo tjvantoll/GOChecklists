@@ -1,19 +1,4 @@
-@font-face {
-  font-family: "Varela";
-  src: url("/app/fonts/varela-regular.ttf");
+html, body { margin: 0; }
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
-
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: "Varela", "Segoe UI", "Helvetica Neue", Arial;
-}
-h1 {
-  background-color: #445BA1;
-  color: white;
-  margin: 0;
-  padding: 0.5em;
-  font-size: 1.25em;
-  text-align: center;
-}
-

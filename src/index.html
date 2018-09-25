@@ -2,37 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ShinyDex</title>
+  <title>WorkInProgress></title>
   <base href="/">
 
-  <link rel="manifest" href="manifest.json"> 
-  <link rel="apple-touch-icon" sizes="180x180" href="app/images/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="app/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="app/images/icons/favicon-16x16.png">
-  <link rel="icon" type="image/x-icon" href="app/images/icons/favicon.ico">
-
-  <meta name="theme-color" content="#445BA1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script>
-    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
-    (function(){
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <app-root></app-root>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-  <script>
-    if (!navigator.share) {
-      new ClipboardJS(".primary");
-    }
-  </script>
 </body>
 </html>

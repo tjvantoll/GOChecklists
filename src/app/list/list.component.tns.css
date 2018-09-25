@@ -1,0 +1,11 @@
+FlexboxLayout {
+  padding: 5;
+  align-items: center;
+}
+.selected {
+  background-color: #C0C0C0;
+}
+Image {
+  height: 80;
+  width: 80;
+}

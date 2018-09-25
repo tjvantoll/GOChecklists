@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let item of items" [class.selected]="item.selected" (click)="itemTapped(item)">
+    <img [src]="item.image">
+    <span>{{ item.name }}</span>
+  </li>
+</ul>
+  
