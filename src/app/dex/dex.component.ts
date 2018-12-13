@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 
 import { Pokemon } from "../shared/pokemon.model";
 import { PokemonService } from "../shared/pokemon.service";
@@ -13,9 +14,11 @@ import { DexHelper } from "./dex-helper";
 export class DexComponent implements OnInit {
   isAndroid;
   imagePath;
+  routePath;
+  pageTitle;
 
   loaded = false;
-  shinies: Pokemon[] = [];
+  mons: Pokemon[] = [];
 
   ownedCount;
   percentOwned;
@@ -28,32 +31,43 @@ export class DexComponent implements OnInit {
   shareMessage;
 
   constructor(
-    private pokemonService: PokemonService
-  ) {}
+    private pokemonService: PokemonService,
+    private route: ActivatedRoute
+  ) {
+    this.route.url.subscribe(params => {
+      this.routePath = params[0].path;
+    });
+  }
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();
     this.imagePath = "~/app/images/" + (this.isAndroid ? "sprites" : "sprites-black") + "/";
+    this.pageTitle = this.isShinyMode() ? "ShinyDex" : "LuckyDex";
 
-    this.pokemonService.getShinies().subscribe(
-      (data) => {
-        this.shinies = this.pokemonService.shinies;
-        this.determineOwnedCounts();
-        this.loaded = true;
-      },
-      () => {
-        DexHelper.showError("Could not retrieve a list of shinies from the server. Check your network connection.");
-      });
+    var success = () => {
+      this.mons = this.isShinyMode() ? this.pokemonService.shinies : this.pokemonService.luckies;
+      this.determineOwnedCounts();
+      this.loaded = true;
+    };
+    var failure = () => {
+      DexHelper.showError("Could not retrieve a list of shinies from the server. Check your network connection.");
+    }
+
+    if (this.isShinyMode()) {
+      this.pokemonService.getShinies().subscribe(success, failure);
+    } else {
+      this.pokemonService.getLuckies().subscribe(success, failure);
+    }
   }
 
   determineOwnedCounts() {
     let owned = 0;
-    this.shinies.forEach((shiny) => {
+    this.mons.forEach((shiny) => {
       if (shiny.owned) { owned++; }
     });
     this.ownedCount = owned;
 
-    let percent = Math.round((owned / this.shinies.length) * 100);
+    let percent = Math.round((owned / this.mons.length) * 100);
     this.percentOwned = percent;
 
     this.progressbarColor = (percent <= 6) ? "#FB041E" :
@@ -74,8 +88,14 @@ export class DexComponent implements OnInit {
   }
 
   toggleShinyOwned(shiny) {
-    let index = this.shinies.indexOf(shiny);
-    this.pokemonService.toggleShinyOwned(index);
+    let index = this.mons.indexOf(shiny);
+    
+    if (this.isShinyMode()) {
+      this.pokemonService.toggleShinyOwned(index);
+    } else {
+      this.pokemonService.toggleLuckyOwned(index);
+    }
+
     this.determineOwnedCounts();
   }
 
@@ -91,12 +111,12 @@ export class DexComponent implements OnInit {
     let message = "";
     
     if (this.shareStatus) {
-      message += "I have " + this.ownedCount + " / " + this.shinies.length + " shinies.";
+      message += "I have " + this.ownedCount + " / " + this.mons.length + " shinies.";
     }
 
     if (this.shareOwned) {
       let ownedShinies = [];
-      this.shinies.forEach((shiny) => {
+      this.mons.forEach((shiny) => {
         if (shiny.owned) {
           ownedShinies.push(shiny.name);
         }
@@ -109,7 +129,7 @@ export class DexComponent implements OnInit {
 
     if (this.shareUnowned) {
       let unownedShinies = [];
-      this.shinies.forEach((shiny) => {
+      this.mons.forEach((shiny) => {
         if (!shiny.owned) {
           unownedShinies.push(shiny.name);
         }
@@ -127,5 +147,9 @@ export class DexComponent implements OnInit {
 
   cancelShare() {
     this.sharing = false;
+  }
+
+  private isShinyMode() {
+    return this.routePath == "shiny";
   }
 }

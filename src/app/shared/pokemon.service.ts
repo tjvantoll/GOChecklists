@@ -4,6 +4,7 @@ import { map } from "rxjs/operators";
 
 import { Pokemon } from "./pokemon.model";
 import { PokemonHelper } from "./pokemon-helper";
+import { Observable } from "tns-core-modules/ui/page/page";
 
 const BASE_URL = "https://baas.kinvey.com/appdata/kid_H1_cK1DWQ";
 
@@ -38,7 +39,7 @@ export class PokemonService {
       headers: this.getHeaders(), params: { "sort": "id" }
     })
     .pipe(
-      map((data) => {
+      map(data => {
         let shinies = <Pokemon[]>data;
 
         shinies.forEach((mon) => {
@@ -73,7 +74,7 @@ export class PokemonService {
 
   private buildOwnedArray(sourceArray: Array<Pokemon>) {
     let saved = [];
-    this.shinies.forEach((shiny) => {
+    sourceArray.forEach((shiny) => {
       if (shiny.owned) {
         saved.push(shiny.id);
       }

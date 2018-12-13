@@ -1,5 +1,5 @@
 <h1>
-  ShinyDex
+  {{ this.pageTitle }}
   <button (click)="share()">Share</button>
 </h1>
 
@@ -9,14 +9,14 @@
       <div class="progressbar-contents" [style.width]="percentOwned + '%'"
         [style.backgroundColor]="progressbarColor"></div>
     </div>
-    <span *ngIf="shinies.length > 0">{{ ownedCount + ' / ' + shinies.length }}</span>
+    <span *ngIf="mons.length > 0">{{ ownedCount + ' / ' + mons.length }}</span>
   </div>
 
   <ul>
-    <li (click)="toggleShinyOwned(shiny)" class="card" *ngFor="let shiny of shinies" [class.selected]="shiny.owned">
-      <span>{{ shiny.name }}</span>
-      <img class="checkbox" [src]="shiny.owned ? 'app/images/checked.png' : 'app/images/unchecked.png'">
-      <img class="sprite" src="app/images/sprites/{{ shiny.id }}.png">
+    <li (click)="toggleShinyOwned(mon)" class="card" *ngFor="let mon of mons" [class.selected]="mon.owned">
+      <span>{{ mon.name }}</span>
+      <img class="checkbox" [src]="mon.owned ? 'app/images/checked.png' : 'app/images/unchecked.png'">
+      <img class="sprite" src="app/images/sprites/{{ mon.id }}.png">
     </li>
   </ul>
 </div>
@@ -27,7 +27,7 @@
   <div>
     <label>
       <input type="checkbox" [(ngModel)]="shareStatus">
-      <span>My completion rate—i.e. {{ ownedCount + ' / ' + shinies.length }}</span>
+      <span>My completion rate—i.e. {{ ownedCount + ' / ' + mons.length }}</span>
     </label>
   </div>
 
