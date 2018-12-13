@@ -5,9 +5,8 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
-import { OddsComponent } from "./odds/odds.component";
 import { DexComponent } from "./dex/dex.component";
-import { ShinyService } from "./shared/shiny.service";
+import { PokemonService } from "./shared/pokemon.service";
 
 @NgModule({
   imports: [
@@ -18,11 +17,10 @@ import { ShinyService } from "./shared/shiny.service";
   ],
   declarations: [
     AppComponent,
-    OddsComponent,
     DexComponent
   ],
   providers: [
-    ShinyService
+    PokemonService
   ],
   bootstrap: [AppComponent]
 })

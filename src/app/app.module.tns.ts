@@ -8,8 +8,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { DexComponent } from "./dex/dex.component";
-import { OddsComponent } from "./odds/odds.component";
-import { ShinyService } from "./shared/shiny.service";
+import { PokemonService } from "./shared/pokemon.service";
 
 @NgModule({
   bootstrap: [
@@ -25,11 +24,10 @@ import { ShinyService } from "./shared/shiny.service";
   ],
   declarations: [
     AppComponent,
-    DexComponent,
-    OddsComponent
+    DexComponent
   ],
   providers: [
-    ShinyService
+    PokemonService
   ],
   schemas: [
     NO_ERRORS_SCHEMA

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
-import { Shiny } from "../shared/shiny.model";
-import { ShinyService } from "../shared/shiny.service";
+import { Pokemon } from "../shared/pokemon.model";
+import { PokemonService } from "../shared/pokemon.service";
 import { DexHelper } from "./dex-helper";
 
 @Component({
@@ -15,7 +15,7 @@ export class DexComponent implements OnInit {
   imagePath;
 
   loaded = false;
-  shinies: Shiny[] = [];
+  shinies: Pokemon[] = [];
 
   ownedCount;
   percentOwned;
@@ -28,16 +28,16 @@ export class DexComponent implements OnInit {
   shareMessage;
 
   constructor(
-    private shinyService: ShinyService
+    private pokemonService: PokemonService
   ) {}
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();
     this.imagePath = "~/app/images/" + (this.isAndroid ? "sprites" : "sprites-black") + "/";
 
-    this.shinyService.getShinies().subscribe(
-      () => {
-        this.shinies = this.shinyService.shinies;
+    this.pokemonService.getShinies().subscribe(
+      (data) => {
+        this.shinies = this.pokemonService.shinies;
         this.determineOwnedCounts();
         this.loaded = true;
       },
@@ -75,7 +75,7 @@ export class DexComponent implements OnInit {
 
   toggleShinyOwned(shiny) {
     let index = this.shinies.indexOf(shiny);
-    this.shinyService.toggleShinyOwned(index);
+    this.pokemonService.toggleShinyOwned(index);
     this.determineOwnedCounts();
   }
 
