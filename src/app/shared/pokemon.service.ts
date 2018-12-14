@@ -4,7 +4,6 @@ import { map } from "rxjs/operators";
 
 import { Pokemon } from "./pokemon.model";
 import { PokemonHelper } from "./pokemon-helper";
-import { Observable } from "tns-core-modules/ui/page/page";
 
 const BASE_URL = "https://baas.kinvey.com/appdata/kid_H1_cK1DWQ";
 
@@ -18,41 +17,64 @@ export class PokemonService {
   constructor(private http: HttpClient) {}
 
   getShinies() {
-    this.shinies = [];
-    return this.get(
-      "/Shinies",
-      this.shinies,
-      this.parseOwnedData(this.helper.readShinies())
-    );
+    return this.getPokemon(this.parseOwnedData(this.helper.readShinies()))
+      .then(data => {
+        for (let i = data.length - 1; i >= 0; i--) {
+          if (data[i].shinyAvailable === false) {
+            data.splice(i, 1);
+          }
+        }
+
+        this.shinies = data;
+        return this.shinies;
+      });
   }
+
   getLuckies() {
-    this.luckies = [];
-    return this.get(
-      "/Luckies",
-      this.luckies,
-      this.parseOwnedData(this.helper.readLuckies())
-    );
+    return this.getPokemon(this.parseOwnedData(this.helper.readLuckies()))
+      .then(data => {
+        for (let i = data.length - 1; i >= 0; i--) {
+          if (data[i].tradable === false || data[i].available === false) {
+            data.splice(i, 1);
+          }
+        }
+
+        this.luckies = data;
+        return this.luckies;
+      });
   }
 
-  private get(endpoint: string, destinationArray: Array<Pokemon>, ownedMons: Array<Number>) {
-    return this.http.get(BASE_URL + endpoint, {
-      headers: this.getHeaders(), params: { "sort": "id" }
+  private getPokemon(ownedMons: Array<Number>) {
+    return this.http.get(BASE_URL + "/Pokemon", {
+      headers: this.getHeaders(),
+      params: { "sort": "id" }
     })
-    .pipe(
-      map(data => {
-        let shinies = <Pokemon[]>data;
+    .toPromise()
+    .then(data => {
+      let mons = <Pokemon[]> data;
+      let returnData = <Pokemon[]> [];
 
-        shinies.forEach((mon) => {
-          let owned = false;
-          ownedMons.forEach((ownedId) => {
-            if (ownedId === Number(mon.id)) {
-              owned = true;
-            }
-          })
-          destinationArray.push(new Pokemon(mon.name, mon.id, owned));
-        });
-      })
-    );
+      mons.forEach((mon) => {
+        let owned = false;
+        ownedMons.forEach((ownedId) => {
+          if (ownedId === Number(mon.id)) {
+            owned = true;
+          }
+        })
+        returnData.push(
+          new Pokemon(
+            mon.name,
+            mon.id,
+            owned,
+            mon.available,
+            mon.shinyAvailable,
+            mon.tradable
+          )
+        );
+      });
+
+      return returnData;
+    })
   }
 
   toggleShinyOwned(index) {

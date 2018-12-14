@@ -41,11 +41,11 @@ export class DexComponent implements OnInit {
 
   ngOnInit(): void {
     this.isAndroid = !DexHelper.isIOS();
-    this.imagePath = "~/app/images/" + (this.isAndroid ? "sprites" : "sprites-black") + "/";
+    this.imagePath = "/app/images/" + (this.isShinyMode() ? "shiny-sprites" : "sprites") + "/";
     this.pageTitle = this.isShinyMode() ? "ShinyDex" : "LuckyDex";
 
-    var success = () => {
-      this.mons = this.isShinyMode() ? this.pokemonService.shinies : this.pokemonService.luckies;
+    var success = (data) => {
+      this.mons = data;
       this.determineOwnedCounts();
       this.loaded = true;
     };
@@ -54,9 +54,9 @@ export class DexComponent implements OnInit {
     }
 
     if (this.isShinyMode()) {
-      this.pokemonService.getShinies().subscribe(success, failure);
+      this.pokemonService.getShinies().then(success).catch(failure);
     } else {
-      this.pokemonService.getLuckies().subscribe(success, failure);
+      this.pokemonService.getLuckies().then(success).catch(failure);
     }
   }
 
