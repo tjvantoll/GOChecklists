@@ -12,38 +12,39 @@ import { DexHelper } from "./dex-helper";
   templateUrl: "./dex.component.html"
 })
 export class DexComponent implements OnInit {
-  isAndroid;
-  imagePath;
-  routePath;
-  pageTitle;
-
+  pageMode;
   loaded = false;
+  dialogOpen = false;
   mons: Pokemon[] = [];
 
   ownedCount;
   percentOwned;
   progressbarColor;
 
-  sharing = false;
-  shareStatus = true;
-  shareOwned = false;
-  shareUnowned = false;
-  shareMessage;
-
   constructor(
     private pokemonService: PokemonService,
     private route: ActivatedRoute
   ) {
     this.route.url.subscribe(params => {
-      this.routePath = params[0].path;
+      let routePath = params[0].path;
+      switch (routePath) {
+        case DexModes.DEX:
+          this.pageMode = DexModes.DEX;
+          break;
+        case DexModes.SHINY:
+          this.pageMode = DexModes.SHINY;
+          break;
+        case DexModes.LUCKY:
+          this.pageMode = DexModes.LUCKY;
+          break;
+        case DexModes.UNOWN:
+          this.pageMode = DexModes.UNOWN;
+          break;
+      }
     });
   }
 
   ngOnInit(): void {
-    this.isAndroid = !DexHelper.isIOS();
-    this.imagePath = "/app/images/" + (this.isShinyMode() ? "shiny-sprites" : "sprites") + "/";
-    this.pageTitle = this.isShinyMode() ? "ShinyDex" : "LuckyDex";
-
     var success = (data) => {
       this.mons = data;
       this.determineOwnedCounts();
@@ -53,10 +54,19 @@ export class DexComponent implements OnInit {
       DexHelper.showError("Could not retrieve a list of shinies from the server. Check your network connection.");
     }
 
-    if (this.isShinyMode()) {
-      this.pokemonService.getShinies().then(success).catch(failure);
-    } else {
-      this.pokemonService.getLuckies().then(success).catch(failure);
+    switch (this.pageMode) {
+      case DexModes.DEX:
+        this.pokemonService.getDex().then(success).catch(failure);
+        break;
+      case DexModes.SHINY:
+        this.pokemonService.getShinies().then(success).catch(failure);
+        break;
+      case DexModes.LUCKY:
+        this.pokemonService.getLuckies().then(success).catch(failure);
+        break;
+      case DexModes.UNOWN:
+        this.pokemonService.getUnown().then(success).catch(failure);
+        break;
     }
   }
 
@@ -89,21 +99,70 @@ export class DexComponent implements OnInit {
 
   toggleShinyOwned(shiny) {
     let index = this.mons.indexOf(shiny);
-    
-    if (this.isShinyMode()) {
-      this.pokemonService.toggleShinyOwned(index);
-    } else {
-      this.pokemonService.toggleLuckyOwned(index);
+
+    switch (this.pageMode) {
+      case DexModes.DEX:
+        this.pokemonService.toggleDexOwned(index);
+        break;
+      case DexModes.SHINY:
+        this.pokemonService.toggleShinyOwned(index);
+        break;
+      case DexModes.LUCKY:
+        this.pokemonService.toggleLuckyOwned(index);
+        break;
+      case DexModes.UNOWN:
+        this.pokemonService.toggleUnownOwned(index);
+        break;
     }
 
     this.determineOwnedCounts();
   }
 
-  toggleMenu() {
-    DexHelper.toggleMenu();
+  getPageTitle() {
+    return DexModes.getPageTitle(this.pageMode);
   }
 
-  share() {
+  getImagePath(mon: Pokemon) {
+    if (this.pageMode == DexModes.UNOWN) {
+      return DexModes.getImagePath(this.pageMode) + mon.id + "-" + mon.name.toLowerCase() + ".png";
+    }
+    return DexModes.getImagePath(this.pageMode) + mon.id + ".png";
+  }
+}
+
+class DexModes {
+  static DEX = "dex";
+  static SHINY = "shiny";
+  static LUCKY = "lucky";
+  static UNOWN = "unown";
+
+  static getImagePath(mode) {
+    return "/app/images/" +
+      ((mode == DexModes.SHINY) ? "shiny-sprites" : "sprites") + "/";
+  }
+
+  static getPageTitle(mode) {
+    switch (mode) {
+      case DexModes.DEX:
+        return "Dex";
+      case DexModes.SHINY:
+        return "ShinyDex";
+      case DexModes.LUCKY:
+        return "LuckyDex";
+      case DexModes.UNOWN:
+        return "UnownDex";
+    }
+  }
+}
+
+
+  /*sharing = false;
+  shareStatus = true;
+  shareOwned = false;
+  shareUnowned = false;
+  shareMessage;*/
+
+  /*share() {
     this.sharing = !this.sharing;
   }
 
@@ -148,8 +207,4 @@ export class DexComponent implements OnInit {
   cancelShare() {
     this.sharing = false;
   }
-
-  private isShinyMode() {
-    return this.routePath == "shiny";
-  }
-}
+  */

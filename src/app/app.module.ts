@@ -6,6 +6,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { DexComponent } from "./dex/dex.component";
+import { HomeComponent } from "./home/home.component";
 import { PokemonService } from "./shared/pokemon.service";
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PokemonService } from "./shared/pokemon.service";
   ],
   declarations: [
     AppComponent,
-    DexComponent
+    DexComponent,
+    HomeComponent
   ],
   providers: [
     PokemonService

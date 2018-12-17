@@ -1,9 +1,6 @@
-<h1>
-  {{ this.pageTitle }}
-  <button (click)="share()">Share</button>
-</h1>
+<h1>{{ getPageTitle() }}</h1>
 
-<div [style.opacity]="sharing ? 0.2 : 1">
+<div [style.opacity]="dialogOpen ? 0.2 : 1">
   <div class="top-container">
     <div class="progressbar">
       <div class="progressbar-contents" [style.width]="percentOwned + '%'"
@@ -16,12 +13,14 @@
     <li (click)="toggleShinyOwned(mon)" class="card" *ngFor="let mon of mons" [class.selected]="mon.owned">
       <span>{{ mon.name }}</span>
       <img class="checkbox" [src]="mon.owned ? 'app/images/checked.png' : 'app/images/unchecked.png'">
-      <img class="sprite" src="{{ imagePath + mon.id }}.png">
+      <img class="sprite" [src]="getImagePath(mon)">
     </li>
   </ul>
 </div>
 
-<div class="dialog" [style.display]="sharing ? 'block' : 'none'">
+<img *ngIf="!loaded" class="loading" src="app/images/loading.gif">
+
+<!--<div class="dialog" [style.display]="sharing ? 'block' : 'none'">
   <p>What shiny data would you like to share?</p>
 
   <div>
@@ -48,5 +47,4 @@
   <button class="primary" (click)="confirmShare()" [attr.data-clipboard-text]="shareMessage">Share</button>
   <button (click)="cancelShare()">Cancel</button>
 </div>
-
-<img *ngIf="!loaded" class="loading" src="app/images/loading.gif">
+-->

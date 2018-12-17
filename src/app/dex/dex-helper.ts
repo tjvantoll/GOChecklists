@@ -9,8 +9,6 @@ export class DexHelper {
     alert(message);
   }
 
-  static toggleMenu() {}
-
   static shareText(message) {
     theNavigator = window.navigator;
     if (theNavigator && theNavigator.share) {

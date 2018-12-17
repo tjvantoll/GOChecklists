@@ -9,12 +9,28 @@ const BASE_URL = "https://baas.kinvey.com/appdata/kid_H1_cK1DWQ";
 
 @Injectable()
 export class PokemonService {
-  public shinies = new Array<Pokemon>();
-  public luckies = new Array<Pokemon>();
+  private dex = new Array<Pokemon>();
+  private shinies = new Array<Pokemon>();
+  private luckies = new Array<Pokemon>();
+  private unown = new Array<Pokemon>();
 
   helper = new PokemonHelper();
 
   constructor(private http: HttpClient) {}
+
+  getDex() {
+    return this.getPokemon(this.parseOwnedData(this.helper.readDex()))
+      .then(data => {
+        for (let i = data.length - 1; i >= 0; i--) {
+          if (!data[i].available) {
+            data.splice(i, 1);
+          }
+        }
+
+        this.dex = data;
+        return this.dex;
+      });
+  }
 
   getShinies() {
     return this.getPokemon(this.parseOwnedData(this.helper.readShinies()))
@@ -42,6 +58,27 @@ export class PokemonService {
         this.luckies = data;
         return this.luckies;
       });
+  }
+
+  getUnown() {
+    return new Promise((resolve, reject) => {
+      this.unown = [];
+      let unownValues = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?";
+      let ownedUnowns = this.parseOwnedData(this.helper.readUnown());
+
+      for (let i = 0; i < unownValues.length; i++) {
+        let owned = false;
+        ownedUnowns.forEach((mon) => {
+          if (mon == unownValues.charAt(i)) {
+            owned = true;
+          }
+        })
+        
+        this.unown.push(new Pokemon(unownValues.charAt(i), "201", owned));
+      }
+
+      resolve(this.unown);
+    })
   }
 
   private getPokemon(ownedMons: Array<Number>) {
@@ -77,6 +114,10 @@ export class PokemonService {
     })
   }
 
+  toggleDexOwned(index) {
+    this.dex[index].owned = !this.dex[index].owned;
+    this.helper.saveDex(this.buildOwnedArray(this.dex));
+  }
   toggleShinyOwned(index) {
     this.shinies[index].owned = !this.shinies[index].owned;
     this.helper.saveShinies(this.buildOwnedArray(this.shinies));
@@ -84,6 +125,16 @@ export class PokemonService {
   toggleLuckyOwned(index) {
     this.luckies[index].owned = !this.luckies[index].owned;
     this.helper.saveLuckies(this.buildOwnedArray(this.luckies));
+  }
+  toggleUnownOwned(index) {
+    this.unown[index].owned = !this.unown[index].owned;
+    let saved = [];
+    this.unown.forEach((mon) => {
+      if (mon.owned) {
+        saved.push(mon.name);
+      }
+    });
+    this.helper.saveUnown(saved);
   }
 
   private parseOwnedData(rawData: string) {
@@ -96,9 +147,9 @@ export class PokemonService {
 
   private buildOwnedArray(sourceArray: Array<Pokemon>) {
     let saved = [];
-    sourceArray.forEach((shiny) => {
-      if (shiny.owned) {
-        saved.push(shiny.id);
+    sourceArray.forEach((mon) => {
+      if (mon.owned) {
+        saved.push(mon.id);
       }
     });
 
