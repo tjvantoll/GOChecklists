@@ -83,6 +83,12 @@ ul {
   right: 0.25em;
   width: 1.75em;
 }
+.checked {
+  display: none;
+}
+.selected .checked {
+  display: inline;
+}
 .sprite {
   position: absolute;
   top: 1.25em;

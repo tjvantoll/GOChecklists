@@ -18,7 +18,8 @@
   <ul>
     <li (click)="toggleShinyOwned(mon)" class="card" *ngFor="let mon of mons" [class.selected]="mon.owned">
       <span>{{ mon.name }}</span>
-      <img class="checkbox" [src]="mon.owned ? 'app/images/checked.png' : 'app/images/unchecked.png'">
+      <img class="checkbox unchecked" src="app/images/unchecked.png">
+      <img class="checkbox checked" src="app/images/checked.png">
       <img class="sprite" [src]="getImagePath(mon)">
     </li>
   </ul>
