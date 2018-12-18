@@ -1,22 +1,36 @@
 h1 {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 h1 button {
-  position: absolute;
-  right: 0.75em;
   text-indent: -9999px;
   white-space: nowrap;
   border: none;
   background-color: transparent;
-  background-image: url(/app/images/share.png);
+  background-image: url(/app/images/home.svg);
   background-repeat: no-repeat;
-  background-size: 2.5em;
-  height: 2.5em;
-  width: 2.5em;
+  background-size: 2em;
+  height: 2em;
+  width: 2em;
   outline: none;
+  filter: invert(100%) sepia(0%) saturate(109%) hue-rotate(329deg) brightness(105%) contrast(102%);
+}
+.title {
+  flex-grow: 2;
+}
+.filler {
+  width: 2em;
 }
 
-.top-container {
+.fixed-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+.progressbar-container {
   display: flex;
   margin: 0.5em 0.5em 0.25em 0.5em;
 }
@@ -26,9 +40,9 @@ h1 button {
   width: 100%;
 }
 .progressbar-contents {
-  height: 20px;
+  height: 25px;
 }
-.top-container > span {
+.progressbar-container > span {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +53,7 @@ h1 button {
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 5.7em 0 0 0;
   margin: 0.25em;
   display: flex;
   flex-wrap: wrap;

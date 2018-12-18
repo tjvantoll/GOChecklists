@@ -1,12 +1,18 @@
-<h1>{{ getPageTitle() }}</h1>
-
 <div [style.opacity]="dialogOpen ? 0.2 : 1">
-  <div class="top-container">
-    <div class="progressbar">
-      <div class="progressbar-contents" [style.width]="percentOwned + '%'"
-        [style.backgroundColor]="progressbarColor"></div>
+  <div class="fixed-container">
+    <h1>
+      <button [routerLink]="['/']">Home</button>
+      <span class="title">{{ getPageTitle() }}</span>
+      <span class="filler"></span>
+    </h1>
+
+    <div class="progressbar-container">
+      <div class="progressbar">
+        <div class="progressbar-contents" [style.width]="percentOwned + '%'"
+          [style.backgroundColor]="progressbarColor"></div>
+      </div>
+      <span *ngIf="mons.length > 0">{{ ownedCount + ' / ' + mons.length }}</span>
     </div>
-    <span *ngIf="mons.length > 0">{{ ownedCount + ' / ' + mons.length }}</span>
   </div>
 
   <ul>
