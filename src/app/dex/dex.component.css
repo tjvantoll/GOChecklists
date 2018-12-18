@@ -53,11 +53,12 @@ h1 button {
 
 ul {
   list-style-type: none;
-  padding: 5.7em 0 0 0;
+  padding: 5.7em 0 0.5em 0;
   margin: 0.25em;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  touch-action: manipulation;
 }
 .card {
   flex: 1 0 25%;
