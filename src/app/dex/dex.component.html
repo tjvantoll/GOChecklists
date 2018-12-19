@@ -1,9 +1,9 @@
 <div [style.opacity]="dialogOpen ? 0.2 : 1">
   <div class="fixed-container">
     <h1>
-      <button [routerLink]="['/']">Home</button>
+      <button class="home" [routerLink]="['/']">Home</button>
       <span class="title">{{ getPageTitle() }}</span>
-      <span class="filler"></span>
+      <button class="settings" (click)="toggleDialog()"></button>
     </h1>
 
     <div class="progressbar-container">
@@ -27,31 +27,18 @@
 
 <img *ngIf="!loaded" class="loading" src="app/images/loading.gif">
 
-<!--<div class="dialog" [style.display]="sharing ? 'block' : 'none'">
-  <p>What shiny data would you like to share?</p>
+<div class="dialog" [style.display]="dialogOpen ? 'block' : 'none'">
+  <h2>Settings</h2>
 
   <div>
-    <label>
-      <input type="checkbox" [(ngModel)]="shareStatus">
-      <span>My completion rate—i.e. {{ ownedCount + ' / ' + mons.length }}</span>
-    </label>
+    <label>Sort Order</label>
+    <select>
+      <option>Pokédex Number</option>
+      <option>Name</option>
+      <option>Checked</option>
+    </select>
   </div>
 
-  <div>
-    <label>
-      <input type="checkbox" [(ngModel)]="shareOwned">
-      <span>A list of shinies I have</span>
-    </label>
-  </div>
-
-  <div>
-    <label>
-      <input type="checkbox" [(ngModel)]="shareUnowned">
-      <span>A list of shinies I do NOT have</span>
-    </label>
-  </div>
-
-  <button class="primary" (click)="confirmShare()" [attr.data-clipboard-text]="shareMessage">Share</button>
-  <button (click)="cancelShare()">Cancel</button>
+  <button class="primary">Save</button>
+  <button (click)="closeDialog()">Cancel</button>
 </div>
--->

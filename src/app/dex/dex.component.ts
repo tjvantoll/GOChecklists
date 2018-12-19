@@ -128,6 +128,14 @@ export class DexComponent implements OnInit {
     }
     return DexModes.getImagePath(this.pageMode) + mon.id + ".png";
   }
+
+  toggleDialog() {
+    this.dialogOpen = !this.dialogOpen;
+    // document.body.style.overflow = "hidden";
+  }
+  closeDialog() {
+    this.dialogOpen = false;
+  }
 }
 
 class DexModes {
@@ -154,57 +162,3 @@ class DexModes {
     }
   }
 }
-
-
-  /*sharing = false;
-  shareStatus = true;
-  shareOwned = false;
-  shareUnowned = false;
-  shareMessage;*/
-
-  /*share() {
-    this.sharing = !this.sharing;
-  }
-
-  confirmShare() {
-    let message = "";
-    
-    if (this.shareStatus) {
-      message += "I have " + this.ownedCount + " / " + this.mons.length + " shinies.";
-    }
-
-    if (this.shareOwned) {
-      let ownedShinies = [];
-      this.mons.forEach((shiny) => {
-        if (shiny.owned) {
-          ownedShinies.push(shiny.name);
-        }
-      });
-      if (this.shareStatus) {
-        message += "\n\n";
-      }
-      message += ("My shinies: " + ownedShinies.join(", "));
-    }
-
-    if (this.shareUnowned) {
-      let unownedShinies = [];
-      this.mons.forEach((shiny) => {
-        if (!shiny.owned) {
-          unownedShinies.push(shiny.name);
-        }
-      });
-      if (this.shareStatus || this.shareOwned) {
-        message += "\n\n";
-      }
-      message += ("I need: " + unownedShinies.join(", "));
-    }
-
-    this.shareMessage = message;
-    DexHelper.shareText(message);
-    this.cancelShare();
-  }
-
-  cancelShare() {
-    this.sharing = false;
-  }
-  */
