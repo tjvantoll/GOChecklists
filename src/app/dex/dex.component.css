@@ -132,6 +132,13 @@ ul {
 }
 .dialog > div {
   margin: 1em 0;
+  display: flex;
+}
+.dialog label {
+  margin-right: 10px;
+}
+.dialog select {
+  flex: 2;
 }
 .dialog button {
   width: 100%;

@@ -21,6 +21,8 @@ export class DexComponent implements OnInit {
   percentOwned;
   progressbarColor;
 
+  sortOrder;
+
   constructor(
     private pokemonService: PokemonService,
     private route: ActivatedRoute
@@ -45,8 +47,10 @@ export class DexComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    var success = (data) => {
+    this.sortOrder = localStorage.getItem("sortOrder") || 1;
+    var success = (data: Pokemon[]) => {
       this.mons = data;
+      this.sort();
       this.determineOwnedCounts();
       this.loaded = true;
     };
@@ -68,6 +72,26 @@ export class DexComponent implements OnInit {
         this.pokemonService.getUnown().then(success).catch(failure);
         break;
     }
+  }
+
+  sort() {
+    localStorage.setItem("sortOrder", this.sortOrder);
+    this.mons = this.mons.sort((a: Pokemon, b: Pokemon) => {
+      if (this.sortOrder == 1) {
+        return 0;
+      }
+      if (this.sortOrder == 2) {
+        return a.name > b.name ? 1: -1;
+      }
+
+      if ((a.owned && b.owned) || (!a.owned && !b.owned)) {
+        return 0;
+      }
+      if (a.owned && !b.owned) {
+        return 1;
+      }
+      return -1;
+    });
   }
 
   determineOwnedCounts() {
@@ -116,6 +140,7 @@ export class DexComponent implements OnInit {
     }
 
     this.determineOwnedCounts();
+    this.sort();
   }
 
   getPageTitle() {

@@ -31,14 +31,14 @@
   <h2>Settings</h2>
 
   <div>
-    <label>Sort Order</label>
-    <select>
-      <option>Pokédex Number</option>
-      <option>Name</option>
-      <option>Checked</option>
+    <label>Sort Order:</label>
+    <select [(ngModel)]="sortOrder" (change)="sort()">
+      <option value="1">Pokédex Number</option>
+      <option value="2">Name</option>
+      <option value="3">Checked</option>
     </select>
   </div>
 
-  <button class="primary">Save</button>
-  <button (click)="closeDialog()">Cancel</button>
+  <!--<button class="primary">Save</button>-->
+  <button (click)="closeDialog()">Close</button>
 </div>
