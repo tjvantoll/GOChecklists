@@ -9,10 +9,16 @@ h1 button {
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 2em;
-  height: 2em;
-  width: 2em;
+  background-position: 0.5em 0.5em;
+  height: 3em;
+  width: 3em;
+  padding: 1em;
   outline: none;
   filter: invert(100%) sepia(0%) saturate(109%) hue-rotate(329deg) brightness(105%) contrast(102%);
+  cursor: pointer;
+}
+h1 span {
+  margin: 0.4em 0;
 }
 .home {
   background-image: url(/app/images/home.svg);
@@ -51,7 +57,7 @@ h1 button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 4.5em;
+  min-width: 5.5em;
   text-align: center;
   font-size: 0.8em;
 }
@@ -114,24 +120,25 @@ ul {
 }
 
 .dialog {
-  position: absolute;
+  position: fixed;
   top: 10em;
   border-color: black;
   border-width: 1px 0;
   border-style: solid;
-  padding: 1em;
+  padding: 2em;
   width: 100%;
   background: white;
   box-sizing: border-box;
 }
 .dialog h2 {
   margin: 0em;
+  font-size: 1.75em;
 }
 .dialog p {
   margin: 0 0 1.5em 0;
 }
 .dialog > div {
-  margin: 1em 0;
+  margin: 2em 0;
   display: flex;
 }
 .dialog label {
@@ -148,6 +155,7 @@ ul {
   background: white;
   color: #2AB3FF;
   font-size: 0.9em;
+  cursor: pointer;
 }
 .dialog .primary {
   background-color: #2AB3FF;

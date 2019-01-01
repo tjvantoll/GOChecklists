@@ -156,10 +156,7 @@ export class DexComponent implements OnInit {
 
   toggleDialog() {
     this.dialogOpen = !this.dialogOpen;
-    // document.body.style.overflow = "hidden";
-  }
-  closeDialog() {
-    this.dialogOpen = false;
+    document.body.style.overflow = this.dialogOpen ? "hidden" : "auto";
   }
 }
 

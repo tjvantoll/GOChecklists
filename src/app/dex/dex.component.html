@@ -31,8 +31,8 @@
   <h2>Settings</h2>
 
   <div>
-    <label>Sort Order:</label>
-    <select [(ngModel)]="sortOrder" (change)="sort()">
+    <label for="sortOrder">Sort Order:</label>
+    <select id="sortOrder" [(ngModel)]="sortOrder" (change)="sort()">
       <option value="1">Pokédex Number</option>
       <option value="2">Name</option>
       <option value="3">Checked</option>
@@ -40,5 +40,5 @@
   </div>
 
   <!--<button class="primary">Save</button>-->
-  <button (click)="closeDialog()">Close</button>
+  <button (click)="toggleDialog()">Close</button>
 </div>
