@@ -146,6 +146,7 @@ ul {
 }
 .dialog select {
   flex: 2;
+  font-size: 16px;
 }
 .dialog button {
   width: 100%;
