@@ -75,17 +75,20 @@ export class DexComponent implements OnInit {
   }
 
   sort() {
+    const idBasedSort = (a: Pokemon, b: Pokemon) => {
+      return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1: -1;
+    }
     localStorage.setItem("sortOrder", this.sortOrder);
     this.mons = this.mons.sort((a: Pokemon, b: Pokemon) => {
       if (this.sortOrder == 1) {
-        return 0;
+        return idBasedSort(a, b);
       }
       if (this.sortOrder == 2) {
         return a.name > b.name ? 1: -1;
       }
 
       if ((a.owned && b.owned) || (!a.owned && !b.owned)) {
-        return 0;
+        return idBasedSort(a, b);
       }
       if (a.owned && !b.owned) {
         return 1;
@@ -122,6 +125,10 @@ export class DexComponent implements OnInit {
   }
 
   toggleShinyOwned(shiny) {
+    if (this.dialogOpen) {
+      return;
+    }
+
     let index = this.mons.indexOf(shiny);
 
     switch (this.pageMode) {
@@ -140,7 +147,7 @@ export class DexComponent implements OnInit {
     }
 
     this.determineOwnedCounts();
-    this.sort();
+    setTimeout(() => { this.sort() }, 100);
   }
 
   getPageTitle() {

@@ -16,4 +16,7 @@ h1 {
   font-size: 1.5em;
   text-align: center;
 }
-
+h1 span {
+  display: inline-block;
+  margin: 0.4em 0;
+}
