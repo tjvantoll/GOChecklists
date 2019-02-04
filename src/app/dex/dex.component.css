@@ -69,7 +69,9 @@ ul {
   touch-action: manipulation;
 }
 .card {
-  flex: 1 0 25%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 25%;
   margin: 0.25em;
   border: 1px solid #DCE7DC;
   border-radius: 10px;
@@ -77,6 +79,24 @@ ul {
   height: 7em;
   position: relative;
   font-size: 0.8em;
+}
+@media (min-width: 500px) {
+  .card { flex-basis: 20%; }
+}
+@media (min-width: 600px) {
+  .card { flex-basis: 18%; }
+}
+@media (min-width: 750px) {
+  .card { flex-basis: 15%; }
+}
+@media (min-width: 900px) {
+  .card { flex-basis: 12%; }
+}
+@media (min-width: 1050px) {
+  .card { flex-basis: 10%; }
+}
+@media (min-width: 1200px) {
+  .card { flex-basis: 8%; }
 }
 .selected {
   background-color: #F5F5F5;
