@@ -47,7 +47,7 @@ export class DexComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.sortOrder = localStorage.getItem("sortOrder") || 1;
+    this.sortOrder = localStorage.getItem(this.getSortOrderName()) || 1;
     var success = (data: Pokemon[]) => {
       this.mons = data;
       this.sort();
@@ -78,7 +78,7 @@ export class DexComponent implements OnInit {
     const idBasedSort = (a: Pokemon, b: Pokemon) => {
       return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1: -1;
     }
-    localStorage.setItem("sortOrder", this.sortOrder);
+    localStorage.setItem(this.getSortOrderName(), this.sortOrder);
     this.mons = this.mons.sort((a: Pokemon, b: Pokemon) => {
       if (this.sortOrder == 1) {
         return idBasedSort(a, b);
@@ -164,6 +164,10 @@ export class DexComponent implements OnInit {
   toggleDialog() {
     this.dialogOpen = !this.dialogOpen;
     document.body.style.overflow = this.dialogOpen ? "hidden" : "auto";
+  }
+
+  getSortOrderName() {
+    return "sortOrder-" + this.pageMode;
   }
 }
 
