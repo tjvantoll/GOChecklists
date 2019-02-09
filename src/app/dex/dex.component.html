@@ -33,7 +33,7 @@
   <div>
     <label for="sortOrder">Sort Order:</label>
     <select id="sortOrder" [(ngModel)]="sortOrder" (change)="sort()">
-      <option value="1">Pokédex Number</option>
+      <option *ngIf="this.pageMode != 'unown'" value="1">Pokédex Number</option>
       <option value="2">Name</option>
       <option value="3">Checked</option>
     </select>

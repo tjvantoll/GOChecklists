@@ -47,7 +47,7 @@ export class DexComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.sortOrder = localStorage.getItem(this.getSortOrderName()) || 1;
+    this.sortOrder = localStorage.getItem(this.getSortOrderName()) || DexModes.getDefaultSortOrder(this.pageMode);
     var success = (data: Pokemon[]) => {
       this.mons = data;
       this.sort();
@@ -193,5 +193,9 @@ class DexModes {
       case DexModes.UNOWN:
         return "UnownDex";
     }
+  }
+
+  static getDefaultSortOrder(mode) {
+    return mode == DexModes.UNOWN ? 2 : 1;
   }
 }
