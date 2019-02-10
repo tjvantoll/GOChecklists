@@ -112,6 +112,10 @@ ul {
   right: 0.25em;
   width: 1.75em;
 }
+.card .gender {
+  top: auto;
+  bottom: 0.5em;
+}
 .checked {
   display: none;
 }
@@ -160,6 +164,7 @@ ul {
 }
 .dialog label {
   margin-right: 10px;
+  min-width: 10em;
 }
 .dialog select {
   flex: 2;

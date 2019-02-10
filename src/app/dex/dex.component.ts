@@ -22,6 +22,7 @@ export class DexComponent implements OnInit {
   progressbarColor;
 
   sortOrder;
+  listGenders;
 
   constructor(
     private pokemonService: PokemonService,
@@ -48,30 +49,33 @@ export class DexComponent implements OnInit {
 
   ngOnInit(): void {
     this.sortOrder = localStorage.getItem(this.getSortOrderName()) || DexModes.getDefaultSortOrder(this.pageMode);
-    var success = (data: Pokemon[]) => {
-      this.mons = data;
-      this.sort();
-      this.determineOwnedCounts();
-      this.loaded = true;
-    };
-    var failure = () => {
-      DexHelper.showError("Could not retrieve a list of shinies from the server. Check your network connection.");
-    }
+    this.listGenders = localStorage.getItem(this.getListGendersName()) || "no";
 
     switch (this.pageMode) {
       case DexModes.DEX:
-        this.pokemonService.getDex().then(success).catch(failure);
+        this.pokemonService.getDex().then(data => { this.processList(data) }).catch(this.handleError);
         break;
       case DexModes.SHINY:
-        this.pokemonService.getShinies().then(success).catch(failure);
+        this.pokemonService.getShinies().then(data => { this.processList(data) }).catch(this.handleError);
         break;
       case DexModes.LUCKY:
-        this.pokemonService.getLuckies().then(success).catch(failure);
+        this.pokemonService.getLuckies().then(data => { this.processList(data) }).catch(this.handleError);
         break;
       case DexModes.UNOWN:
-        this.pokemonService.getUnown().then(success).catch(failure);
+        this.pokemonService.getUnown().then(data => { this.processList(data) }).catch(this.handleError);
         break;
     }
+  }
+
+  private processList(data: Pokemon[]) {
+    this.mons = data;
+    this.sort();
+    this.genderHandling();
+    this.determineOwnedCounts();
+    this.loaded = true;
+  }
+  private handleError() {
+    DexHelper.showError("Could not retrieve a list of shinies from the server. Check your network connection.");
   }
 
   sort() {
@@ -95,6 +99,30 @@ export class DexComponent implements OnInit {
       }
       return -1;
     });
+  }
+
+  genderHandling() {
+    const finalList = [];
+    this.mons.forEach((mon) => {
+      if (mon.gender == "both" && this.listGenders == "yes") {
+        var male = Object.assign({}, mon);
+        var female = Object.assign({}, mon);
+        male.gender = "male";
+        female.gender = "female";
+        finalList.push(male);
+        finalList.push(female);
+        return;
+      }
+
+      finalList.push(mon);
+    });
+
+    this.mons = finalList;
+  }
+
+  genderChange() {
+    localStorage.setItem(this.getListGendersName(), this.listGenders);
+    this.processList(this.mons);
   }
 
   determineOwnedCounts() {
@@ -130,7 +158,6 @@ export class DexComponent implements OnInit {
     }
 
     let index = this.mons.indexOf(shiny);
-
     switch (this.pageMode) {
       case DexModes.DEX:
         this.pokemonService.toggleDexOwned(index);
@@ -155,10 +182,15 @@ export class DexComponent implements OnInit {
   }
 
   getImagePath(mon: Pokemon) {
+    var intId = parseInt(mon.id);
+
+    let femaleSpriteExists = PokemonService.FEMALE_SPRITE_LIST.includes(parseInt(mon.id));
+    let femalePath = (femaleSpriteExists && mon.gender == "female") ? "female/" : "";
+
     if (this.pageMode == DexModes.UNOWN) {
       return DexModes.getImagePath(this.pageMode) + mon.id + "-" + mon.name.toLowerCase() + ".png";
     }
-    return DexModes.getImagePath(this.pageMode) + mon.id + ".png";
+    return DexModes.getImagePath(this.pageMode) + femalePath + mon.id + ".png";
   }
 
   toggleDialog() {
@@ -166,8 +198,20 @@ export class DexComponent implements OnInit {
     document.body.style.overflow = this.dialogOpen ? "hidden" : "auto";
   }
 
-  getSortOrderName() {
+  private getSortOrderName() {
     return "sortOrder-" + this.pageMode;
+  }
+  private getListGendersName() {
+    return "listGendersName-" + this.pageMode;
+  }
+  private getGenderIcon(mon) {
+    if (mon.gender == "female") {
+      return "♀";
+    }
+    if (mon.gender == "male") {
+      return "♂";
+    }
+    return "";
   }
 }
 

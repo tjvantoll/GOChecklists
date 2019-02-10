@@ -21,6 +21,7 @@
       <img class="checkbox unchecked" src="app/images/unchecked.png">
       <img class="checkbox checked" src="app/images/checked.png">
       <img class="sprite" [src]="getImagePath(mon)">
+      <span class="gender" *ngIf="listGenders == 'yes'">{{ getGenderIcon(mon) }}</span>
     </li>
   </ul>
 </div>
@@ -31,11 +32,19 @@
   <h2>Settings</h2>
 
   <div>
-    <label for="sortOrder">Sort Order:</label>
+    <label for="sortOrder">Sort order:</label>
     <select id="sortOrder" [(ngModel)]="sortOrder" (change)="sort()">
       <option *ngIf="this.pageMode != 'unown'" value="1">Pokédex Number</option>
       <option value="2">Name</option>
       <option value="3">Checked</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="listGenders">List both genders:</label>
+    <select id="listGenders" [(ngModel)]="listGenders" (change)="genderChange()">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
     </select>
   </div>
 
