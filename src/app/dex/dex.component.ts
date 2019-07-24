@@ -49,7 +49,8 @@ export class DexComponent implements OnInit {
 
   ngOnInit(): void {
     this.sortOrder = localStorage.getItem(this.getSortOrderName()) || DexModes.getDefaultSortOrder(this.pageMode);
-    this.listGenders = localStorage.getItem(this.getListGendersName()) || "no";
+    // this.listGenders = localStorage.getItem(this.getListGendersName()) || "no";
+    this.listGenders = "no";
 
     switch (this.pageMode) {
       case DexModes.DEX:
@@ -70,7 +71,8 @@ export class DexComponent implements OnInit {
   private processList(data: Pokemon[]) {
     this.mons = data;
     this.sort();
-    this.genderHandling();
+    // This is buggy when gender mode is turned off and needs more testing.
+    // this.genderHandling();
     this.determineOwnedCounts();
     this.loaded = true;
   }
