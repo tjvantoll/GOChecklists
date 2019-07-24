@@ -1,10 +1,6 @@
-<ActionBar flat="true" title="ShinyDex" class="action-bar">
-  <!--<NavigationButton ios:visibility="collapsed" (tap)="toggleMenu()" icon="res://menu"></NavigationButton>
-  <ActionItem android:visibility="collapsed" (tap)="toggleMenu()" icon="res://menu" ios.position="left"></ActionItem>-->
-  <ActionItem (tap)="share()" ios.systemIcon="9" ios.position="right" android.systemIcon="ic_menu_share" android.position="actionBar"></ActionItem>
-</ActionBar>
+<ActionBar flat="true" title="{{ getPageTitle() }}" class="action-bar"></ActionBar>
 
-<GridLayout class="page" [class.android]="isAndroid" [class.ios]="!isAndroid">
+<!--<GridLayout class="page" [class.android]="isAndroid" [class.ios]="!isAndroid">
   <GridLayout rows="auto, *" [opacity]="sharing ? 0.2 : 1">
 
     <GridLayout *ngIf="loaded" columns="5*, *" class="progress-section">
@@ -19,7 +15,6 @@
       <ng-template tkListItemTemplate let-item="item" let-i="index">
         <GridLayout columns="*, auto" rows="auto, auto" class="card" (tap)="toggleShinyOwned(item)">
 
-          <!-- lol hack -->
           <GridLayout colSpan="2" rowSpan="2" backgroundColor="#F5F5F5" [opacity]="item.owned ? 1 : 0"></GridLayout>
 
           <Label col="0" row="0" [text]="item.name"></Label>
@@ -59,3 +54,4 @@
     </StackLayout>
   </AbsoluteLayout>
 </GridLayout>
+-->
