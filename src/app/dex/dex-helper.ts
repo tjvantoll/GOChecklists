@@ -1,5 +1,3 @@
-let theNavigator: any;
-
 export class DexHelper {
   static isIOS() {
     return false;
@@ -9,16 +7,15 @@ export class DexHelper {
     alert(message);
   }
 
-  static shareText(message) {
-    theNavigator = window.navigator;
-    if (theNavigator && theNavigator.share) {
-      theNavigator.share({
-        title: "ShinyDex",
-        text: message
-      });
-    } else {
-      // This magic happens via ClipboardJS in index.html
-      alert("Copied to clipboard");
-    }
+  static readSortOrder(mode) {
+    return localStorage.getItem(mode);
+  }
+
+  static writeSortOrder(mode, sortOrder) {
+    return localStorage.setItem(mode, sortOrder);
+  }
+
+  static toggleDialogDisplay(isDialogOpen: boolean) {
+    document.body.style.overflow = isDialogOpen ? "hidden" : "auto";
   }
 }

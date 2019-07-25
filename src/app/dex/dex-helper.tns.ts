@@ -1,6 +1,5 @@
-import * as SocialShare from "nativescript-social-share";
-import { isIOS } from "tns-core-modules/platform";
 import { alert } from "tns-core-modules/ui/dialogs";
+import { isIOS } from "tns-core-modules/platform";
 
 export class DexHelper {
   static isIOS() {
@@ -15,7 +14,15 @@ export class DexHelper {
     });
   }
 
-  static shareText(message) {
-    SocialShare.shareText(message, "My ShinyDex");
+  static readSortOrder(mode) {
+    return "";
+  }
+
+  static writeSortOrder(mode, sortOrder) {
+    
+  }
+
+  static toggleDialogDisplay(isDialogOpen: boolean) {
+
   }
 }

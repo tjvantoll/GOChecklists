@@ -28,7 +28,6 @@
     "@angular/router": "~8.1.2",
     "core-js": "^2.5.4",
     "nativescript-angular": "8.0.2",
-    "nativescript-social-share": "^1.5.1",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-ui-listview": "7.0.0",
     "reflect-metadata": "~0.1.8",

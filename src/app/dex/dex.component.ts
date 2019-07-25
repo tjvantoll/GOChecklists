@@ -13,6 +13,7 @@ import { DexHelper } from "./dex-helper";
 })
 export class DexComponent implements OnInit {
   pageMode;
+  isAndroid = !DexHelper.isIOS();
   loaded = false;
   dialogOpen = false;
   mons: Pokemon[] = [];
@@ -48,7 +49,7 @@ export class DexComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.sortOrder = localStorage.getItem(this.getSortOrderName()) || DexModes.getDefaultSortOrder(this.pageMode);
+    this.sortOrder = DexHelper.readSortOrder(this.getSortOrderName()) || DexModes.getDefaultSortOrder(this.pageMode);
     // this.listGenders = localStorage.getItem(this.getListGendersName()) || "no";
     this.listGenders = "no";
 
@@ -84,7 +85,9 @@ export class DexComponent implements OnInit {
     const idBasedSort = (a: Pokemon, b: Pokemon) => {
       return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1: -1;
     }
-    localStorage.setItem(this.getSortOrderName(), this.sortOrder);
+    
+    DexHelper.writeSortOrder(this.getSortOrderName(), this.sortOrder);
+
     this.mons = this.mons.sort((a: Pokemon, b: Pokemon) => {
       if (this.sortOrder == 1) {
         return idBasedSort(a, b);
@@ -103,6 +106,7 @@ export class DexComponent implements OnInit {
     });
   }
 
+  /*
   genderHandling() {
     const finalList = [];
     this.mons.forEach((mon) => {
@@ -121,11 +125,11 @@ export class DexComponent implements OnInit {
 
     this.mons = finalList;
   }
-
   genderChange() {
     localStorage.setItem(this.getListGendersName(), this.listGenders);
     this.processList(this.mons);
   }
+  */
 
   determineOwnedCounts() {
     let owned = 0;
@@ -197,7 +201,7 @@ export class DexComponent implements OnInit {
 
   toggleDialog() {
     this.dialogOpen = !this.dialogOpen;
-    document.body.style.overflow = this.dialogOpen ? "hidden" : "auto";
+    DexHelper.toggleDialogDisplay(this.dialogOpen);
   }
 
   private getSortOrderName() {
