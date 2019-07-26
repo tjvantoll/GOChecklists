@@ -12,6 +12,7 @@ export class PokemonService {
   private shinies = new Array<Pokemon>();
   private luckies = new Array<Pokemon>();
   private unown = new Array<Pokemon>();
+  private shadows = new Array<Pokemon>();
 
   helper = new PokemonHelper();
 
@@ -82,6 +83,20 @@ export class PokemonService {
     })
   }
 
+  getShadows() {
+    return this.getPokemon(this.parseOwnedData(this.helper.readShadows()))
+      .then(data => {
+        for (let i = data.length - 1; i >= 0; i--) {
+          if (data[i].shadow === false) {
+            data.splice(i, 1);
+          }
+        }
+
+        this.shadows = data;
+        return this.shadows;
+      });
+  }
+
   private getPokemon(ownedMons: Array<Number>) {
     return this.http.get(BASE_URL + "/Pokemon", {
       headers: this.getHeaders(),
@@ -107,7 +122,8 @@ export class PokemonService {
             mon.available,
             mon.shinyAvailable,
             mon.tradable,
-            mon.gender
+            mon.gender,
+            mon.shadow
           )
         );
       });
@@ -137,6 +153,10 @@ export class PokemonService {
       }
     });
     this.helper.saveUnown(saved);
+  }
+  toggleShadowOwned(index) {
+    this.shadows[index].owned = !this.shadows[index].owned;
+    this.helper.saveShadows(this.buildOwnedArray(this.shadows));
   }
 
   private parseOwnedData(rawData: string) {

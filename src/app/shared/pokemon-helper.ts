@@ -23,6 +23,12 @@ export class PokemonHelper {
   saveUnown(saved) {
     this.save("unown", saved);
   }
+  readShadows(): string {
+    return this.read("shadows");
+  }
+  saveShadows(saved) {
+    this.save("shadows", saved);
+  }
 
   private read(key: string) {
     return localStorage.getItem(key);

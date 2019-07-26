@@ -44,6 +44,9 @@ export class DexComponent implements OnInit {
         case DexModes.UNOWN:
           this.pageMode = DexModes.UNOWN;
           break;
+        case DexModes.SHADOW:
+          this.pageMode = DexModes.SHADOW;
+          break;
       }
     });
   }
@@ -66,6 +69,8 @@ export class DexComponent implements OnInit {
       case DexModes.UNOWN:
         this.pokemonService.getUnown().then(data => { this.processList(data) }).catch(this.handleError);
         break;
+      case DexModes.SHADOW:
+        this.pokemonService.getShadows().then(data => { this.processList(data) }).catch(this.handleError);
     }
   }
 
@@ -177,6 +182,8 @@ export class DexComponent implements OnInit {
       case DexModes.UNOWN:
         this.pokemonService.toggleUnownOwned(index);
         break;
+      case DexModes.SHADOW:
+        this.pokemonService.toggleShadowOwned(index);
     }
 
     this.determineOwnedCounts();
@@ -226,6 +233,7 @@ class DexModes {
   static SHINY = "shiny";
   static LUCKY = "lucky";
   static UNOWN = "unown";
+  static SHADOW = "shadow";
 
   static getImagePath(mode) {
     return "/app/images/" +
@@ -242,6 +250,8 @@ class DexModes {
         return "LuckyDex";
       case DexModes.UNOWN:
         return "UnownDex";
+      case DexModes.SHADOW:
+        return "ShadowDex";
     }
   }
 

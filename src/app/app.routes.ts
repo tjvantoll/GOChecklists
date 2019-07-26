@@ -8,5 +8,6 @@ export const ROUTES: Routes = [
   { path: "dex", component: DexComponent },
   { path: "lucky", component: DexComponent },
   { path: "shiny", component: DexComponent },
-  { path: "unown", component: DexComponent }
+  { path: "unown", component: DexComponent },
+  { path: "shadow", component: DexComponent }
 ];

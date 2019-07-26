@@ -6,6 +6,7 @@ export class Pokemon {
     public available: boolean = true,
     public shinyAvailable: boolean = false,
     public tradable = true,
-    public gender = "both"
+    public gender = "both",
+    public shadow = false
   ) {}
 }
