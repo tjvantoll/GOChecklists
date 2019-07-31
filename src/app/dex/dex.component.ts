@@ -51,11 +51,7 @@ export class DexComponent implements OnInit {
           break;
       }
 
-      this.utilityService.setPageTitle(
-        this.pageMode.charAt(0).toUpperCase() +
-        this.pageMode.slice(1) +
-        (this.pageMode === DexModes.DEX ? "" : "Dex")
-      );
+      this.utilityService.setPageTitle(DexModes.getPageTitle(this.pageMode));
     });
   }
 

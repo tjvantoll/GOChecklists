@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "com.tjvantoll.ShinyDex"  
+    applicationId = "com.tjvantoll.GOChecklists"  
   }  
   aaptOptions {  
     additionalParameters "--no-version-vectors"  

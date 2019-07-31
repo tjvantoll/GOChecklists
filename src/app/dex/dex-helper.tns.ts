@@ -8,7 +8,7 @@ export class DexHelper {
 
   static showError(message) {
     alert({
-      title: "ShinyDex",
+      title: "GOChecklists",
       message: message,
       okButtonText: "OK"
     });

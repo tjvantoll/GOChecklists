@@ -1,7 +1,7 @@
 {
-  "name": "ShinyDex",
+  "name": "GOChecklists",
   "nativescript": {
-    "id": "com.tjvantoll.ShinyDex",
+    "id": "com.tjvantoll.GOChecklists",
     "tns-ios": {
       "version": "6.0.1"
     },
@@ -14,7 +14,7 @@
     "start": "ng serve",
     "start-local": "ng serve --host 0.0.0.0",
     "build": "ng build",
-    "deploy": "ng build --prod --base-href / && gh-pages -d dist/ShinyDex --remote origin"
+    "deploy": "ng build --prod --base-href / && gh-pages -d dist/GOChecklists --remote origin"
   },
   "private": true,
   "dependencies": {

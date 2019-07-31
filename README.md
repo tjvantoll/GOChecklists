@@ -1,6 +1,6 @@
 # GOChecklists
 
-GOChecklists is a multi-platform app built with NativeScript and the Angular CLI. The app is available on [Google Play](https://play.google.com/store/apps/details?id=com.tjvantoll.ShinyDex) and [the web](https://shinydex.app).
+GOChecklists is a multi-platform app built with NativeScript and the Angular CLI. The app is available on [Google Play](https://play.google.com/store/apps/details?id=com.tjvantoll.GOChecklists) and [the web](https://gochecklists.app).
 
 ![](assets/apps.png)
 

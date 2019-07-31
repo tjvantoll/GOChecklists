@@ -6,7 +6,7 @@
     "defaultCollection": "@nativescript/schematics"
   },
   "projects": {
-    "ShinyDex": {
+    "GOChecklists": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ShinyDex",
+            "outputPath": "dist/GOChecklists",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -55,18 +55,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ShinyDex:build"
+            "browserTarget": "GOChecklists:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ShinyDex:build:production"
+              "browserTarget": "GOChecklists:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ShinyDex:build"
+            "browserTarget": "GOChecklists:build"
           }
         },
         "test": {
@@ -100,7 +100,7 @@
         }
       }
     },
-    "ShinyDex-e2e": {
+    "GOChecklists-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -108,11 +108,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ShinyDex:serve"
+            "devServerTarget": "GOChecklists:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ShinyDex:serve:production"
+              "devServerTarget": "GOChecklists:serve:production"
             }
           }
         },
@@ -128,5 +128,5 @@
       }
     }
   },
-  "defaultProject": "ShinyDex"
+  "defaultProject": "GOChecklists"
 }
