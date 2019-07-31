@@ -1,12 +1,12 @@
-# ShinyDex
+# GOChecklists
 
-ShinyDex is a multi-platform app built with NativeScript and the Angular CLI. The app is available on [Google Play](https://play.google.com/store/apps/details?id=com.tjvantoll.ShinyDex) and [the web](https://shinydex.app).
+GOChecklists is a multi-platform app built with NativeScript and the Angular CLI. The app is available on [Google Play](https://play.google.com/store/apps/details?id=com.tjvantoll.ShinyDex) and [the web](https://shinydex.app).
 
 ![](assets/apps.png)
 
 ## Development
 
-To run ShinyDex locally you need to install the Angular CLI, NativeScript, and NativeScript schematics. You can do so with the following commands.
+To run GOChecklists locally you need to install the Angular CLI, NativeScript, and NativeScript schematics. You can do so with the following commands.
 
 ```
 npm install -g @angular/cli
@@ -18,7 +18,7 @@ If you want to build the app for iOS or Android, you’ll additionally need to i
 
 ## Running the app
 
-ShinyDex runs on the web, on iOS, and on Android. Here are the commands you need to run the app on all three platforms.
+GOChecklists runs on the web, on iOS, and on Android. Here are the commands you need to run the app on all three platforms.
 
 ### Web
 
