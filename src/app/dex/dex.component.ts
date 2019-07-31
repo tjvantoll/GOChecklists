@@ -4,6 +4,7 @@ import { ActivatedRoute } from "@angular/router";
 import { Pokemon } from "../shared/pokemon.model";
 import { PokemonService } from "../shared/pokemon.service";
 import { DexHelper } from "./dex-helper";
+import { UtilityService } from "../shared/utility.service";
 
 @Component({
   selector: "ns-dex",
@@ -27,6 +28,7 @@ export class DexComponent implements OnInit {
 
   constructor(
     private pokemonService: PokemonService,
+    private utilityService: UtilityService,
     private route: ActivatedRoute
   ) {
     this.route.url.subscribe(params => {
@@ -48,6 +50,12 @@ export class DexComponent implements OnInit {
           this.pageMode = DexModes.SHADOW;
           break;
       }
+
+      this.utilityService.setPageTitle(
+        this.pageMode.charAt(0).toUpperCase() +
+        this.pageMode.slice(1) +
+        (this.pageMode === DexModes.DEX ? "" : "Dex")
+      );
     });
   }
 
