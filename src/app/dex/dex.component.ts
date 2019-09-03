@@ -98,15 +98,24 @@ export class DexComponent implements OnInit {
     DexHelper.writeSortOrder(this.getSortOrderName(), this.sortOrder);
 
     this.mons = this.mons.sort((a: Pokemon, b: Pokemon) => {
+      // id sort
       if (this.sortOrder == 1) {
         return idBasedSort(a, b);
       }
+
+      // Name sort
       if (this.sortOrder == 2) {
         return a.name > b.name ? 1: -1;
       }
 
+      // Checked sort
       if ((a.owned && b.owned) || (!a.owned && !b.owned)) {
-        return idBasedSort(a, b);
+        // Sort Unowns by name
+        if (this.pageMode == DexModes.UNOWN) {
+          return a.name > b.name ? 1: -1;
+        } else {
+          return idBasedSort(a, b);
+        }
       }
       if (a.owned && !b.owned) {
         return 1;
