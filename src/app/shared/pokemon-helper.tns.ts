@@ -5,12 +5,14 @@ export class PokemonHelper {
   shinySaveFile: File;
   luckySaveFile: File;
   unownSaveFile: File;
+  shadowSaveFile: File;
 
   constructor() {
     this.dexSaveFile = knownFolders.documents().getFile("dex.json");
     this.shinySaveFile = knownFolders.documents().getFile("shinies.json");
     this.luckySaveFile = knownFolders.documents().getFile("luckies.json");
     this.unownSaveFile = knownFolders.documents().getFile("unown.json");
+    this.shadowSaveFile = knownFolders.documents().getFile("shadows.json");
   }
 
   readDex(): string {
@@ -36,6 +38,12 @@ export class PokemonHelper {
   }
   saveUnown(saved) {
     this.save(this.unownSaveFile, saved);
+  }
+  readShadows(): string {
+    return this.read(this.shadowSaveFile);
+  }
+  saveShadows(saved) {
+    this.save(this.shadowSaveFile, saved);
   }
 
   private read(file: File) {
