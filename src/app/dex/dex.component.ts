@@ -33,6 +33,7 @@ export class DexComponent implements OnInit {
   ) {
     this.route.url.subscribe(params => {
       let routePath = params[0].path;
+
       switch (routePath) {
         case DexModes.DEX:
           this.pageMode = DexModes.DEX;
@@ -210,7 +211,7 @@ export class DexComponent implements OnInit {
   getImagePath(mon: Pokemon) {
     var intId = parseInt(mon.id);
 
-    let femaleSpriteExists = PokemonService.FEMALE_SPRITE_LIST.includes(parseInt(mon.id));
+    let femaleSpriteExists = PokemonService.FEMALE_SPRITE_LIST.includes(intId);
     let femalePath = (femaleSpriteExists && mon.gender == "female") ? "female/" : "";
 
     if (this.pageMode == DexModes.UNOWN) {

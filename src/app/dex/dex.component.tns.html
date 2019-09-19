@@ -11,25 +11,27 @@
       <Label col="1" [text]="ownedCount + ' / ' + mons.length"></Label>
     </GridLayout>
 
-    <ListView *ngIf="loaded" row="1" [items]="mons" class="list-group">
+    <RadListView *ngIf="loaded" row="1" [items]="mons" class="list-group">
       <ng-template let-item="item" let-i="index">
-        <StackLayout height="50" width="50" backgroundColor="red"></StackLayout>
-        <!--<GridLayout columns="*, auto" rows="auto, auto" class="card" (tap)="toggleShinyOwned(item)">
+        <!--<StackLayout>
+          <StackLayout height="50" width="50" backgroundColor="red"></StackLayout>
+          <Label [text]="item.name"></Label>
+        </StackLayout>-->
+
+
+        <GridLayout columns="*, auto" rows="auto, auto" class="card" (tap)="toggleShinyOwned(item)">
 
           <GridLayout colSpan="2" rowSpan="2" backgroundColor="#F5F5F5" [opacity]="item.owned ? 1 : 0"></GridLayout>
-
-          <Label colSpan="2" rowSpan="2" text="foo"></Label>
 
           <Label col="0" row="0" [text]="item.name"></Label>
           <Image col="1" row="0" class="check" [src]="item.owned ? 'res://checked' : 'res://unchecked'"></Image>
           <Image colSpan="2" row="1" class="sprite" src="{{ imagePath + item.id }}.png"></Image>
         </GridLayout>
-      -->
       </ng-template>
 
-      <!--<ListViewGridLayout tkListViewLayout scrollDirection="Vertical"
-        ios:itemHeight="120" spanCount="3"></ListViewGridLayout>-->
-    </ListView>
+      <ListViewGridLayout tkListViewLayout scrollDirection="Vertical"
+        ios:itemHeight="120" spanCount="3"></ListViewGridLayout>
+    </RadListView>
 
     <ActivityIndicator rowSpan="2" [busy]="!loaded"></ActivityIndicator>
   </GridLayout>

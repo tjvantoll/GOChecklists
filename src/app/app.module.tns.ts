@@ -9,6 +9,7 @@ import { AppComponent } from "./app.component";
 import { DexComponent } from "./dex/dex.component";
 import { HomeComponent } from "./home/home.component";
 import { PokemonService } from "./shared/pokemon.service";
+import { UtilityService } from "./shared/utility.service";
 
 @NgModule({
   bootstrap: [
@@ -27,7 +28,8 @@ import { PokemonService } from "./shared/pokemon.service";
     HomeComponent
   ],
   providers: [
-    PokemonService
+    PokemonService,
+    UtilityService
   ],
   schemas: [
     NO_ERRORS_SCHEMA
