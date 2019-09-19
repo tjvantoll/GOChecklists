@@ -25,4 +25,8 @@ export class DexHelper {
   static toggleDialogDisplay(isDialogOpen: boolean) {
 
   }
+
+  static getImagePathPrefix() {
+    return "~/app/images/";
+  }
 }

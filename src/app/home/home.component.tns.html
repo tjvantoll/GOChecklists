@@ -1,8 +1,8 @@
-<ActionBar title="GO Checklists"></ActionBar>
+<ActionBar class="action-bar" title="GO Checklists"></ActionBar>
 
-<StackLayout>
-    <Label [nsRouterLink]="['/dex']" text="Dex"></Label>
-    <Label [nsRouterLink]="['/shiny']" text="ShinyDex"></Label>
-    <Label [nsRouterLink]="['/lucky']" text="LuckyDex"></Label>
-    <Label [nsRouterLink]="['/unown']" text="UnownDex"></Label>
-</StackLayout>
+<GridLayout height="500" rows="*, *" columns="*, *">
+    <Label row="0" col="0" [nsRouterLink]="['/dex']" text="Dex"></Label>
+    <Label row="0" col="1" [nsRouterLink]="['/shiny']" text="ShinyDex"></Label>
+    <Label row="1" col="0" [nsRouterLink]="['/lucky']" text="LuckyDex"></Label>
+    <Label row="1" col="1" [nsRouterLink]="['/unown']" text="UnownDex"></Label>
+</GridLayout>

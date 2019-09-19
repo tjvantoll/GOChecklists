@@ -18,4 +18,8 @@ export class DexHelper {
   static toggleDialogDisplay(isDialogOpen: boolean) {
     document.body.style.overflow = isDialogOpen ? "hidden" : "auto";
   }
+
+  static getImagePathPrefix() {
+    return "/app/images/";
+  }
 }

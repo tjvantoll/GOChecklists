@@ -35,7 +35,7 @@ When the command finishes, visit `localhost:4200` in your browser to see your ap
 To run your app for iOS use the following command.
 
 ```
-tns run ios --bundle
+tns run ios
 ```
 
 ### Android
@@ -43,5 +43,5 @@ tns run ios --bundle
 And finally, to run your app on Android use the following command.
 
 ```
-tns run android --bundle
+tns run android
 ```

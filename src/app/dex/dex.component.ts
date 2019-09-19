@@ -217,7 +217,8 @@ export class DexComponent implements OnInit {
     if (this.pageMode == DexModes.UNOWN) {
       return DexModes.getImagePath(this.pageMode) + mon.id + "-" + mon.name.toLowerCase() + ".png";
     }
-    return DexModes.getImagePath(this.pageMode) + femalePath + mon.id + ".png";
+
+    return DexModes.getImagePath(this.pageMode) + femalePath + mon.id + ".png";;
   }
 
   toggleDialog() {
@@ -250,7 +251,7 @@ class DexModes {
   static SHADOW = "shadow";
 
   static getImagePath(mode) {
-    return "/app/images/" +
+    return DexHelper.getImagePathPrefix() +
       ((mode == DexModes.SHINY) ? "shiny-sprites" : "sprites") + "/";
   }
 
