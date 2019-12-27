@@ -54,15 +54,17 @@ export default class PokemonService {
   }
 
   read(pageMode) {
-    const mons = localStorage.getItem(pageMode);
+    const key = DexModes.getSaveKey(pageMode);
+    const mons = localStorage.getItem(key);
     return JSON.parse(mons);
   }
 
   save(data, pageMode) {
+    const key = DexModes.getSaveKey(pageMode);
     const owned = data.filter(mon => mon.owned);
     const valuesToSave = owned.map(mon => pageMode === DexModes.UNOWN ?
       mon.name : mon.id);
-    localStorage.setItem(pageMode, JSON.stringify(valuesToSave));
+    localStorage.setItem(key, JSON.stringify(valuesToSave));
   }
 
   sort(mons, sortOrder) {

@@ -22,6 +22,23 @@ export default class DexModes {
     }
   }
 
+  static getSaveKey(mode) {
+    switch (mode) {
+      case DexModes.DEX:
+        return "dex";
+      case DexModes.SHINY:
+        return "shinies";
+      case DexModes.LUCKY:
+        return "luckies";
+      case DexModes.UNOWN:
+        return "unown";
+      case DexModes.SHADOW:
+        return "shadows";
+      default:
+        throw new Error();
+    }
+  }
+
   static getDefaultSortOrder(mode) {
     return mode === DexModes.UNOWN ? 2 : 1;
   }
