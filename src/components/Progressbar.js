@@ -1,4 +1,27 @@
 import React from "react";
+import styled from "styled-components";
+
+const ProgressbarContainer = styled.div`
+  display: flex;
+  margin: 0.6em 0.5em 0.20em 0.5em;
+
+  .progressbar {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .progressbar-contents {
+    height: 25px;
+  }
+  & > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 5.5em;
+    text-align: center;
+    font-size: 0.8em;
+  }
+`;
 
 export default function Progressbar({ value, max }) {
   const getWidth = () => {
@@ -29,7 +52,7 @@ export default function Progressbar({ value, max }) {
   }
 
   return (
-    <div className="progressbar-container">
+    <ProgressbarContainer>
       <div className="progressbar">
         <div
           className="progressbar-contents"
@@ -42,6 +65,6 @@ export default function Progressbar({ value, max }) {
       {!!max && 
         <span>{`${value} / ${max}`}</span>
       }
-    </div>
+    </ProgressbarContainer>
   );
 }

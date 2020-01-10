@@ -1,5 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+import Header from "./Header";
+
+const List = styled.ul`
+  font-size: 1.25em;
+
+  li {
+    margin: 20px;
+  }
+  ul {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  ul li {
+    margin: 0;
+  }
+`;
 
 function Home() {
   React.useEffect(() => {
@@ -8,11 +26,9 @@ function Home() {
 
   return (
     <React.Fragment>
-      <h1 style={{ display: "block" }}>
-        <span>GO Checklists</span>
-      </h1>
+      <Header title="GO Checklists"></Header>
 
-      <ul className="link-list">
+      <List>
         <li>
           <Link to="/dex">Dex</Link>
           <ul>
@@ -43,7 +59,7 @@ function Home() {
             <li>Track how many shadow Pokémon you have.</li>
           </ul>
         </li>
-      </ul>
+      </List>
     </React.Fragment>
   )
 }
