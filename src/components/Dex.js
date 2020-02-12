@@ -8,54 +8,7 @@ import SettingsService from "../services/settings";
 import Header from "./Header";
 import Progressbar from "./Progressbar";
 import Loading from "./Loading";
-
-const Dialog = styled.div`
-  position: fixed;
-  top: 10em;
-  border-color: black;
-  border-width: 1px 0;
-  border-style: solid;
-  padding: 2em;
-  width: 100%;
-  background: white;
-  box-sizing: border-box;
-
-  h2 {
-    margin: 0em;
-    font-size: 1.75em;
-  }
-  p {
-    margin: 0 0 1.5em 0;
-  }
-  > div {
-    margin: 2em 0;
-    display: flex;
-  }
-  label {
-    margin-right: 10px;
-    min-width: 10em;
-  }
-  select {
-    flex: 2;
-    font-size: 16px;
-  }
-  button {
-    width: 100%;
-    border: 1px solid black;
-    padding: 1em;
-    border: 1px solid #2AB3FF;
-    background: white;
-    color: #2AB3FF;
-    font-size: 0.9em;
-    cursor: pointer;
-  }
-  .primary {
-    background-color: #2AB3FF;
-    color: white;
-    border: none;
-    margin-bottom: 1em;
-  }
-`;
+import Settings from "./Settings";
 
 const FixedContainer = styled.div`
   position: fixed;
@@ -65,19 +18,24 @@ const FixedContainer = styled.div`
   z-index: 2;
 `;
 
-const MonList = styled.ul`
-  list-style-type: none;
+const MonList = styled.div`
   padding: 5.7em 0 0.5em 0;
   margin: 0.25em;
+  touch-action: manipulation;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  touch-action: manipulation;
+  justify-content: center;
+
+  .card-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: middle;
+    margin: 0em 0.25em;
+  }
 
   .card {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 25%;
+    width: 9em;
     margin: 0.25em;
     border: 1px solid #DCE7DC;
     border-radius: 10px;
@@ -85,24 +43,6 @@ const MonList = styled.ul`
     height: 7em;
     position: relative;
     font-size: 0.8em;
-  }
-  @media (min-width: 500px) {
-    .card { flex-basis: 20%; }
-  }
-  @media (min-width: 600px) {
-    .card { flex-basis: 18%; }
-  }
-  @media (min-width: 750px) {
-    .card { flex-basis: 15%; }
-  }
-  @media (min-width: 900px) {
-    .card { flex-basis: 12%; }
-  }
-  @media (min-width: 1050px) {
-    .card { flex-basis: 10%; }
-  }
-  @media (min-width: 1200px) {
-    .card { flex-basis: 8%; }
   }
   .selected {
     background-color: #F5F5F5;
@@ -139,7 +79,7 @@ const MonList = styled.ul`
   }
 `;
 
-function Dex() {
+export default function Dex() {
   const pokemonService = new PokemonService();
   const settingsService = new SettingsService();
   const pageMode = window.location.pathname.replace("/", "");
@@ -154,6 +94,8 @@ function Dex() {
   const [owned, setOwned] = React.useState(0);
   const [showSettings, setShowSettings] = React.useState(false);
   const [sortOrder, setSortOrder] = React.useState(getSortOrder());
+
+  const groups = pokemonService.getGroups();
 
   React.useEffect(() => {
     document.title = "GOChecklists: " + DexModes.getPageTitle(pageMode);
@@ -198,23 +140,9 @@ function Dex() {
     return `/images/${basePath}/${mon.id}.png`;
   }
 
-  const toggleSettings = () => {
-    setShowSettings(!showSettings);
-  }
-  const hideSettings = () => {
-    setShowSettings(false);
-  }
-
-  const changeSortOrder = (e) => {
-    const newSortOrder = e.target.value;
-    setSortOrder(newSortOrder);
-    settingsService.writeSortOrder(newSortOrder, pageMode);
-    sort();
-  }
-
   const buildListItem = (mon) => {
     return (
-      <li
+      <div
         key={mon.id || mon.name}
         className={"card " + (mon.owned ? "selected" : "")}
         onClick={() => toggleOwned(mon)}
@@ -227,8 +155,45 @@ function Dex() {
           alt=""
           src={getImagePath(mon)}
         />
-      </li>
+      </div>
     )
+  }
+
+  const buildList = () => {
+    return (
+      <MonList>
+        {mons.map((mon) => (
+          buildListItem(mon)
+        ))}
+      </MonList>
+    );
+  }
+
+  const buildPokedexSortedList = () => {
+    return (
+      <MonList>
+        {groups.map((group, index) => (
+          <div className="card-group" key={index}>
+            {group.map((id) => {
+              let mon = mons.filter(mon => mon.id === id)[0];
+              return mon ? buildListItem(mon) : "";
+            })}
+          </div>
+        ))}
+      </MonList>
+    )
+  }
+
+  const toggleSettings = () => {
+    setShowSettings(!showSettings);
+  }
+  const onSortOrderChange = (newSortOrder) => {
+    setSortOrder(newSortOrder);
+    settingsService.writeSortOrder(newSortOrder, pageMode);
+    sort();
+  }
+  const onVisibleChange = (newVisible) => {
+    setShowSettings(newVisible);
   }
 
   return (
@@ -242,32 +207,18 @@ function Dex() {
           <Progressbar value={owned} max={mons.length} />
         </FixedContainer>
 
-        <MonList>
-          {mons.map((mon) => (
-            buildListItem(mon)
-          ))}
-        </MonList>
+        {sortOrder === "1" && buildPokedexSortedList()}
+        {sortOrder !== "1" && buildList()}
       </div>
 
       {!loaded && <Loading />}
 
-      <Dialog style={{ display: showSettings ? "block": "none" }}>
-        <h2>Settings</h2>
-
-        <div>
-          <label htmlFor="sortOrder">Sort order:</label>
-          <select id="sortOrder" value={sortOrder} onChange={changeSortOrder}>
-            {pageMode !== DexModes.UNOWN &&
-              <option value="1">Pokédex Number</option>}
-            <option value="2">Name</option>
-            <option value="3">Checked</option>
-          </select>
-        </div>
-
-        <button onClick={hideSettings}>Close</button>
-      </Dialog>
+      <Settings
+        pageMode={pageMode}
+        visible={showSettings}
+        onVisibleChange={onVisibleChange}
+        sortOrder={sortOrder}
+        onSortOrderChange={onSortOrderChange} />
     </React.Fragment>
   );
 }
-
-export default Dex;
