@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import DexModes from "../services/DexModes";
+import SortModes from "../services/SortModes";
 
 const Dialog = styled.div`
   position: fixed;
@@ -72,9 +73,9 @@ export default function Settings(props) {
         <label htmlFor="sortOrder">Sort order:</label>
         <select id="sortOrder" value={sortOrder} onChange={changeSortOrder}>
           {pageMode !== DexModes.UNOWN &&
-            <option value="1">Pokédex Number</option>}
-          <option value="2">Name</option>
-          <option value="3">Checked</option>
+            <option value={SortModes.ID}>Pokédex Number</option>}
+          <option value={SortModes.NAME}>Name</option>
+          <option value={SortModes.CHECKED}>Checked</option>
         </select>
       </div>
 

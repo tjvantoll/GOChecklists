@@ -1,4 +1,5 @@
 import DexModes from "./DexModes";
+import SortModes from "./SortModes";
 
 const UNOWN_VALUES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?";
 
@@ -74,13 +75,11 @@ export default class PokemonService {
     }
 
     return mons.sort((a, b) => {
-      // id sort
-      if (sortOrder === 1) {
+      if (sortOrder === SortModes.ID) {
         return idBasedSort(a, b);
       }
 
-      // Name sort
-      if (sortOrder === 2) {
+      if (sortOrder === SortModes.NAME) {
         return a.name > b.name ? 1: -1;
       }
 

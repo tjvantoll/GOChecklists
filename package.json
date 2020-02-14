@@ -32,5 +32,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^6.12.2",
+    "react-test-renderer": "^16.12.0"
   }
 }
