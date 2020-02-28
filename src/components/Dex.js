@@ -10,6 +10,8 @@ import Progressbar from "./Progressbar";
 import Loading from "./Loading";
 import Settings from "./Settings";
 
+const pokemonService = new PokemonService();
+
 const FixedContainer = styled.div`
   position: fixed;
   width: 100%;
@@ -80,7 +82,6 @@ const MonList = styled.div`
 `;
 
 export default function Dex() {
-  const pokemonService = new PokemonService();
   const settingsService = new SettingsService();
   const pageMode = window.location.pathname.replace("/", "");
 
@@ -110,8 +111,7 @@ export default function Dex() {
         });
         setLoaded(true);
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [pageMode, sortOrder]);
 
   const sort = () => {
     const sortedMons = pokemonService.sort(mons, getSortOrder());
