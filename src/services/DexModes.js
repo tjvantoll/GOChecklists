@@ -18,7 +18,7 @@ export default class DexModes {
       case DexModes.SHADOW:
         return "ShadowDex";
       default:
-        throw new Error();
+        throw new Error("Unknown page mode");
     }
   }
 

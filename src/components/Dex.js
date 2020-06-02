@@ -10,8 +10,6 @@ import Progressbar from "./Progressbar";
 import Loading from "./Loading";
 import Settings from "./Settings";
 
-const pokemonService = new PokemonService();
-
 const FixedContainer = styled.div`
   position: fixed;
   width: 100%;
@@ -82,8 +80,9 @@ const MonList = styled.div`
 `;
 
 export default function Dex() {
+  const pokemonService = new PokemonService();
   const settingsService = new SettingsService();
-  const pageMode = window.location.pathname.replace("/", "");
+  const pageMode = pokemonService.getPageMode();
 
   const getSortOrder = () => {
     return settingsService.readSortOrder(pageMode) ||
@@ -110,6 +109,13 @@ export default function Dex() {
           return data.filter(mon => mon.owned).length;
         });
         setLoaded(true);
+
+        // Clean up empty groups
+        document.querySelectorAll(".card-group").forEach(cardGroup => {
+          if (cardGroup.querySelectorAll(".card").length === 0) {
+            cardGroup.parentElement.removeChild(cardGroup);
+          }
+        })
       });
   }, [pageMode, sortOrder]);
 
