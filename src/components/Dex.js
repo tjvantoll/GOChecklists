@@ -111,6 +111,7 @@ export default function Dex() {
     setOwned(() => {
       return mons.filter(mon => mon.owned).length;
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageMode, sortOrder]);
 
   const sort = () => {
