@@ -1,6 +1,7 @@
 import DexModes from "./DexModes";
 import SortModes from "./SortModes";
 
+import pokemon from "../data/pokemon";
 const UNOWN_VALUES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?";
 
 export default class PokemonService {
@@ -9,14 +10,8 @@ export default class PokemonService {
   }
 
   getMons(pageMode) {
-    return fetch("https://baas.kinvey.com/appdata/kid_H1_cK1DWQ/Pokemon?sort=id", {
-      headers: this.getHeaders()
-    })
-    .then(res => res.json())
-    .then(data => {
-      return pageMode === DexModes.UNOWN ? this.filterUnown() :
-        this.filter(data, pageMode);
-    })
+    return pageMode === DexModes.UNOWN ? this.filterUnown() :
+      this.filter(pokemon, pageMode);
   }
 
   filter(allMons, pageMode) {
@@ -73,9 +68,8 @@ export default class PokemonService {
   }
 
   sort(mons, sortOrder) {
-    sortOrder = parseInt(sortOrder, 10);
     const idBasedSort = (a, b) => {
-      return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1: -1;
+      return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1 : -1;
     }
 
     return mons.sort((a, b) => {
@@ -84,14 +78,14 @@ export default class PokemonService {
       }
 
       if (sortOrder === SortModes.NAME) {
-        return a.name > b.name ? 1: -1;
+        return a.name > b.name ? 1 : -1;
       }
 
       // Checked sort
       if ((a.owned && b.owned) || (!a.owned && !b.owned)) {
         // Sort Unowns by name
         if (a.name.length === 1) {
-          return a.name > b.name ? 1: -1;
+          return a.name > b.name ? 1 : -1;
         } else {
           return idBasedSort(a, b);
         }

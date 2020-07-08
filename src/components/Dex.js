@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 import DexModes from "../services/DexModes";
+import SortModes from "../services/SortModes";
 import PokemonService from "../services/pokemon";
 import SettingsService from "../services/settings";
 
 import Header from "./Header";
 import Progressbar from "./Progressbar";
-import Loading from "./Loading";
 import Settings from "./Settings";
 
 const FixedContainer = styled.div`
@@ -43,6 +43,12 @@ const MonList = styled.div`
     height: 7em;
     position: relative;
     font-size: 0.8em;
+  }
+  @media (max-width: 500px) {
+    .card { font-size: 0.75em; }
+  }
+  @media (max-width: 370px) {
+    .card { font-size: 0.70em; }
   }
   .selected {
     background-color: #F5F5F5;
@@ -90,7 +96,6 @@ export default function Dex() {
   };
 
   const [mons, setMons] = React.useState([]);
-  const [loaded, setLoaded] = React.useState(false);
   const [owned, setOwned] = React.useState(0);
   const [showSettings, setShowSettings] = React.useState(false);
   const [sortOrder, setSortOrder] = React.useState(getSortOrder());
@@ -100,23 +105,12 @@ export default function Dex() {
   React.useEffect(() => {
     document.title = "GOChecklists: " + DexModes.getPageTitle(pageMode);
 
-    pokemonService
-      .getMons(pageMode)
-      .then(data => {
-        const sortedMons = pokemonService.sort(data, sortOrder);
-        setMons(sortedMons);
-        setOwned(() => {
-          return data.filter(mon => mon.owned).length;
-        });
-        setLoaded(true);
-
-        // Clean up empty groups
-        document.querySelectorAll(".card-group").forEach(cardGroup => {
-          if (cardGroup.querySelectorAll(".card").length === 0) {
-            cardGroup.parentElement.removeChild(cardGroup);
-          }
-        })
-      });
+    const mons = pokemonService.getMons(pageMode);
+    const sortedMons = pokemonService.sort(mons, sortOrder);
+    setMons(sortedMons);
+    setOwned(() => {
+      return mons.filter(mon => mon.owned).length;
+    });
   }, [pageMode, sortOrder]);
 
   const sort = () => {
@@ -213,11 +207,9 @@ export default function Dex() {
           <Progressbar value={owned} max={mons.length} />
         </FixedContainer>
 
-        {sortOrder === "1" && buildPokedexSortedList()}
-        {sortOrder !== "1" && buildList()}
+        {sortOrder === SortModes.ID && buildPokedexSortedList()}
+        {sortOrder !== SortModes.ID && buildList()}
       </div>
-
-      {!loaded && <Loading />}
 
       <Settings
         pageMode={pageMode}

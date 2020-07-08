@@ -18,15 +18,6 @@ test("Test out default rendering", async (done) => {
   });
   PokemonService.prototype.getPageMode = mockGetPageMode;
 
-  const mockGetMons = jest.fn(() => {
-    return new Promise((resolveFunc, rejectFunc) => {
-      resolveFunc([
-        { id: "1", name: "Bulbasaur" }
-      ])
-    });
-  });
-  PokemonService.prototype.getMons = mockGetMons;
-
   const { container, queryByText } = render(<Dex />);
   const text = await waitForElement(() => {
     setTimeout(() => {
@@ -36,4 +27,3 @@ test("Test out default rendering", async (done) => {
     });
   });
 });
-

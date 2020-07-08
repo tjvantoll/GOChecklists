@@ -1,3 +1,5 @@
+import SortModes from "./SortModes";
+
 export default class DexModes {
   static DEX = "dex";
   static SHINY = "shiny";
@@ -40,6 +42,6 @@ export default class DexModes {
   }
 
   static getDefaultSortOrder(mode) {
-    return mode === DexModes.UNOWN ? 2 : 1;
+    return mode === DexModes.UNOWN ? SortModes.NAME : SortModes.ID;
   }
 }
