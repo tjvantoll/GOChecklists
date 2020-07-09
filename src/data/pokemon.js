@@ -46,7 +46,8 @@ export default [
   {
     "name": "Arbok",
     "id": 24,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Nidoking",
@@ -261,7 +262,8 @@ export default [
   {
     "name": "Ekans",
     "id": 23,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Sandshrew",
@@ -488,7 +490,8 @@ export default [
   {
     "name": "Weezing",
     "id": 110,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Rhydon",
@@ -1042,7 +1045,8 @@ export default [
   {
     "name": "Koffing",
     "id": 109,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Mewtwo",
