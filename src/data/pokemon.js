@@ -41,7 +41,8 @@ export default [
     "name": "Nidorina",
     "id": 30,
     "shinyAvailable": true,
-    "gender": "female"
+    "gender": "female",
+    "shadow": true
   },
   {
     "name": "Arbok",
@@ -53,7 +54,8 @@ export default [
     "name": "Nidoking",
     "id": 34,
     "shinyAvailable": true,
-    "gender": "male"
+    "gender": "male",
+    "shadow": true
   },
   {
     "name": "Vulpix",
@@ -108,7 +110,8 @@ export default [
   {
     "name": "Machoke",
     "id": 67,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Bellsprout",
@@ -125,7 +128,8 @@ export default [
   {
     "name": "Machamp",
     "id": 68,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Tentacruel",
@@ -165,7 +169,8 @@ export default [
     "name": "Zapdos",
     "id": 145,
     "shinyAvailable": true,
-    "gender": "none"
+    "gender": "none",
+    "shadow": true
   },
   {
     "name": "Dratini",
@@ -291,13 +296,15 @@ export default [
     "name": "Nidoran ♀",
     "id": 29,
     "shinyAvailable": true,
-    "gender": "female"
+    "gender": "female",
+    "shadow": true
   },
   {
     "name": "Nidorino",
     "id": 33,
     "shinyAvailable": true,
-    "gender": "male"
+    "gender": "male",
+    "shadow": true
   },
   {
     "name": "Clefairy",
@@ -347,7 +354,8 @@ export default [
     "name": "Nidoran ♂",
     "id": 32,
     "shinyAvailable": true,
-    "gender": "male"
+    "gender": "male",
+    "shadow": true
   },
   {
     "name": "Persian",
@@ -365,7 +373,8 @@ export default [
     "name": "Nidoqueen",
     "id": 31,
     "shinyAvailable": true,
-    "gender": "female"
+    "gender": "female",
+    "shadow": true
   },
   {
     "name": "Psyduck",
@@ -455,7 +464,8 @@ export default [
   {
     "name": "Machop",
     "id": 66,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Geodude",
@@ -876,7 +886,8 @@ export default [
   {
     "name": "Stunky",
     "id": 434,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Spiritomb",
@@ -1319,7 +1330,8 @@ export default [
   {
     "name": "Forretress",
     "id": 205,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Snubbull",
@@ -1329,12 +1341,14 @@ export default [
   {
     "name": "Gligar",
     "id": 207,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Pineco",
     "id": 204,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Dunsparce",
@@ -1365,7 +1379,8 @@ export default [
   {
     "name": "Shuckle",
     "id": 213,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Sneasel",
@@ -1467,7 +1482,8 @@ export default [
     "name": "Raikou",
     "id": 243,
     "shinyAvailable": true,
-    "gender": "none"
+    "gender": "none",
+    "shadow": true
   },
   {
     "name": "Blissey",
@@ -1497,7 +1513,8 @@ export default [
     "name": "Suicune",
     "id": 245,
     "shinyAvailable": true,
-    "gender": "none"
+    "gender": "none",
+    "shadow": true
   },
   {
     "name": "Lugia",
@@ -2390,7 +2407,8 @@ export default [
   {
     "name": "Skuntank",
     "id": 435,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Bronzor",
@@ -2595,7 +2613,8 @@ export default [
   {
     "name": "Gliscor",
     "id": 472,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Yanmega",
