@@ -5,6 +5,7 @@ import DexModes from "../services/DexModes";
 import SortModes from "../services/SortModes";
 import PokemonService from "../services/pokemon";
 import SettingsService from "../services/settings";
+import Render from "./Render";
 
 import Header from "./Header";
 import Progressbar from "./Progressbar";
@@ -96,6 +97,7 @@ export default function Dex() {
   };
 
   const [mons, setMons] = React.useState([]);
+  const [groupedMons, setGroupedMons] = React.useState([]);
   const [owned, setOwned] = React.useState(0);
   const [showSettings, setShowSettings] = React.useState(false);
   const [sortOrder, setSortOrder] = React.useState(getSortOrder());
@@ -108,6 +110,7 @@ export default function Dex() {
     const mons = pokemonService.getMons(pageMode);
     const sortedMons = pokemonService.sort(mons, sortOrder);
     setMons(sortedMons);
+    setGroupedMons(pokemonService.getGroupedMons(sortedMons));
     setOwned(() => {
       return mons.filter(mon => mon.owned).length;
     });
@@ -173,11 +176,10 @@ export default function Dex() {
   const buildPokedexSortedList = () => {
     return (
       <MonList>
-        {groups.map((group, index) => (
+        {groupedMons.map((group, index) => (
           <div className="card-group" key={index}>
-            {group.map((id) => {
-              let mon = mons.filter(mon => mon.id === id)[0];
-              return mon ? buildListItem(mon) : "";
+            {group.map(mon => {
+              return buildListItem(mon);
             })}
           </div>
         ))}
@@ -208,8 +210,12 @@ export default function Dex() {
           <Progressbar value={owned} max={mons.length} />
         </FixedContainer>
 
-        {sortOrder === SortModes.ID && buildPokedexSortedList()}
-        {sortOrder !== SortModes.ID && buildList()}
+        <Render if={sortOrder === SortModes.ID}>
+          {buildPokedexSortedList()}
+        </Render>
+        <Render if={sortOrder !== SortModes.ID}>
+          {buildList()}
+        </Render>
       </div>
 
       <Settings

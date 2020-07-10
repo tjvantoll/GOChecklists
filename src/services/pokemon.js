@@ -105,6 +105,24 @@ export default class PokemonService {
     };
   }
 
+  getGroupedMons(mons) {
+    const groups = [];
+    this.getGroups().forEach(group => {
+      const monsForGroup = [];
+      group.forEach(id => {
+        const mon = mons.filter(mon => mon.id === id)[0];
+        if (mon) {
+          monsForGroup.push(mon);
+        }
+      });
+      if (monsForGroup.length > 0) {
+        groups.push(monsForGroup);
+      }
+    });
+
+    return groups;
+  }
+
   getGroups() {
     return [
       [1, 2, 3],
