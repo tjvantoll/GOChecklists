@@ -31,6 +31,8 @@ export default class PokemonService {
       }
     });
 
+    // Reset the data from previous runs
+    pokemon.forEach(mon => { mon.owned = false; });
     availableMons.forEach(mon => {
       if (ownedMons.includes(mon.id)) {
         mon.owned = true;
