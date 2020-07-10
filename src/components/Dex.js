@@ -102,8 +102,6 @@ export default function Dex() {
   const [showSettings, setShowSettings] = React.useState(false);
   const [sortOrder, setSortOrder] = React.useState(getSortOrder());
 
-  const groups = pokemonService.getGroups();
-
   React.useEffect(() => {
     document.title = "GOChecklists: " + DexModes.getPageTitle(pageMode);
 
