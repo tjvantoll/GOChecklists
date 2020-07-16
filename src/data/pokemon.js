@@ -116,13 +116,13 @@ export default [
   {
     "name": "Bellsprout",
     "id": 69,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
     "name": "Victreebel",
     "id": 71,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -902,7 +902,7 @@ export default [
   {
     "name": "Weepinbell",
     "id": 70,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -3102,13 +3102,13 @@ export default [
   {
     "name": "Petilil",
     "id": 548,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Lilligant",
     "id": 549,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
