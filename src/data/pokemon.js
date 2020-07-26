@@ -511,7 +511,7 @@ export default [
   {
     "name": "Tangela",
     "id": 114,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Rhyhorn",
@@ -1063,7 +1063,8 @@ export default [
     "name": "Mewtwo",
     "id": 150,
     "shinyAvailable": true,
-    "gender": "none"
+    "gender": "none",
+    "shadow": true
   },
   {
     "name": "Moltres",
@@ -1319,7 +1320,7 @@ export default [
   {
     "name": "Unown",
     "id": 201,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "none"
   },
   {
@@ -1363,7 +1364,7 @@ export default [
   {
     "name": "Qwilfish",
     "id": 211,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Granbull",
@@ -2590,7 +2591,7 @@ export default [
     "name": "Tangrowth",
     "id": 465,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Magmortar",
@@ -2678,7 +2679,7 @@ export default [
   {
     "name": "Rotom",
     "id": 479,
-    "available": false,
+    "available": true,
     "shinyAvailable": false,
     "gender": "none"
   },
@@ -2977,13 +2978,13 @@ export default [
     "name": "Woobat",
     "id": 527,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Swoobat",
     "id": 528,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Drilbur",
@@ -3601,13 +3602,13 @@ export default [
     "name": "Heatmor",
     "id": 631,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Durant",
     "id": 632,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Deino",
@@ -3715,8 +3716,9 @@ export default [
   {
     "name": "Victini",
     "id": 494,
-    "available": false,
-    "shinyAvailable": false
+    "available": true,
+    "shinyAvailable": false,
+    "tradable": false
   },
   {
     "name": "Obstagoon",
