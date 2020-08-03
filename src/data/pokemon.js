@@ -3614,19 +3614,19 @@ export default [
     "name": "Deino",
     "id": 633,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Zwelious",
     "id": 634,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Hydreigon",
     "id": 635,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Larvesta",
