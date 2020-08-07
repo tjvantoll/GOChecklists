@@ -548,7 +548,7 @@ export default [
   {
     "name": "Staryu",
     "id": 120,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "none"
   },
   {
@@ -559,7 +559,7 @@ export default [
   {
     "name": "Starmie",
     "id": 121,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "none"
   },
   {
@@ -2157,7 +2157,7 @@ export default [
     "name": "Deoxys",
     "id": 386,
     "tradable": false,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "none"
   },
   {
@@ -3445,13 +3445,13 @@ export default [
   {
     "name": "Elgyem",
     "id": 605,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Beeheeyem",
     "id": 606,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
