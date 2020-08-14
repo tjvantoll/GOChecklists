@@ -2960,19 +2960,19 @@ export default [
     "name": "Roggenrola",
     "id": 524,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Boldore",
     "id": 525,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Gigalith",
     "id": 526,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Woobat",
@@ -3055,19 +3055,19 @@ export default [
   {
     "name": "Sewaddle",
     "id": 540,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Swadloon",
     "id": 541,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Leavanny",
     "id": 542,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3091,13 +3091,13 @@ export default [
   {
     "name": "Cottonee",
     "id": 546,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Whimsicott",
     "id": 547,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3337,7 +3337,7 @@ export default [
   {
     "name": "Emolga",
     "id": 587,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3571,7 +3571,7 @@ export default [
   {
     "name": "Bouffalant",
     "id": 626,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3710,7 +3710,7 @@ export default [
     "name": "Genesect",
     "id": 649,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "tradable": false
   },
   {
