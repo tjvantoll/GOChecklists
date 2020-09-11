@@ -1137,7 +1137,7 @@ export default [
   {
     "name": "Ledian",
     "id": 166,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Ariados",
@@ -1147,7 +1147,7 @@ export default [
   {
     "name": "Ledyba",
     "id": 165,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Sentret",
