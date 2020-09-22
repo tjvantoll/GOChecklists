@@ -937,7 +937,7 @@ export default [
   {
     "name": "Doduo",
     "id": 84,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Seel",
@@ -973,7 +973,7 @@ export default [
   {
     "name": "Dodrio",
     "id": 85,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Dewgong",
