@@ -2245,7 +2245,7 @@ export default [
   {
     "name": "Kricketot",
     "id": 401,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Staraptor",
@@ -2280,7 +2280,7 @@ export default [
   {
     "name": "Kricketune",
     "id": 402,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Shinx",
