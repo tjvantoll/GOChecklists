@@ -60,7 +60,7 @@ export default [
   {
     "name": "Vulpix",
     "id": 37,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -71,7 +71,7 @@ export default [
   {
     "name": "Ninetales",
     "id": 38,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -3325,13 +3325,13 @@ export default [
   {
     "name": "Deerling",
     "id": 585,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Sawsbuck",
     "id": 586,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
