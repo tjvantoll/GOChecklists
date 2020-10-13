@@ -3121,19 +3121,19 @@ export default [
   {
     "name": "Sandile",
     "id": 551,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Krokorok",
     "id": 552,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Krookodile",
     "id": 553,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3559,13 +3559,13 @@ export default [
   {
     "name": "Pawniard",
     "id": 624,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Bisharp",
     "id": 625,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3589,13 +3589,13 @@ export default [
   {
     "name": "Vullaby",
     "id": 629,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Mandibuzz",
     "id": 630,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
