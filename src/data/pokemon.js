@@ -695,7 +695,8 @@ export default [
   {
     "name": "Hoppip",
     "id": 187,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Marill",
@@ -1256,7 +1257,8 @@ export default [
   {
     "name": "Skiploom",
     "id": 188,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Sunkern",
@@ -1276,7 +1278,8 @@ export default [
   {
     "name": "Jumpluff",
     "id": 189,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Sunflora",
