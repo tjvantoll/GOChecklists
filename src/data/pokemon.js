@@ -1320,7 +1320,8 @@ export default [
   {
     "name": "Slowking",
     "id": 199,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Wobbuffet",
