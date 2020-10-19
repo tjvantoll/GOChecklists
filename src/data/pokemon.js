@@ -77,12 +77,14 @@ export default [
   {
     "name": "Dugtrio",
     "id": 51,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Diglett",
     "id": 50,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Golduck",
@@ -459,7 +461,8 @@ export default [
   {
     "name": "Slowpoke",
     "id": 79,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Machop",
@@ -645,7 +648,8 @@ export default [
   {
     "name": "Aerodactyl",
     "id": 142,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Articuno",
@@ -706,7 +710,8 @@ export default [
   {
     "name": "Skarmory",
     "id": 227,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Phanpy",
@@ -913,7 +918,8 @@ export default [
   {
     "name": "Slowbro",
     "id": 80,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Golem",
@@ -953,7 +959,8 @@ export default [
   {
     "name": "Shellder",
     "id": 90,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Gastly",
@@ -968,7 +975,8 @@ export default [
   {
     "name": "Cloyster",
     "id": 91,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Dodrio",
@@ -1392,7 +1400,8 @@ export default [
   {
     "name": "Ursaring",
     "id": 217,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Heracross",
@@ -1418,7 +1427,8 @@ export default [
   {
     "name": "Teddiursa",
     "id": 216,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Slugma",
