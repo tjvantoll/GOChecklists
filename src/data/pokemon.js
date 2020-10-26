@@ -898,7 +898,7 @@ export default [
   {
     "name": "Spiritomb",
     "id": 442,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Tentacool",
@@ -3743,6 +3743,12 @@ export default [
   {
     "name": "Perrserker",
     "id": 863,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Runerigus",
+    "id": 867,
     "available": true,
     "shinyAvailable": false
   }
