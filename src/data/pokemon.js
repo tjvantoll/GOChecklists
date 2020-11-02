@@ -3747,6 +3747,12 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Sirfetch’d",
+    "id": 865,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
     "name": "Runerigus",
     "id": 867,
     "available": true,
