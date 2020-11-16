@@ -3412,13 +3412,13 @@ export default [
     "name": "Ferroseed",
     "id": 597,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Ferrothorn",
     "id": 598,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Klink",
