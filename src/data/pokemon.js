@@ -461,7 +461,7 @@ export default [
   {
     "name": "Slowpoke",
     "id": 79,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -919,7 +919,7 @@ export default [
   {
     "name": "Slowbro",
     "id": 80,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -1320,7 +1320,7 @@ export default [
   {
     "name": "Slowking",
     "id": 199,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
