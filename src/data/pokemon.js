@@ -541,12 +541,12 @@ export default [
   {
     "name": "Seaking",
     "id": 119,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Goldeen",
     "id": 118,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Staryu",
