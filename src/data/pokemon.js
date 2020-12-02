@@ -3735,6 +3735,111 @@ export default [
     "tradable": false
   },
   {
+    "name": "Chespin",
+    "id": 650,
+    "available": true
+  },
+  {
+    "name": "Quilladin",
+    "id": 651,
+    "available": true
+  },
+  {
+    "name": "Chesnaught",
+    "id": 652,
+    "available": true
+  },
+  {
+    "name": "Fennekin",
+    "id": 653,
+    "available": true
+  },
+  {
+    "name": "Braixen",
+    "id": 654,
+    "available": true
+  },
+  {
+    "name": "Delphox",
+    "id": 655,
+    "available": true
+  },
+  {
+    "name": "Froakie",
+    "id": 656,
+    "available": true
+  },
+  {
+    "name": "Frogadier",
+    "id": 657,
+    "available": true
+  },
+  {
+    "name": "Greninja",
+    "id": 658,
+    "available": true
+  },
+  {
+    "name": "Bunnelby",
+    "id": 659,
+    "available": true
+  },
+  {
+    "name": "Diggersby",
+    "id": 660,
+    "available": true
+  },
+  {
+    "name": "Fletchling",
+    "id": 661,
+    "available": true
+  },
+  {
+    "name": "Fletchinder",
+    "id": 662,
+    "available": true
+  },
+  {
+    "name": "Talonflame",
+    "id": 663,
+    "available": true
+  },
+  {
+    "name": "Litleo",
+    "id": 667,
+    "available": true
+  },
+  {
+    "name": "Pyroar",
+    "id": 668,
+    "available": true
+  },
+  {
+    "name": "Espurr",
+    "id": 677,
+    "available": true
+  },
+  {
+    "name": "Meowstic",
+    "id": 678,
+    "available": true
+  },
+  {
+    "name": "Klefki",
+    "id": 707,
+    "available": true
+  },
+  {
+    "name": "Noibat",
+    "id": 714,
+    "available": true
+  },
+  {
+    "name": "Noivern",
+    "id": 715,
+    "available": true
+  },
+  {
     "name": "Obstagoon",
     "id": 862,
     "available": true,
