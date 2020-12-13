@@ -3737,107 +3737,128 @@ export default [
   {
     "name": "Chespin",
     "id": 650,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Quilladin",
     "id": 651,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Chesnaught",
     "id": 652,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Fennekin",
     "id": 653,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Braixen",
     "id": 654,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Delphox",
     "id": 655,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Froakie",
     "id": 656,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Frogadier",
     "id": 657,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Greninja",
     "id": 658,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Bunnelby",
     "id": 659,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Diggersby",
     "id": 660,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Fletchling",
     "id": 661,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Fletchinder",
     "id": 662,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Talonflame",
     "id": 663,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Litleo",
     "id": 667,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Pyroar",
     "id": 668,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Espurr",
     "id": 677,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Meowstic",
     "id": 678,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Klefki",
     "id": 707,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Noibat",
     "id": 714,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Noivern",
     "id": 715,
-    "available": true
+    "available": true,
+    "shinyAvailable": false,
   },
   {
     "name": "Obstagoon",
