@@ -1574,7 +1574,7 @@ export default [
     "name": "Celebi",
     "id": 251,
     "tradable": false,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "none"
   },
   {
@@ -3592,13 +3592,13 @@ export default [
     "name": "Rufflet",
     "id": 627,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Braviary",
     "id": 628,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Vullaby",
