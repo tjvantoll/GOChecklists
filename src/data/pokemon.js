@@ -2800,19 +2800,19 @@ export default [
     "name": "Snivy",
     "id": 495,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Servine",
     "id": 496,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Serperior",
     "id": 497,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Tepig",
@@ -3321,19 +3321,19 @@ export default [
   {
     "name": "Vanillite",
     "id": 582,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Vanillish",
     "id": 583,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Vanilluxe",
     "id": 584,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3875,6 +3875,12 @@ export default [
   {
     "name": "Sirfetch’d",
     "id": 865,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Mr. Rime",
+    "id": 866,
     "available": true,
     "shinyAvailable": false
   },
