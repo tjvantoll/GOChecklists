@@ -2366,12 +2366,12 @@ export default [
   {
     "name": "Buizel",
     "id": 418,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Floatzel",
     "id": 419,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Cherrim",
@@ -3381,13 +3381,13 @@ export default [
   {
     "name": "Frillish",
     "id": 592,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Jellicent",
     "id": 593,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
