@@ -838,17 +838,20 @@ export default [
   {
     "name": "Cradily",
     "id": 346,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Armaldo",
     "id": 348,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Lileep",
     "id": 345,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Kecleon",
@@ -1415,7 +1418,8 @@ export default [
   {
     "name": "Piloswine",
     "id": 221,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Magcargo",
@@ -1474,7 +1478,8 @@ export default [
   {
     "name": "Swinub",
     "id": 220,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Donphan",
@@ -1484,7 +1489,7 @@ export default [
   {
     "name": "Miltank",
     "id": 241,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "female"
   },
   {
@@ -1762,7 +1767,8 @@ export default [
   {
     "name": "Nosepass",
     "id": 299,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Skitty",
@@ -1784,7 +1790,8 @@ export default [
   {
     "name": "Aron",
     "id": 304,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Mawile",
@@ -1800,7 +1807,8 @@ export default [
   {
     "name": "Aggron",
     "id": 306,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Medicham",
@@ -1878,7 +1886,8 @@ export default [
   {
     "name": "Lairon",
     "id": 305,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Torkoal",
@@ -1976,7 +1985,8 @@ export default [
   {
     "name": "Anorith",
     "id": 347,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Castform",
@@ -2020,7 +2030,8 @@ export default [
   {
     "name": "Spheal",
     "id": 363,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Absol",
@@ -2036,7 +2047,8 @@ export default [
   {
     "name": "Walrein",
     "id": 365,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Wynaut",
@@ -2046,7 +2058,8 @@ export default [
   {
     "name": "Sealeo",
     "id": 364,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Glalie",
@@ -2647,7 +2660,8 @@ export default [
     "name": "Probopass",
     "id": 476,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Porygon-z",
@@ -2660,7 +2674,8 @@ export default [
     "name": "Mamoswine",
     "id": 473,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Gallade",
