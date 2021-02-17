@@ -2946,13 +2946,13 @@ export default [
   {
     "name": "Munna",
     "id": 517,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Musharna",
     "id": 518,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3409,7 +3409,7 @@ export default [
     "name": "Alomomola",
     "id": 594,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Joltik",
