@@ -1,188 +1,13 @@
 export default [
   {
-    "name": "Charizard",
-    "id": 6,
+    "name": "Bulbasaur",
+    "id": 1,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Caterpie",
-    "id": 10,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Squirtle",
-    "id": 7,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Pidgey",
-    "id": 16,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Pidgeot",
-    "id": 18,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Raticate",
-    "id": 20,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Fearow",
-    "id": 22,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Nidorina",
-    "id": 30,
-    "shinyAvailable": true,
-    "gender": "female",
-    "shadow": true
-  },
-  {
-    "name": "Arbok",
-    "id": 24,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Nidoking",
-    "id": 34,
-    "shinyAvailable": true,
-    "gender": "male",
-    "shadow": true
-  },
-  {
-    "name": "Vulpix",
-    "id": 37,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Clefable",
-    "id": 36,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Ninetales",
-    "id": 38,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Dugtrio",
-    "id": 51,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Diglett",
-    "id": 50,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Golduck",
-    "id": 55,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Growlithe",
-    "id": 58,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Primeape",
-    "id": 57,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Poliwhirl",
-    "id": 61,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Machoke",
-    "id": 67,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Bellsprout",
-    "id": 69,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Victreebel",
-    "id": 71,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Machamp",
-    "id": 68,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Tentacruel",
-    "id": 73,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Jynx",
-    "id": 124,
-    "shinyAvailable": true,
-    "gender": "female"
-  },
-  {
-    "name": "Electabuzz",
-    "id": 125,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Mr. Mime",
-    "id": 122,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Tauros",
-    "id": 128,
-    "shinyAvailable": true,
-    "gender": "male"
-  },
-  {
-    "name": "Pinsir",
-    "id": 127,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Zapdos",
-    "id": 145,
-    "shinyAvailable": true,
-    "gender": "none",
-    "shadow": true
-  },
-  {
-    "name": "Dratini",
-    "id": 147,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Charmeleon",
-    "id": 5,
+    "name": "Ivysaur",
+    "id": 2,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -199,25 +24,26 @@ export default [
     "shadow": true
   },
   {
-    "name": "Bulbasaur",
-    "id": 1,
+    "name": "Charmeleon",
+    "id": 5,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Metapod",
-    "id": 11,
-    "shinyAvailable": true
+    "name": "Charizard",
+    "id": 6,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Squirtle",
+    "id": 7,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Wartortle",
     "id": 8,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Ivysaur",
-    "id": 2,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -228,10 +54,14 @@ export default [
     "shadow": true
   },
   {
-    "name": "Weedle",
-    "id": 13,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Caterpie",
+    "id": 10,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Metapod",
+    "id": 11,
+    "shinyAvailable": true
   },
   {
     "name": "Butterfree",
@@ -239,19 +69,14 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Kakuna",
-    "id": 14,
+    "name": "Weedle",
+    "id": 13,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Pidgeotto",
-    "id": 17,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Rattata",
-    "id": 19,
+    "name": "Kakuna",
+    "id": 14,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -262,9 +87,41 @@ export default [
     "shadow": true
   },
   {
+    "name": "Pidgey",
+    "id": 16,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Pidgeotto",
+    "id": 17,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Pidgeot",
+    "id": 18,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Rattata",
+    "id": 19,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Raticate",
+    "id": 20,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Spearow",
     "id": 21,
-    "shinyAvailable": false
+    "shinyAvailable": true
+  },
+  {
+    "name": "Fearow",
+    "id": 22,
+    "shinyAvailable": true
   },
   {
     "name": "Ekans",
@@ -273,8 +130,8 @@ export default [
     "shadow": true
   },
   {
-    "name": "Sandshrew",
-    "id": 27,
+    "name": "Arbok",
+    "id": 24,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -287,6 +144,12 @@ export default [
     "name": "Raichu",
     "id": 26,
     "shinyAvailable": true
+  },
+  {
+    "name": "Sandshrew",
+    "id": 27,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Sandslash",
@@ -302,8 +165,36 @@ export default [
     "shadow": true
   },
   {
+    "name": "Nidorina",
+    "id": 30,
+    "shinyAvailable": true,
+    "gender": "female",
+    "shadow": true
+  },
+  {
+    "name": "Nidoqueen",
+    "id": 31,
+    "shinyAvailable": true,
+    "gender": "female",
+    "shadow": true
+  },
+  {
+    "name": "Nidoran ♂",
+    "id": 32,
+    "shinyAvailable": true,
+    "gender": "male",
+    "shadow": true
+  },
+  {
     "name": "Nidorino",
     "id": 33,
+    "shinyAvailable": true,
+    "gender": "male",
+    "shadow": true
+  },
+  {
+    "name": "Nidoking",
+    "id": 34,
     "shinyAvailable": true,
     "gender": "male",
     "shadow": true
@@ -312,6 +203,23 @@ export default [
     "name": "Clefairy",
     "id": 35,
     "shinyAvailable": true
+  },
+  {
+    "name": "Clefable",
+    "id": 36,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Vulpix",
+    "id": 37,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Ninetales",
+    "id": 38,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Jigglypuff",
@@ -324,44 +232,8 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Vileplume",
-    "id": 45,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Paras",
-    "id": 46,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Oddish",
-    "id": 43,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Venomoth",
-    "id": 49,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Venonat",
-    "id": 48,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Nidoran ♂",
-    "id": 32,
-    "shinyAvailable": true,
-    "gender": "male",
-    "shadow": true
-  },
-  {
-    "name": "Persian",
-    "id": 53,
+    "name": "Zubat",
+    "id": 41,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -372,10 +244,67 @@ export default [
     "shadow": true
   },
   {
-    "name": "Nidoqueen",
-    "id": 31,
+    "name": "Oddish",
+    "id": 43,
     "shinyAvailable": true,
-    "gender": "female",
+    "shadow": true
+  },
+  {
+    "name": "Gloom",
+    "id": 44,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Vileplume",
+    "id": 45,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Paras",
+    "id": 46,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Parasect",
+    "id": 47,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Venonat",
+    "id": 48,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Venomoth",
+    "id": 49,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Diglett",
+    "id": 50,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Dugtrio",
+    "id": 51,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Meowth",
+    "id": 52,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Persian",
+    "id": 53,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -385,8 +314,8 @@ export default [
     "shadow": true
   },
   {
-    "name": "Zubat",
-    "id": 41,
+    "name": "Golduck",
+    "id": 55,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -396,31 +325,13 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Gloom",
-    "id": 44,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Primeape",
+    "id": 57,
+    "shinyAvailable": true
   },
   {
-    "name": "Parasect",
-    "id": 47,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Meowth",
-    "id": 52,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Poliwag",
-    "id": 60,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Poliwrath",
-    "id": 62,
+    "name": "Growlithe",
+    "id": 58,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -431,8 +342,20 @@ export default [
     "shadow": true
   },
   {
-    "name": "Kadabra",
-    "id": 64,
+    "name": "Poliwag",
+    "id": 60,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Poliwhirl",
+    "id": 61,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Poliwrath",
+    "id": 62,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -443,24 +366,14 @@ export default [
     "shadow": true
   },
   {
-    "name": "Alakazam",
-    "id": 65,
+    "name": "Kadabra",
+    "id": 64,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Graveler",
-    "id": 75,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Ponyta",
-    "id": 77,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Slowpoke",
-    "id": 79,
+    "name": "Alakazam",
+    "id": 65,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -471,442 +384,22 @@ export default [
     "shadow": true
   },
   {
-    "name": "Geodude",
-    "id": 74,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Hitmonchan",
-    "id": 107,
-    "shinyAvailable": false,
-    "gender": "male",
-    "shadow": true
-  },
-  {
-    "name": "Marowak",
-    "id": 105,
+    "name": "Machoke",
+    "id": 67,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Hitmonlee",
-    "id": 106,
-    "shinyAvailable": false,
-    "gender": "male",
-    "shadow": true
-  },
-  {
-    "name": "Lickitung",
-    "id": 108,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Weezing",
-    "id": 110,
+    "name": "Machamp",
+    "id": 68,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Rhydon",
-    "id": 112,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Tangela",
-    "id": 114,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Rhyhorn",
-    "id": 111,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Horsea",
-    "id": 116,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Kangaskhan",
-    "id": 115,
-    "shinyAvailable": true,
-    "gender": "female"
-  },
-  {
-    "name": "Chansey",
-    "id": 113,
-    "shinyAvailable": true,
-    "gender": "female"
-  },
-  {
-    "name": "Seaking",
-    "id": 119,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Goldeen",
-    "id": 118,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Staryu",
-    "id": 120,
-    "shinyAvailable": true,
-    "gender": "none"
-  },
-  {
-    "name": "Seadra",
-    "id": 117,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Starmie",
-    "id": 121,
-    "shinyAvailable": true,
-    "gender": "none"
-  },
-  {
-    "name": "Scyther",
-    "id": 123,
+    "name": "Bellsprout",
+    "id": 69,
     "shinyAvailable": true,
     "shadow": true
-  },
-  {
-    "name": "Magmar",
-    "id": 126,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Gyarados",
-    "id": 130,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Ditto",
-    "id": 132,
-    "shinyAvailable": false,
-    "gender": "none"
-  },
-  {
-    "name": "Vaporeon",
-    "id": 134,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Flareon",
-    "id": 136,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Omanyte",
-    "id": 138,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Kabuto",
-    "id": 140,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Magikarp",
-    "id": 129,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Lapras",
-    "id": 131,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Eevee",
-    "id": 133,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Porygon",
-    "id": 137,
-    "shinyAvailable": false,
-    "gender": "none",
-    "shadow": true
-  },
-  {
-    "name": "Omastar",
-    "id": 139,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Jolteon",
-    "id": 135,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Aerodactyl",
-    "id": 142,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Articuno",
-    "id": 144,
-    "shinyAvailable": true,
-    "gender": "none",
-    "shadow": true
-  },
-  {
-    "name": "Mew",
-    "id": 151,
-    "tradable": false,
-    "shinyAvailable": false,
-    "gender": "none"
-  },
-  {
-    "name": "Togetic",
-    "id": 176,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Xatu",
-    "id": 178,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Ampharos",
-    "id": 181,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Flaaffy",
-    "id": 180,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Sudowoodo",
-    "id": 185,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Hoppip",
-    "id": 187,
-    "shinyAvailable": false,
-    "shadow": true
-  },
-  {
-    "name": "Marill",
-    "id": 183,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Remoraid",
-    "id": 223,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Skarmory",
-    "id": 227,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Phanpy",
-    "id": 231,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Hitmontop",
-    "id": 237,
-    "shinyAvailable": false,
-    "gender": "male"
-  },
-  {
-    "name": "Porygon2",
-    "id": 233,
-    "shinyAvailable": false,
-    "gender": "none",
-    "shadow": true
-  },
-  {
-    "name": "Magby",
-    "id": 240,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Stantler",
-    "id": 234,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Tyrogue",
-    "id": 236,
-    "shinyAvailable": false,
-    "gender": "male"
-  },
-  {
-    "name": "Smoochum",
-    "id": 238,
-    "shinyAvailable": true,
-    "gender": "female"
-  },
-  {
-    "name": "Cascoon",
-    "id": 268,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Seedot",
-    "id": 273,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Shiftry",
-    "id": 275,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Ludicolo",
-    "id": 272,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Pelipper",
-    "id": 279,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Swellow",
-    "id": 277,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Hariyama",
-    "id": 297,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Ralts",
-    "id": 280,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Lombre",
-    "id": 271,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Grumpig",
-    "id": 326,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Spinda",
-    "id": 327,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Spoink",
-    "id": 325,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Sharpedo",
-    "id": 319,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Vibrava",
-    "id": 329,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Wailmer",
-    "id": 320,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Cradily",
-    "id": 346,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Armaldo",
-    "id": 348,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Lileep",
-    "id": 345,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Kecleon",
-    "id": 352,
-    "available": false,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Purugly",
-    "id": 432,
-    "available": true,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Lopunny",
-    "id": 428,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Honchkrow",
-    "id": 430,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Drifblim",
-    "id": 426,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Glameow",
-    "id": 431,
-    "available": true,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Chingling",
-    "id": 433,
-    "available": true,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Stunky",
-    "id": 434,
-    "shinyAvailable": false,
-    "shadow": true
-  },
-  {
-    "name": "Spiritomb",
-    "id": 442,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Tentacool",
-    "id": 72,
-    "shinyAvailable": true
   },
   {
     "name": "Weepinbell",
@@ -915,15 +408,30 @@ export default [
     "shadow": true
   },
   {
-    "name": "Rapidash",
-    "id": 78,
+    "name": "Victreebel",
+    "id": 71,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Tentacool",
+    "id": 72,
     "shinyAvailable": true
   },
   {
-    "name": "Slowbro",
-    "id": 80,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Tentacruel",
+    "id": 73,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Geodude",
+    "id": 74,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Graveler",
+    "id": 75,
+    "shinyAvailable": true
   },
   {
     "name": "Golem",
@@ -931,10 +439,25 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Magneton",
-    "id": 82,
+    "name": "Ponyta",
+    "id": 77,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Rapidash",
+    "id": 78,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Slowpoke",
+    "id": 79,
     "shinyAvailable": true,
-    "gender": "none",
+    "shadow": true
+  },
+  {
+    "name": "Slowbro",
+    "id": 80,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -945,8 +468,25 @@ export default [
     "shadow": true
   },
   {
+    "name": "Magneton",
+    "id": 82,
+    "shinyAvailable": true,
+    "gender": "none",
+    "shadow": true
+  },
+  {
+    "name": "Farfetch'd",
+    "id": 83,
+    "shinyAvailable": true
+  },
+  {
     "name": "Doduo",
     "id": 84,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Dodrio",
+    "id": 85,
     "shinyAvailable": true
   },
   {
@@ -955,8 +495,19 @@ export default [
     "shinyAvailable": true
   },
   {
+    "name": "Dewgong",
+    "id": 87,
+    "shinyAvailable": true
+  },
+  {
     "name": "Grimer",
     "id": 88,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Muk",
+    "id": 89,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -967,45 +518,24 @@ export default [
     "shadow": true
   },
   {
-    "name": "Gastly",
-    "id": 92,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Gengar",
-    "id": 94,
-    "shinyAvailable": true
-  },
-  {
     "name": "Cloyster",
     "id": 91,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Dodrio",
-    "id": 85,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Dewgong",
-    "id": 87,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Muk",
-    "id": 89,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Farfetch'd",
-    "id": 83,
+    "name": "Gastly",
+    "id": 92,
     "shinyAvailable": true
   },
   {
     "name": "Haunter",
     "id": 93,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Gengar",
+    "id": 94,
     "shinyAvailable": true
   },
   {
@@ -1020,10 +550,10 @@ export default [
     "shadow": true
   },
   {
-    "name": "Voltorb",
-    "id": 100,
+    "name": "Hypno",
+    "id": 97,
     "shinyAvailable": true,
-    "gender": "none"
+    "shadow": true
   },
   {
     "name": "Krabby",
@@ -1031,21 +561,21 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Hypno",
-    "id": 97,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
     "name": "Kingler",
     "id": 99,
     "shinyAvailable": true
   },
   {
-    "name": "Cubone",
-    "id": 104,
+    "name": "Voltorb",
+    "id": 100,
     "shinyAvailable": true,
-    "shadow": true
+    "gender": "none"
+  },
+  {
+    "name": "Electrode",
+    "id": 101,
+    "shinyAvailable": true,
+    "gender": "none"
   },
   {
     "name": "Exeggcute",
@@ -1060,10 +590,35 @@ export default [
     "shadow": true
   },
   {
-    "name": "Electrode",
-    "id": 101,
+    "name": "Cubone",
+    "id": 104,
     "shinyAvailable": true,
-    "gender": "none"
+    "shadow": true
+  },
+  {
+    "name": "Marowak",
+    "id": 105,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Hitmonlee",
+    "id": 106,
+    "shinyAvailable": true,
+    "gender": "male",
+    "shadow": true
+  },
+  {
+    "name": "Hitmonchan",
+    "id": 107,
+    "shinyAvailable": true,
+    "gender": "male",
+    "shadow": true
+  },
+  {
+    "name": "Lickitung",
+    "id": 108,
+    "shinyAvailable": true
   },
   {
     "name": "Koffing",
@@ -1072,8 +627,206 @@ export default [
     "shadow": true
   },
   {
-    "name": "Mewtwo",
-    "id": 150,
+    "name": "Weezing",
+    "id": 110,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Rhyhorn",
+    "id": 111,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Rhydon",
+    "id": 112,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Chansey",
+    "id": 113,
+    "shinyAvailable": true,
+    "gender": "female"
+  },
+  {
+    "name": "Tangela",
+    "id": 114,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Kangaskhan",
+    "id": 115,
+    "shinyAvailable": true,
+    "gender": "female"
+  },
+  {
+    "name": "Horsea",
+    "id": 116,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Seadra",
+    "id": 117,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Goldeen",
+    "id": 118,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Seaking",
+    "id": 119,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Staryu",
+    "id": 120,
+    "shinyAvailable": true,
+    "gender": "none"
+  },
+  {
+    "name": "Starmie",
+    "id": 121,
+    "shinyAvailable": true,
+    "gender": "none"
+  },
+  {
+    "name": "Mr. Mime",
+    "id": 122,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Scyther",
+    "id": 123,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Jynx",
+    "id": 124,
+    "shinyAvailable": true,
+    "gender": "female"
+  },
+  {
+    "name": "Electabuzz",
+    "id": 125,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Magmar",
+    "id": 126,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Pinsir",
+    "id": 127,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Tauros",
+    "id": 128,
+    "shinyAvailable": true,
+    "gender": "male"
+  },
+  {
+    "name": "Magikarp",
+    "id": 129,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Gyarados",
+    "id": 130,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Lapras",
+    "id": 131,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Ditto",
+    "id": 132,
+    "shinyAvailable": true,
+    "gender": "none"
+  },
+  {
+    "name": "Eevee",
+    "id": 133,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Vaporeon",
+    "id": 134,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Jolteon",
+    "id": 135,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Flareon",
+    "id": 136,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Porygon",
+    "id": 137,
+    "shinyAvailable": true,
+    "gender": "none",
+    "shadow": true
+  },
+  {
+    "name": "Omanyte",
+    "id": 138,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Omastar",
+    "id": 139,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Kabuto",
+    "id": 140,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Kabutops",
+    "id": 141,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Aerodactyl",
+    "id": 142,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Snorlax",
+    "id": 143,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Articuno",
+    "id": 144,
+    "shinyAvailable": true,
+    "gender": "none",
+    "shadow": true
+  },
+  {
+    "name": "Zapdos",
+    "id": 145,
     "shinyAvailable": true,
     "gender": "none",
     "shadow": true
@@ -1086,10 +839,36 @@ export default [
     "shadow": true
   },
   {
+    "name": "Dratini",
+    "id": 147,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Dragonair",
     "id": 148,
     "shinyAvailable": true,
     "shadow": true
+  },
+  {
+    "name": "Dragonite",
+    "id": 149,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Mewtwo",
+    "id": 150,
+    "shinyAvailable": true,
+    "gender": "none",
+    "shadow": true
+  },
+  {
+    "name": "Mew",
+    "id": 151,
+    "tradable": false,
+    "shinyAvailable": true,
+    "gender": "none"
   },
   {
     "name": "Chikorita",
@@ -1102,8 +881,8 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Typhlosion",
-    "id": 157,
+    "name": "Meganium",
+    "id": 154,
     "shinyAvailable": true
   },
   {
@@ -1117,8 +896,8 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Meganium",
-    "id": 154,
+    "name": "Typhlosion",
+    "id": 157,
     "shinyAvailable": true
   },
   {
@@ -1137,23 +916,23 @@ export default [
     "shinyAvailable": true
   },
   {
+    "name": "Sentret",
+    "id": 161,
+    "shinyAvailable": true
+  },
+  {
     "name": "Furret",
     "id": 162,
     "shinyAvailable": true
   },
   {
-    "name": "Noctowl",
-    "id": 164,
+    "name": "Hoothoot",
+    "id": 163,
     "shinyAvailable": false
   },
   {
-    "name": "Ledian",
-    "id": 166,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Ariados",
-    "id": 168,
+    "name": "Noctowl",
+    "id": 164,
     "shinyAvailable": false
   },
   {
@@ -1162,9 +941,19 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Sentret",
-    "id": 161,
+    "name": "Ledian",
+    "id": 166,
     "shinyAvailable": true
+  },
+  {
+    "name": "Spinarak",
+    "id": 167,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Ariados",
+    "id": 168,
+    "shinyAvailable": false
   },
   {
     "name": "Crobat",
@@ -1173,35 +962,19 @@ export default [
     "shadow": true
   },
   {
-    "name": "Hoothoot",
-    "id": 163,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Spinarak",
-    "id": 167,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Kabutops",
-    "id": 141,
+    "name": "Chinchou",
+    "id": 170,
     "shinyAvailable": true
   },
   {
-    "name": "Chinchou",
-    "id": 170,
+    "name": "Lanturn",
+    "id": 171,
     "shinyAvailable": true
   },
   {
     "name": "Pichu",
     "id": 172,
     "shinyAvailable": true
-  },
-  {
-    "name": "Snorlax",
-    "id": 143,
-    "shinyAvailable": false,
-    "shadow": true
   },
   {
     "name": "Cleffa",
@@ -1219,14 +992,18 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Dragonite",
-    "id": 149,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Togetic",
+    "id": 176,
+    "shinyAvailable": true
   },
   {
     "name": "Natu",
     "id": 177,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Xatu",
+    "id": 178,
     "shinyAvailable": true
   },
   {
@@ -1236,18 +1013,14 @@ export default [
     "shadow": true
   },
   {
-    "name": "Lanturn",
-    "id": 171,
-    "shinyAvailable": true
+    "name": "Flaaffy",
+    "id": 180,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
-    "name": "Azumarill",
-    "id": 184,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Politoed",
-    "id": 186,
+    "name": "Ampharos",
+    "id": 181,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1258,25 +1031,37 @@ export default [
     "shadow": true
   },
   {
-    "name": "Skiploom",
-    "id": 188,
+    "name": "Marill",
+    "id": 183,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Azumarill",
+    "id": 184,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Sudowoodo",
+    "id": 185,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Politoed",
+    "id": 186,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Hoppip",
+    "id": 187,
     "shinyAvailable": false,
     "shadow": true
   },
   {
-    "name": "Sunkern",
-    "id": 191,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Yanma",
-    "id": 193,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Aipom",
-    "id": 190,
-    "shinyAvailable": true
+    "name": "Skiploom",
+    "id": 188,
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Jumpluff",
@@ -1285,18 +1070,23 @@ export default [
     "shadow": true
   },
   {
+    "name": "Aipom",
+    "id": 190,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Sunkern",
+    "id": 191,
+    "shinyAvailable": true
+  },
+  {
     "name": "Sunflora",
     "id": 192,
     "shinyAvailable": true
   },
   {
-    "name": "Espeon",
-    "id": 196,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Murkrow",
-    "id": 198,
+    "name": "Yanma",
+    "id": 193,
     "shinyAvailable": true
   },
   {
@@ -1305,20 +1095,24 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Quagsire",
+    "id": 195,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Espeon",
+    "id": 196,
+    "shinyAvailable": true
+  },
+  {
     "name": "Umbreon",
     "id": 197,
     "shinyAvailable": true
   },
   {
-    "name": "Misdreavus",
-    "id": 200,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Quagsire",
-    "id": 195,
-    "shinyAvailable": false
+    "name": "Murkrow",
+    "id": 198,
+    "shinyAvailable": true
   },
   {
     "name": "Slowking",
@@ -1327,8 +1121,8 @@ export default [
     "shadow": true
   },
   {
-    "name": "Wobbuffet",
-    "id": 202,
+    "name": "Misdreavus",
+    "id": 200,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1339,30 +1133,25 @@ export default [
     "gender": "none"
   },
   {
+    "name": "Wobbuffet",
+    "id": 202,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Girafarig",
     "id": 203,
     "shinyAvailable": false
   },
   {
-    "name": "Forretress",
-    "id": 205,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Snubbull",
-    "id": 209,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Gligar",
-    "id": 207,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
     "name": "Pineco",
     "id": 204,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Forretress",
+    "id": 205,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1372,18 +1161,29 @@ export default [
     "shinyAvailable": true
   },
   {
+    "name": "Gligar",
+    "id": 207,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Steelix",
     "id": 208,
     "shinyAvailable": true
   },
   {
-    "name": "Qwilfish",
-    "id": 211,
+    "name": "Snubbull",
+    "id": 209,
     "shinyAvailable": true
   },
   {
     "name": "Granbull",
     "id": 210,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Qwilfish",
+    "id": 211,
     "shinyAvailable": true
   },
   {
@@ -1399,36 +1199,13 @@ export default [
     "shadow": true
   },
   {
-    "name": "Sneasel",
-    "id": 215,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Ursaring",
-    "id": 217,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
     "name": "Heracross",
     "id": 214,
     "shinyAvailable": false
   },
   {
-    "name": "Piloswine",
-    "id": 221,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Magcargo",
-    "id": 219,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Delibird",
-    "id": 225,
+    "name": "Sneasel",
+    "id": 215,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1439,14 +1216,32 @@ export default [
     "shadow": true
   },
   {
+    "name": "Ursaring",
+    "id": 217,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Slugma",
     "id": 218,
     "shinyAvailable": false
   },
   {
-    "name": "Mantine",
-    "id": 226,
+    "name": "Magcargo",
+    "id": 219,
     "shinyAvailable": false
+  },
+  {
+    "name": "Swinub",
+    "id": 220,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Piloswine",
+    "id": 221,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Corsola",
@@ -1454,8 +1249,29 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Houndoom",
-    "id": 229,
+    "name": "Remoraid",
+    "id": 223,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Octillery",
+    "id": 224,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Delibird",
+    "id": 225,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Mantine",
+    "id": 226,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Skarmory",
+    "id": 227,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1466,25 +1282,72 @@ export default [
     "shadow": true
   },
   {
+    "name": "Houndoom",
+    "id": 229,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Kingdra",
     "id": 230,
     "shinyAvailable": true
   },
   {
-    "name": "Octillery",
-    "id": 224,
+    "name": "Phanpy",
+    "id": 231,
     "shinyAvailable": false
-  },
-  {
-    "name": "Swinub",
-    "id": 220,
-    "shinyAvailable": true,
-    "shadow": true
   },
   {
     "name": "Donphan",
     "id": 232,
     "shinyAvailable": false
+  },
+  {
+    "name": "Porygon2",
+    "id": 233,
+    "shinyAvailable": true,
+    "gender": "none",
+    "shadow": true
+  },
+  {
+    "name": "Stantler",
+    "id": 234,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Smeargle",
+    "id": 235,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Tyrogue",
+    "id": 236,
+    "shinyAvailable": false,
+    "gender": "male"
+  },
+  {
+    "name": "Hitmontop",
+    "id": 237,
+    "shinyAvailable": false,
+    "gender": "male"
+  },
+  {
+    "name": "Smoochum",
+    "id": 238,
+    "shinyAvailable": true,
+    "gender": "female"
+  },
+  {
+    "name": "Elekid",
+    "id": 239,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Magby",
+    "id": 240,
+    "shinyAvailable": true
   },
   {
     "name": "Miltank",
@@ -1493,10 +1356,10 @@ export default [
     "gender": "female"
   },
   {
-    "name": "Smeargle",
-    "id": 235,
-    "available": true,
-    "shinyAvailable": false
+    "name": "Blissey",
+    "id": 242,
+    "shinyAvailable": true,
+    "gender": "female"
   },
   {
     "name": "Raikou",
@@ -1506,27 +1369,10 @@ export default [
     "shadow": true
   },
   {
-    "name": "Blissey",
-    "id": 242,
+    "name": "Entei",
+    "id": 244,
     "shinyAvailable": true,
-    "gender": "female"
-  },
-  {
-    "name": "Larvitar",
-    "id": 246,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Tyranitar",
-    "id": 248,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Pupitar",
-    "id": 247,
-    "shinyAvailable": true,
+    "gender": "none",
     "shadow": true
   },
   {
@@ -1537,43 +1383,34 @@ export default [
     "shadow": true
   },
   {
+    "name": "Larvitar",
+    "id": 246,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Pupitar",
+    "id": 247,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Tyranitar",
+    "id": 248,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Lugia",
     "id": 249,
     "shinyAvailable": true,
     "gender": "none"
   },
   {
-    "name": "Grovyle",
-    "id": 253,
-    "shinyAvailable": true
-  },
-  {
     "name": "Ho-Oh",
     "id": 250,
     "shinyAvailable": true,
     "gender": "none"
-  },
-  {
-    "name": "Torchic",
-    "id": 255,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Blaziken",
-    "id": 257,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Elekid",
-    "id": 239,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Entei",
-    "id": 244,
-    "shinyAvailable": true,
-    "gender": "none",
-    "shadow": true
   },
   {
     "name": "Celebi",
@@ -1583,10 +1420,14 @@ export default [
     "gender": "none"
   },
   {
-    "name": "Marshtomp",
-    "id": 259,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Treecko",
+    "id": 252,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Grovyle",
+    "id": 253,
+    "shinyAvailable": true
   },
   {
     "name": "Sceptile",
@@ -1594,13 +1435,29 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Treecko",
-    "id": 252,
+    "name": "Torchic",
+    "id": 255,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Combusken",
+    "id": 256,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Blaziken",
+    "id": 257,
     "shinyAvailable": true
   },
   {
     "name": "Mudkip",
     "id": 258,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Marshtomp",
+    "id": 259,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1611,8 +1468,8 @@ export default [
     "shadow": true
   },
   {
-    "name": "Combusken",
-    "id": 256,
+    "name": "Poochyena",
+    "id": 261,
     "shinyAvailable": true
   },
   {
@@ -1621,18 +1478,8 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Poochyena",
-    "id": 261,
-    "shinyAvailable": true
-  },
-  {
     "name": "Zigzagoon",
     "id": 263,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Beautifly",
-    "id": 267,
     "shinyAvailable": true
   },
   {
@@ -1641,13 +1488,8 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Lotad",
-    "id": 270,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Dustox",
-    "id": 269,
+    "name": "Wurmple",
+    "id": 265,
     "shinyAvailable": true
   },
   {
@@ -1656,13 +1498,61 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Wurmple",
-    "id": 265,
+    "name": "Beautifly",
+    "id": 267,
     "shinyAvailable": true
+  },
+  {
+    "name": "Cascoon",
+    "id": 268,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Dustox",
+    "id": 269,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Lotad",
+    "id": 270,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Lombre",
+    "id": 271,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Ludicolo",
+    "id": 272,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Seedot",
+    "id": 273,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Nuzleaf",
+    "id": 274,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Shiftry",
+    "id": 275,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Taillow",
     "id": 276,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Swellow",
+    "id": 277,
     "shinyAvailable": true
   },
   {
@@ -1671,8 +1561,19 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Nuzleaf",
-    "id": 274,
+    "name": "Pelipper",
+    "id": 279,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Ralts",
+    "id": 280,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Kirlia",
+    "id": 281,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1683,13 +1584,13 @@ export default [
     "shadow": true
   },
   {
-    "name": "Masquerain",
-    "id": 284,
+    "name": "Surskit",
+    "id": 283,
     "shinyAvailable": false
   },
   {
-    "name": "Slakoth",
-    "id": 287,
+    "name": "Masquerain",
+    "id": 284,
     "shinyAvailable": false
   },
   {
@@ -1698,18 +1599,18 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Vigoroth",
-    "id": 288,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Surskit",
-    "id": 283,
-    "shinyAvailable": false
-  },
-  {
     "name": "Breloom",
     "id": 286,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Slakoth",
+    "id": 287,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Vigoroth",
+    "id": 288,
     "shinyAvailable": false
   },
   {
@@ -1723,9 +1624,15 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Exploud",
-    "id": 295,
-    "shinyAvailable": false
+    "name": "Ninjask",
+    "id": 291,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Shedinja",
+    "id": 292,
+    "shinyAvailable": false,
+    "gender": "none"
   },
   {
     "name": "Whismur",
@@ -1738,31 +1645,24 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Exploud",
+    "id": 295,
+    "shinyAvailable": false
+  },
+  {
     "name": "Makuhita",
     "id": 296,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Hariyama",
+    "id": 297,
     "shinyAvailable": true
   },
   {
     "name": "Azurill",
     "id": 298,
     "shinyAvailable": true
-  },
-  {
-    "name": "Kirlia",
-    "id": 281,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Ninjask",
-    "id": 291,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Shedinja",
-    "id": 292,
-    "shinyAvailable": false,
-    "gender": "none"
   },
   {
     "name": "Nosepass",
@@ -1777,19 +1677,13 @@ export default [
     "available": true
   },
   {
-    "name": "Sableye",
-    "id": 302,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
     "name": "Delcatty",
     "id": 301,
     "shinyAvailable": true
   },
   {
-    "name": "Aron",
-    "id": 304,
+    "name": "Sableye",
+    "id": 302,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1800,9 +1694,16 @@ export default [
     "shadow": true
   },
   {
-    "name": "Meditite",
-    "id": 307,
-    "shinyAvailable": true
+    "name": "Aron",
+    "id": 304,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Lairon",
+    "id": 305,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Aggron",
@@ -1811,13 +1712,18 @@ export default [
     "shadow": true
   },
   {
+    "name": "Meditite",
+    "id": 307,
+    "shinyAvailable": true
+  },
+  {
     "name": "Medicham",
     "id": 308,
     "shinyAvailable": true
   },
   {
-    "name": "Plusle",
-    "id": 311,
+    "name": "Electrike",
+    "id": 309,
     "shinyAvailable": true
   },
   {
@@ -1826,8 +1732,8 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Electrike",
-    "id": 309,
+    "name": "Plusle",
+    "id": 311,
     "shinyAvailable": true
   },
   {
@@ -1842,20 +1748,15 @@ export default [
     "gender": "male"
   },
   {
-    "name": "Roselia",
-    "id": 315,
-    "shinyAvailable": true
-  },
-  {
     "name": "Illumise",
     "id": 314,
     "shinyAvailable": true,
     "gender": "female"
   },
   {
-    "name": "Swalot",
-    "id": 317,
-    "shinyAvailable": false
+    "name": "Roselia",
+    "id": 315,
+    "shinyAvailable": true
   },
   {
     "name": "Gulpin",
@@ -1863,15 +1764,31 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Wailord",
-    "id": 321,
-    "shinyAvailable": true
+    "name": "Swalot",
+    "id": 317,
+    "shinyAvailable": false
   },
   {
     "name": "Carvanha",
     "id": 318,
     "shinyAvailable": true,
     "shadow": true
+  },
+  {
+    "name": "Sharpedo",
+    "id": 319,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Wailmer",
+    "id": 320,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Wailord",
+    "id": 321,
+    "shinyAvailable": true
   },
   {
     "name": "Numel",
@@ -1884,19 +1801,34 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Lairon",
-    "id": 305,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
     "name": "Torkoal",
     "id": 324,
     "shinyAvailable": false
   },
   {
+    "name": "Spoink",
+    "id": 325,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Grumpig",
+    "id": 326,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Spinda",
+    "id": 327,
+    "shinyAvailable": true
+  },
+  {
     "name": "Trapinch",
     "id": 328,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Vibrava",
+    "id": 329,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -1913,13 +1845,29 @@ export default [
     "shadow": true
   },
   {
+    "name": "Cacturne",
+    "id": 332,
+    "shinyAvailable": false,
+    "shadow": true
+  },
+  {
     "name": "Swablu",
     "id": 333,
     "shinyAvailable": true
   },
   {
+    "name": "Altaria",
+    "id": 334,
+    "shinyAvailable": true
+  },
+  {
     "name": "Zangoose",
     "id": 335,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Seviper",
+    "id": 336,
     "shinyAvailable": true
   },
   {
@@ -1929,36 +1877,15 @@ export default [
     "gender": "none"
   },
   {
-    "name": "Barboach",
-    "id": 339,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Altaria",
-    "id": 334,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Cacturne",
-    "id": 332,
-    "shinyAvailable": false,
-    "shadow": true
-  },
-  {
-    "name": "Seviper",
-    "id": 336,
-    "shinyAvailable": true
-  },
-  {
     "name": "Solrock",
     "id": 338,
     "shinyAvailable": true,
     "gender": "none"
   },
   {
-    "name": "Crawdaunt",
-    "id": 342,
-    "shinyAvailable": false
+    "name": "Barboach",
+    "id": 339,
+    "shinyAvailable": true
   },
   {
     "name": "Whiscash",
@@ -1968,6 +1895,11 @@ export default [
   {
     "name": "Corphish",
     "id": 341,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Crawdaunt",
+    "id": 342,
     "shinyAvailable": false
   },
   {
@@ -1983,15 +1915,28 @@ export default [
     "gender": "none"
   },
   {
+    "name": "Lileep",
+    "id": 345,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Cradily",
+    "id": 346,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
     "name": "Anorith",
     "id": 347,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Castform",
-    "id": 351,
-    "shinyAvailable": true
+    "name": "Armaldo",
+    "id": 348,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Feebas",
@@ -2004,20 +1949,25 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Banette",
-    "id": 354,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Castform",
+    "id": 351,
+    "shinyAvailable": true
   },
   {
-    "name": "Dusclops",
-    "id": 356,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Kecleon",
+    "id": 352,
+    "available": false,
+    "shinyAvailable": false
   },
   {
     "name": "Shuppet",
     "id": 353,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Banette",
+    "id": 354,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -2028,10 +1978,20 @@ export default [
     "shadow": true
   },
   {
-    "name": "Spheal",
-    "id": 363,
-    "shinyAvailable": false,
+    "name": "Dusclops",
+    "id": 356,
+    "shinyAvailable": true,
     "shadow": true
+  },
+  {
+    "name": "Tropius",
+    "id": 357,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Chimecho",
+    "id": 358,
+    "shinyAvailable": false
   },
   {
     "name": "Absol",
@@ -2040,20 +2000,25 @@ export default [
     "shadow": true
   },
   {
+    "name": "Wynaut",
+    "id": 360,
+    "shinyAvailable": true
+  },
+  {
     "name": "Snorunt",
     "id": 361,
     "shinyAvailable": true
   },
   {
-    "name": "Walrein",
-    "id": 365,
-    "shinyAvailable": false,
-    "shadow": true
+    "name": "Glalie",
+    "id": 362,
+    "shinyAvailable": true
   },
   {
-    "name": "Wynaut",
-    "id": 360,
-    "shinyAvailable": true
+    "name": "Spheal",
+    "id": 363,
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Sealeo",
@@ -2062,13 +2027,20 @@ export default [
     "shadow": true
   },
   {
-    "name": "Glalie",
-    "id": 362,
-    "shinyAvailable": true
+    "name": "Walrein",
+    "id": 365,
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Clamperl",
     "id": 366,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Huntail",
+    "id": 367,
     "available": true,
     "shinyAvailable": true
   },
@@ -2079,25 +2051,24 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Shelgon",
-    "id": 372,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Huntail",
-    "id": 367,
-    "available": true,
-    "shinyAvailable": true
-  },
-  {
     "name": "Relicanth",
     "id": 369,
     "shinyAvailable": false
   },
   {
+    "name": "Luvdisc",
+    "id": 370,
+    "shinyAvailable": true
+  },
+  {
     "name": "Bagon",
     "id": 371,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Shelgon",
+    "id": 372,
     "shinyAvailable": true,
     "shadow": true
   },
@@ -2122,24 +2093,6 @@ export default [
     "shadow": true
   },
   {
-    "name": "Registeel",
-    "id": 379,
-    "shinyAvailable": true,
-    "gender": "none"
-  },
-  {
-    "name": "Regirock",
-    "id": 377,
-    "shinyAvailable": true,
-    "gender": "none"
-  },
-  {
-    "name": "Latios",
-    "id": 381,
-    "shinyAvailable": true,
-    "gender": "male"
-  },
-  {
     "name": "Metagross",
     "id": 376,
     "shinyAvailable": true,
@@ -2147,8 +2100,8 @@ export default [
     "shadow": true
   },
   {
-    "name": "Kyogre",
-    "id": 382,
+    "name": "Regirock",
+    "id": 377,
     "shinyAvailable": true,
     "gender": "none"
   },
@@ -2159,53 +2112,38 @@ export default [
     "gender": "none"
   },
   {
+    "name": "Registeel",
+    "id": 379,
+    "shinyAvailable": true,
+    "gender": "none"
+  },
+  {
     "name": "Latias",
     "id": 380,
     "shinyAvailable": true,
     "gender": "female"
   },
   {
-    "name": "Rayquaza",
-    "id": 384,
+    "name": "Latios",
+    "id": 381,
+    "shinyAvailable": true,
+    "gender": "male"
+  },
+  {
+    "name": "Kyogre",
+    "id": 382,
     "shinyAvailable": true,
     "gender": "none"
-  },
-  {
-    "name": "Chimecho",
-    "id": 358,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Tropius",
-    "id": 357,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Deoxys",
-    "id": 386,
-    "tradable": false,
-    "shinyAvailable": true,
-    "gender": "none"
-  },
-  {
-    "name": "Luvdisc",
-    "id": 370,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Grotle",
-    "id": 388,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Chimchar",
-    "id": 390,
-    "shinyAvailable": false
   },
   {
     "name": "Groudon",
     "id": 383,
+    "shinyAvailable": true,
+    "gender": "none"
+  },
+  {
+    "name": "Rayquaza",
+    "id": 384,
     "shinyAvailable": true,
     "gender": "none"
   },
@@ -2218,14 +2156,34 @@ export default [
     "tradable": false
   },
   {
-    "name": "Infernape",
-    "id": 392,
-    "shinyAvailable": false
+    "name": "Deoxys",
+    "id": 386,
+    "tradable": false,
+    "shinyAvailable": true,
+    "gender": "none"
   },
   {
-    "name": "Prinplup",
-    "id": 394,
-    "shinyAvailable": true
+    "name": "Turtwig",
+    "id": 387,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Grotle",
+    "id": 388,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Torterra",
+    "id": 389,
+    "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Chimchar",
+    "id": 390,
+    "shinyAvailable": false
   },
   {
     "name": "Monferno",
@@ -2233,10 +2191,19 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Turtwig",
-    "id": 387,
-    "shinyAvailable": true,
-    "shadow": true
+    "name": "Infernape",
+    "id": 392,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Piplup",
+    "id": 393,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Prinplup",
+    "id": 394,
+    "shinyAvailable": true
   },
   {
     "name": "Empoleon",
@@ -2249,19 +2216,13 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Torterra",
-    "id": 389,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Piplup",
-    "id": 393,
-    "shinyAvailable": true
-  },
-  {
     "name": "Staravia",
     "id": 397,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Staraptor",
+    "id": 398,
     "shinyAvailable": false
   },
   {
@@ -2270,38 +2231,13 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Kricketot",
-    "id": 401,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Staraptor",
-    "id": 398,
-    "shinyAvailable": false
-  },
-  {
     "name": "Bibarel",
     "id": 400,
     "shinyAvailable": false
   },
   {
-    "name": "Luxio",
-    "id": 404,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Roserade",
-    "id": 407,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Luxray",
-    "id": 405,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Budew",
-    "id": 406,
+    "name": "Kricketot",
+    "id": 401,
     "shinyAvailable": true
   },
   {
@@ -2315,8 +2251,40 @@ export default [
     "shinyAvailable": true
   },
   {
+    "name": "Luxio",
+    "id": 404,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Luxray",
+    "id": 405,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Budew",
+    "id": 406,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Roserade",
+    "id": 407,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Cranidos",
+    "id": 408,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
     "name": "Rampardos",
     "id": 409,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Shieldon",
+    "id": 410,
     "available": true,
     "shinyAvailable": false
   },
@@ -2327,16 +2295,10 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Combee",
-    "id": 415,
+    "name": "Burmy",
+    "id": 412,
     "available": true,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Cranidos",
-    "id": 408,
-    "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Wormadam",
@@ -2346,19 +2308,6 @@ export default [
     "gender": "female"
   },
   {
-    "name": "Vespiquen",
-    "id": 416,
-    "available": true,
-    "shinyAvailable": false,
-    "gender": "female"
-  },
-  {
-    "name": "Shieldon",
-    "id": 410,
-    "available": true,
-    "shinyAvailable": false
-  },
-  {
     "name": "Mothim",
     "id": 414,
     "available": true,
@@ -2366,10 +2315,17 @@ export default [
     "gender": "male"
   },
   {
-    "name": "Burmy",
-    "id": 412,
+    "name": "Combee",
+    "id": 415,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": false
+  },
+  {
+    "name": "Vespiquen",
+    "id": 416,
+    "available": true,
+    "shinyAvailable": false,
+    "gender": "female"
   },
   {
     "name": "Pachirisu",
@@ -2387,8 +2343,20 @@ export default [
     "shinyAvailable": true
   },
   {
+    "name": "Cherubi",
+    "id": 420,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
     "name": "Cherrim",
     "id": 421,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Shellos",
+    "id": 422,
     "available": true,
     "shinyAvailable": false
   },
@@ -2399,10 +2367,10 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Cherubi",
-    "id": 420,
+    "name": "Ambipom",
+    "id": 424,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Drifloon",
@@ -2410,8 +2378,18 @@ export default [
     "shinyAvailable": true
   },
   {
+    "name": "Drifblim",
+    "id": 426,
+    "shinyAvailable": true
+  },
+  {
     "name": "Buneary",
     "id": 427,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Lopunny",
+    "id": 428,
     "shinyAvailable": true
   },
   {
@@ -2421,16 +2399,33 @@ export default [
     "shadow": true
   },
   {
-    "name": "Shellos",
-    "id": 422,
+    "name": "Honchkrow",
+    "id": 430,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Glameow",
+    "id": 431,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Purugly",
+    "id": 432,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Chingling",
+    "id": 433,
     "available": true,
     "shinyAvailable": false
   },
   {
-    "name": "Ambipom",
-    "id": 424,
-    "available": true,
-    "shinyAvailable": true
+    "name": "Stunky",
+    "id": 434,
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Skuntank",
@@ -2459,6 +2454,12 @@ export default [
     "shinyAvailable": true
   },
   {
+    "name": "Mime Jr.",
+    "id": 439,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
     "name": "Happiny",
     "id": 440,
     "available": true,
@@ -2466,9 +2467,14 @@ export default [
     "gender": "female"
   },
   {
-    "name": "Mime Jr.",
-    "id": 439,
+    "name": "Chatot",
+    "id": 441,
     "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Spiritomb",
+    "id": 442,
     "shinyAvailable": true
   },
   {
@@ -2484,22 +2490,16 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Munchlax",
-    "id": 446,
-    "available": true,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Chatot",
-    "id": 441,
-    "available": true,
-    "shinyAvailable": false
-  },
-  {
     "name": "Garchomp",
     "id": 445,
     "available": true,
     "shinyAvailable": true
+  },
+  {
+    "name": "Munchlax",
+    "id": 446,
+    "available": true,
+    "shinyAvailable": false
   },
   {
     "name": "Riolu",
@@ -2507,14 +2507,19 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Hippowdon",
-    "id": 450,
-    "available": true,
+    "name": "Lucario",
+    "id": 448,
     "shinyAvailable": true
   },
   {
     "name": "Hippopotas",
     "id": 449,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Hippowdon",
+    "id": 450,
     "available": true,
     "shinyAvailable": true
   },
@@ -2531,13 +2536,14 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Lucario",
-    "id": 448,
+    "name": "Croagunk",
+    "id": 453,
+    "available": true,
     "shinyAvailable": true
   },
   {
-    "name": "Croagunk",
-    "id": 453,
+    "name": "Toxicroak",
+    "id": 454,
     "available": true,
     "shinyAvailable": true
   },
@@ -2547,10 +2553,29 @@ export default [
     "shinyAvailable": false
   },
   {
-    "name": "Toxicroak",
-    "id": 454,
+    "name": "Finneon",
+    "id": 456,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": false
+  },
+  {
+    "name": "Lumineon",
+    "id": 457,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Mantyke",
+    "id": 458,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Snover",
+    "id": 459,
+    "available": true,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Abomasnow",
@@ -2560,10 +2585,10 @@ export default [
     "shadow": true
   },
   {
-    "name": "Mantyke",
-    "id": 458,
-    "available": true,
-    "shinyAvailable": false
+    "name": "Weavile",
+    "id": 461,
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Magnezone",
@@ -2574,14 +2599,20 @@ export default [
     "shadow": true
   },
   {
-    "name": "Finneon",
-    "id": 456,
+    "name": "Lickilicky",
+    "id": 463,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Rhyperior",
     "id": 464,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Tangrowth",
+    "id": 465,
+    "available": true,
     "shinyAvailable": true
   },
   {
@@ -2591,62 +2622,25 @@ export default [
     "shadow": true
   },
   {
-    "name": "Togekiss",
-    "id": 468,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Lumineon",
-    "id": 457,
-    "available": true,
-    "shinyAvailable": false
-  },
-  {
-    "name": "Weavile",
-    "id": 461,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Snover",
-    "id": 459,
-    "available": true,
-    "shinyAvailable": true,
-    "shadow": true
-  },
-  {
-    "name": "Tangrowth",
-    "id": 465,
-    "available": true,
-    "shinyAvailable": true
-  },
-  {
     "name": "Magmortar",
     "id": 467,
     "shinyAvailable": true,
     "shadow": true
   },
   {
-    "name": "Leafeon",
-    "id": 470,
-    "available": true,
+    "name": "Togekiss",
+    "id": 468,
     "shinyAvailable": true
-  },
-  {
-    "name": "Lickilicky",
-    "id": 463,
-    "available": true,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Gliscor",
-    "id": 472,
-    "shinyAvailable": true,
-    "shadow": true
   },
   {
     "name": "Yanmega",
     "id": 469,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Leafeon",
+    "id": 470,
     "available": true,
     "shinyAvailable": true
   },
@@ -2657,17 +2651,9 @@ export default [
     "shinyAvailable": true
   },
   {
-    "name": "Probopass",
-    "id": 476,
-    "available": true,
-    "shinyAvailable": false,
-    "shadow": true
-  },
-  {
-    "name": "Porygon-z",
-    "id": 474,
-    "shinyAvailable": false,
-    "gender": "none",
+    "name": "Gliscor",
+    "id": 472,
+    "shinyAvailable": true,
     "shadow": true
   },
   {
@@ -2675,6 +2661,13 @@ export default [
     "id": 473,
     "available": true,
     "shinyAvailable": true,
+    "shadow": true
+  },
+  {
+    "name": "Porygon-z",
+    "id": 474,
+    "shinyAvailable": true,
+    "gender": "none",
     "shadow": true
   },
   {
@@ -2686,17 +2679,17 @@ export default [
     "shadow": true
   },
   {
+    "name": "Probopass",
+    "id": 476,
+    "available": true,
+    "shinyAvailable": false,
+    "shadow": true
+  },
+  {
     "name": "Dusknoir",
     "id": 477,
     "shinyAvailable": true,
     "shadow": true
-  },
-  {
-    "name": "Mesprit",
-    "id": 481,
-    "available": true,
-    "shinyAvailable": false,
-    "gender": "none"
   },
   {
     "name": "Froslass",
@@ -2720,6 +2713,13 @@ export default [
     "gender": "none"
   },
   {
+    "name": "Mesprit",
+    "id": 481,
+    "available": true,
+    "shinyAvailable": false,
+    "gender": "none"
+  },
+  {
     "name": "Azelf",
     "id": 482,
     "available": true,
@@ -2727,9 +2727,9 @@ export default [
     "gender": "none"
   },
   {
-    "name": "Manaphy",
-    "id": 490,
-    "available": false,
+    "name": "Dialga",
+    "id": 483,
+    "available": true,
     "shinyAvailable": false,
     "gender": "none"
   },
@@ -2741,17 +2741,10 @@ export default [
     "gender": "none"
   },
   {
-    "name": "Cresselia",
-    "id": 488,
-    "shinyAvailable": true,
-    "gender": "female"
-  },
-  {
-    "name": "Dialga",
-    "id": 483,
+    "name": "Heatran",
+    "id": 485,
     "available": true,
-    "shinyAvailable": false,
-    "gender": "none"
+    "shinyAvailable": true
   },
   {
     "name": "Regigigas",
@@ -2761,14 +2754,27 @@ export default [
     "gender": "none"
   },
   {
-    "name": "Heatran",
-    "id": 485,
-    "available": true,
-    "shinyAvailable": true
+    "name": "Giratina",
+    "id": 487,
+    "shinyAvailable": true,
+    "gender": "none"
+  },
+  {
+    "name": "Cresselia",
+    "id": 488,
+    "shinyAvailable": true,
+    "gender": "female"
   },
   {
     "name": "Phione",
     "id": 489,
+    "available": false,
+    "shinyAvailable": false,
+    "gender": "none"
+  },
+  {
+    "name": "Manaphy",
+    "id": 490,
     "available": false,
     "shinyAvailable": false,
     "gender": "none"
@@ -2789,12 +2795,6 @@ export default [
     "gender": "none"
   },
   {
-    "name": "Giratina",
-    "id": 487,
-    "shinyAvailable": true,
-    "gender": "none"
-  },
-  {
     "name": "Arceus",
     "id": 493,
     "available": false,
@@ -2802,14 +2802,11 @@ export default [
     "gender": "none"
   },
   {
-    "name": "Melmetal",
-    "id": 809,
-    "shinyAvailable": true
-  },
-  {
-    "name": "Meltan",
-    "id": 808,
-    "shinyAvailable": true
+    "name": "Victini",
+    "id": 494,
+    "available": true,
+    "shinyAvailable": false,
+    "tradable": false
   },
   {
     "name": "Snivy",
@@ -3743,137 +3740,140 @@ export default [
     "tradable": false
   },
   {
-    "name": "Victini",
-    "id": 494,
-    "available": true,
-    "shinyAvailable": false,
-    "tradable": false
-  },
-  {
     "name": "Chespin",
     "id": 650,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Quilladin",
     "id": 651,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Chesnaught",
     "id": 652,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Fennekin",
     "id": 653,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Braixen",
     "id": 654,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Delphox",
     "id": 655,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Froakie",
     "id": 656,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Frogadier",
     "id": 657,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Greninja",
     "id": 658,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Bunnelby",
     "id": 659,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Diggersby",
     "id": 660,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Fletchling",
     "id": 661,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Fletchinder",
     "id": 662,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Talonflame",
     "id": 663,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Litleo",
     "id": 667,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Pyroar",
     "id": 668,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Espurr",
     "id": 677,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Meowstic",
     "id": 678,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Klefki",
     "id": 707,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Noibat",
     "id": 714,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
   },
   {
     "name": "Noivern",
     "id": 715,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Meltan",
+    "id": 808,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Melmetal",
+    "id": 809,
+    "shinyAvailable": true
   },
   {
     "name": "Obstagoon",
