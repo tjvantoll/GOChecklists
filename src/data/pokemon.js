@@ -3688,7 +3688,7 @@ export default [
     "name": "Tornadus",
     "id": 641,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Thundurus",
@@ -3712,7 +3712,7 @@ export default [
     "name": "Landorus",
     "id": 645,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Kyurem",
@@ -3809,19 +3809,19 @@ export default [
     "name": "Fletchling",
     "id": 661,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Fletchinder",
     "id": 662,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Talonflame",
     "id": 663,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Litleo",
