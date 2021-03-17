@@ -3453,19 +3453,19 @@ export default [
   {
     "name": "Tynamo",
     "id": 602,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Eelektrik",
     "id": 603,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Eelektross",
     "id": 604,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
@@ -3694,7 +3694,7 @@ export default [
     "name": "Thundurus",
     "id": 642,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Reshiram",
