@@ -1072,7 +1072,8 @@ export default [
   {
     "name": "Aipom",
     "id": 190,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Sunkern",
@@ -2370,7 +2371,8 @@ export default [
     "name": "Ambipom",
     "id": 424,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Drifloon",
@@ -3797,13 +3799,13 @@ export default [
     "name": "Bunnelby",
     "id": 659,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Diggersby",
     "id": 660,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Fletchling",
