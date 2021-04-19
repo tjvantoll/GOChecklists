@@ -3850,6 +3850,30 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Skrelp",
+    "id": 690,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Dragalge",
+    "id": 691,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Clauncher",
+    "id": 692,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Clawitzer",
+    "id": 693,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
     "name": "Klefki",
     "id": 707,
     "available": true,
