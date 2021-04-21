@@ -3252,13 +3252,13 @@ export default [
     "name": "Trubbish",
     "id": 568,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Garbodor",
     "id": 569,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Zorua",
@@ -3846,6 +3846,18 @@ export default [
   {
     "name": "Meowstic",
     "id": 678,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Binacle",
+    "id": 688,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Barbaracle",
+    "id": 689,
     "available": true,
     "shinyAvailable": false
   },
