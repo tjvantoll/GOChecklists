@@ -3912,6 +3912,24 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Goomy",
+    "id": 704,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Sliggoo",
+    "id": 705,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Goodra",
+    "id": 706,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
     "name": "Klefki",
     "id": 707,
     "available": true,
