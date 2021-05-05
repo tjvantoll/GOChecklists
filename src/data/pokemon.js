@@ -3867,13 +3867,13 @@ export default [
     "name": "Swirlix",
     "id": 684,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": false
   },
   {
     "name": "Slurpuff",
     "id": 685,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": false
   },
   {
     "name": "Binacle",
