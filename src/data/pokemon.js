@@ -1322,7 +1322,7 @@ export default [
     "name": "Smeargle",
     "id": 235,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Tyrogue",
