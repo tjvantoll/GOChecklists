@@ -1093,12 +1093,14 @@ export default [
   {
     "name": "Wooper",
     "id": 194,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Quagsire",
     "id": 195,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Espeon",
@@ -3850,6 +3852,30 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Spritzee",
+    "id": 682,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Aromatisse",
+    "id": 683,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Swirlix",
+    "id": 684,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
+    "name": "Slurpuff",
+    "id": 685,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
     "name": "Binacle",
     "id": 688,
     "available": true,
@@ -3900,6 +3926,12 @@ export default [
   {
     "name": "Noivern",
     "id": 715,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Xerneas",
+    "id": 716,
     "available": true,
     "shinyAvailable": false
   },
