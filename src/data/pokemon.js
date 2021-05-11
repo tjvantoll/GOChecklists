@@ -3840,6 +3840,18 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Pancham",
+    "id": 674,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
+    "name": "Pangoro",
+    "id": 675,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
     "name": "Espurr",
     "id": 677,
     "available": true,
