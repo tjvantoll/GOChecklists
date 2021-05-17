@@ -472,6 +472,7 @@ export default class PokemonService {
       [707],
       [714, 715],
       [716],
+      [717],
       [808, 809],
     ]
   }

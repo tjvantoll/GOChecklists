@@ -3966,6 +3966,12 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Yveltal",
+    "id": 717,
+    "available": true,
+    "shinyAvailable": false
+  },
+  {
     "name": "Meltan",
     "id": 808,
     "shinyAvailable": true
