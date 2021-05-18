@@ -651,7 +651,8 @@ export default [
   {
     "name": "Tangela",
     "id": 114,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Kangaskhan",
@@ -1177,12 +1178,14 @@ export default [
   {
     "name": "Snubbull",
     "id": 209,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Granbull",
     "id": 210,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Qwilfish",
@@ -1473,12 +1476,14 @@ export default [
   {
     "name": "Poochyena",
     "id": 261,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Mightyena",
     "id": 262,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Zigzagoon",
@@ -1655,12 +1660,14 @@ export default [
   {
     "name": "Makuhita",
     "id": 296,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Hariyama",
     "id": 297,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Azurill",
@@ -1727,12 +1734,14 @@ export default [
   {
     "name": "Electrike",
     "id": 309,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Manectric",
     "id": 310,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Plusle",
@@ -2216,17 +2225,20 @@ export default [
   {
     "name": "Starly",
     "id": 396,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Staravia",
     "id": 397,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Staraptor",
     "id": 398,
-    "shinyAvailable": false
+    "shinyAvailable": false,
+    "shadow": true
   },
   {
     "name": "Bidoof",
@@ -2531,13 +2543,15 @@ export default [
     "name": "Skorupi",
     "id": 451,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Drapion",
     "id": 452,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Croagunk",
@@ -2617,7 +2631,8 @@ export default [
     "name": "Tangrowth",
     "id": 465,
     "available": true,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Electivire",
