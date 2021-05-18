@@ -1116,7 +1116,8 @@ export default [
   {
     "name": "Murkrow",
     "id": 198,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Slowking",
@@ -2417,7 +2418,8 @@ export default [
   {
     "name": "Honchkrow",
     "id": 430,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Glameow",
