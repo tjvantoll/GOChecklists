@@ -663,12 +663,14 @@ export default [
   {
     "name": "Horsea",
     "id": 116,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Seadra",
     "id": 117,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Goldeen",
@@ -1297,7 +1299,8 @@ export default [
   {
     "name": "Kingdra",
     "id": 230,
-    "shinyAvailable": true
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Phanpy",
