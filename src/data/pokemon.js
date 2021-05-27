@@ -3944,6 +3944,12 @@ export default [
     "shinyAvailable": false
   },
   {
+    "name": "Sylveon",
+    "id": 700,
+    "available": true,
+    "shinyAvailable": true
+  },
+  {
     "name": "Goomy",
     "id": 704,
     "available": true,
