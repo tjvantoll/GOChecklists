@@ -3579,13 +3579,13 @@ export default [
   {
     "name": "Mienfoo",
     "id": 619,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
     "name": "Mienshao",
     "id": 620,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
