@@ -2247,12 +2247,14 @@ export default [
   {
     "name": "Bidoof",
     "id": 399,
-    "shinyAvailable": false
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Bibarel",
     "id": 400,
-    "shinyAvailable": false
+    "shinyAvailable": true,
+    "shadow": true
   },
   {
     "name": "Kricketot",
@@ -2774,7 +2776,7 @@ export default [
     "name": "Regigigas",
     "id": 486,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "none"
   },
   {
