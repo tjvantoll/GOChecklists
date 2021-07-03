@@ -2856,19 +2856,19 @@ export default [
     "name": "Tepig",
     "id": 498,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Pignite",
     "id": 499,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Emboar",
     "id": 500,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Oshawott",
