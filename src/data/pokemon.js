@@ -3192,13 +3192,13 @@ export default [
     "name": "Darumaka",
     "id": 554,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Darmanitan",
     "id": 555,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Maractus",
