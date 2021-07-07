@@ -1420,7 +1420,8 @@ export default [
     "name": "Ho-Oh",
     "id": 250,
     "shinyAvailable": true,
-    "gender": "none"
+    "gender": "none",
+    "shadow": true
   },
   {
     "name": "Celebi",
