@@ -1650,17 +1650,17 @@ export default [
   {
     "name": "Whismur",
     "id": 293,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Loudred",
     "id": 294,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Exploud",
     "id": 295,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Makuhita",
@@ -2008,7 +2008,7 @@ export default [
   {
     "name": "Chimecho",
     "id": 358,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Absol",
@@ -2296,25 +2296,25 @@ export default [
     "name": "Cranidos",
     "id": 408,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Rampardos",
     "id": 409,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Shieldon",
     "id": 410,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Bastiodon",
     "id": 411,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Burmy",
@@ -2757,7 +2757,7 @@ export default [
     "name": "Dialga",
     "id": 483,
     "available": true,
-    "shinyAvailable": false,
+    "shinyAvailable": true,
     "gender": "none"
   },
   {
@@ -3055,7 +3055,7 @@ export default [
     "name": "Audino",
     "id": 531,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Timburr",
@@ -3079,31 +3079,31 @@ export default [
     "name": "Tympole",
     "id": 535,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Palpitoad",
     "id": 536,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Seismitoad",
     "id": 537,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Throh",
     "id": 538,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Sawk",
     "id": 539,
     "available": true,
-    "shinyAvailable": false
+    "shinyAvailable": true
   },
   {
     "name": "Sewaddle",
@@ -3756,7 +3756,7 @@ export default [
   {
     "name": "Meloetta",
     "id": 648,
-    "available": false,
+    "available": true,
     "shinyAvailable": false
   },
   {
