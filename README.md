@@ -2,7 +2,7 @@
 
 GOChecklists is a React app that allows you to track your Pokédex completion in Pokémon GO.
 
-![](https://user-images.githubusercontent.com/544280/71531121-29ac4900-28e5-11ea-99e9-ed9b767e9d26.png)
+![](screenshot.png)
 
 ## Available Scripts
 
