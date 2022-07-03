@@ -569,12 +569,14 @@ const pokemon = [
     name: "Voltorb",
     id: 100,
     shinyAvailable: true,
+    shadow: true,
     gender: "none",
   },
   {
     name: "Electrode",
     id: 101,
     shinyAvailable: true,
+    shadow: true,
     gender: "none",
   },
   {
@@ -877,46 +879,55 @@ const pokemon = [
     name: "Chikorita",
     id: 152,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Bayleef",
     id: 153,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Meganium",
     id: 154,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Cyndaquil",
     id: 155,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Quilava",
     id: 156,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Typhlosion",
     id: 157,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Totodile",
     id: 158,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Croconaw",
     id: 159,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Feraligatr",
     id: 160,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Sentret",
@@ -1047,6 +1058,7 @@ const pokemon = [
     name: "Sudowoodo",
     id: 185,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Politoed",
@@ -1149,6 +1161,7 @@ const pokemon = [
     name: "Girafarig",
     id: 203,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Pineco",
@@ -1414,6 +1427,7 @@ const pokemon = [
     name: "Lugia",
     id: 249,
     shinyAvailable: true,
+    shadow: true,
     gender: "none",
   },
   {
@@ -1651,16 +1665,19 @@ const pokemon = [
     name: "Whismur",
     id: 293,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Loudred",
     id: 294,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Exploud",
     id: 295,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Makuhita",
@@ -1811,11 +1828,13 @@ const pokemon = [
     name: "Numel",
     id: 322,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Camerupt",
     id: 323,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Torkoal",
@@ -2139,6 +2158,7 @@ const pokemon = [
     id: 380,
     shinyAvailable: true,
     gender: "female",
+    shadow: true,
   },
   {
     name: "Latios",
@@ -2540,12 +2560,14 @@ const pokemon = [
     id: 449,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Hippowdon",
     id: 450,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Skorupi",
@@ -2819,6 +2841,7 @@ const pokemon = [
     id: 492,
     available: true,
     shinyAvailable: false,
+    tradable: false,
     gender: "none",
   },
   {
@@ -3757,6 +3780,7 @@ const pokemon = [
     name: "Meloetta",
     id: 648,
     available: true,
+    tradable: false,
     shinyAvailable: false,
   },
   {
@@ -4190,6 +4214,7 @@ const pokemon = [
     name: "Hoopa",
     id: 720,
     available: true,
+    tradable: false,
     shinyAvailable: false,
   },
   {
@@ -5226,6 +5251,7 @@ const pokemon = [
     name: "Zarude",
     id: 893,
     available: true,
+    tradable: false,
     shinyAvailable: false,
   },
   {
