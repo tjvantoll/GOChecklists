@@ -1,35 +1,29 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Dex from './components/Dex';
-import Home from './components/Home';
+import Dex from "./components/Dex";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div>
       <Router>
-        <Switch>
-          <Route
-            exact
-            path={"/"}
-            component={Home}
-          />
-          <Route
-            exact
-            path={["/dex", "/shiny", "/lucky", "/unown", "/shadow"]}
-            component={Dex}
-          />
-          <Route>
-            <h1>404!</h1>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/dex" element={<Dex />} />
+          <Route exact path="/shiny" element={<Dex />} />
+          <Route exact path="/lucky" element={<Dex />} />
+          <Route exact path="/unown" element={<Dex />} />
+          <Route exact path="/shadow" element={<Dex />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </Router>
     </div>
   );
+}
+
+function NotFound() {
+  return <h1>404!</h1>;
 }
 
 export default App;

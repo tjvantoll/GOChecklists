@@ -10,13 +10,14 @@ export default class PokemonService {
   }
 
   getMons(pageMode) {
-    return pageMode === DexModes.UNOWN ? this.filterUnown() :
-      this.filter(pokemon, pageMode);
+    return pageMode === DexModes.UNOWN
+      ? this.filterUnown()
+      : this.filter(pokemon, pageMode);
   }
 
   filter(allMons, pageMode) {
     const ownedMons = this.read(pageMode) || [];
-    const availableMons = allMons.filter(mon => {
+    const availableMons = allMons.filter((mon) => {
       switch (pageMode) {
         case DexModes.DEX:
           return mon.available !== false;
@@ -32,8 +33,10 @@ export default class PokemonService {
     });
 
     // Reset the data from previous runs
-    pokemon.forEach(mon => { mon.owned = false; });
-    availableMons.forEach(mon => {
+    pokemon.forEach((mon) => {
+      mon.owned = false;
+    });
+    availableMons.forEach((mon) => {
       if (ownedMons.includes(mon.id)) {
         mon.owned = true;
       }
@@ -45,10 +48,10 @@ export default class PokemonService {
     const ownedMons = this.read(DexModes.UNOWN) || [];
     const unownToReturn = [];
 
-    Array.from(UNOWN_VALUES).forEach(unown => {
+    Array.from(UNOWN_VALUES).forEach((unown) => {
       unownToReturn.push({
         name: unown,
-        owned: ownedMons.includes(unown)
+        owned: ownedMons.includes(unown),
       });
     });
 
@@ -63,16 +66,17 @@ export default class PokemonService {
 
   save(data, pageMode) {
     const key = DexModes.getSaveKey(pageMode);
-    const owned = data.filter(mon => mon.owned);
-    const valuesToSave = owned.map(mon => pageMode === DexModes.UNOWN ?
-      mon.name : mon.id);
+    const owned = data.filter((mon) => mon.owned);
+    const valuesToSave = owned.map((mon) =>
+      pageMode === DexModes.UNOWN ? mon.name : mon.id
+    );
     localStorage.setItem(key, JSON.stringify(valuesToSave));
   }
 
   sort(mons, sortOrder) {
     const idBasedSort = (a, b) => {
       return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1 : -1;
-    }
+    };
 
     return mons.sort((a, b) => {
       if (sortOrder === SortModes.ID) {
@@ -103,16 +107,17 @@ export default class PokemonService {
   getHeaders() {
     return {
       "Content-Type": "application/json",
-      "Authorization": "Basic a2lkX0gxX2NLMURXUTozZjExNTVhOGY5ODE0MDBlYTYyMWFkYTczMmViZTFjMQ=="
+      Authorization:
+        "Basic a2lkX0gxX2NLMURXUTozZjExNTVhOGY5ODE0MDBlYTYyMWFkYTczMmViZTFjMQ==",
     };
   }
 
   getGroupedMons(mons) {
     const groups = [];
-    this.getGroups().forEach(group => {
+    this.getGroups().forEach((group) => {
       const monsForGroup = [];
-      group.forEach(id => {
-        const mon = mons.filter(mon => mon.id === id)[0];
+      group.forEach((id) => {
+        const mon = mons.filter((mon) => mon.id === id)[0];
         if (mon) {
           monsForGroup.push(mon);
         }
@@ -184,7 +189,7 @@ export default class PokemonService {
       [118, 119],
       [120, 121],
       [439, 122, 866],
-      [123, 212],
+      [123, 212, 900],
       [238, 124],
       [239, 125, 466],
       [240, 126, 467],
@@ -232,21 +237,21 @@ export default class PokemonService {
       [206],
       [207, 472],
       [209, 210],
-      [211],
+      [211, 904],
       [213],
       [214],
-      [215, 461],
-      [216, 217],
+      [215, 461, 903],
+      [216, 217, 901],
       [218, 219],
       [220, 221, 473],
-      [222],
+      [222, 864],
       [223, 224],
       [225],
       [458, 226],
       [227],
       [228, 229],
       [231, 232],
-      [234],
+      [234, 899],
       [235],
       [241],
       [243],
@@ -398,7 +403,7 @@ export default class PokemonService {
       [543, 544, 545],
       [546, 547],
       [548, 549],
-      [550],
+      [550, 902],
       [551, 552, 553],
       [554, 555],
       [556],
@@ -468,12 +473,127 @@ export default class PokemonService {
       [688, 689],
       [690, 691],
       [692, 693],
+      [694, 695],
+      [696, 697],
+      [698, 699],
+      [701],
+      [702],
+      [703],
       [704, 705, 706],
       [707],
+      [708, 709],
+      [710, 711],
+      [712, 713],
       [714, 715],
       [716],
       [717],
+      [718],
+      [719],
+      [720],
+      [721],
+      [722, 723, 724],
+      [725, 726, 727],
+      [728, 729, 730],
+      [731, 732, 733],
+      [734, 735],
+      [736, 737, 738],
+      [739, 740],
+      [741],
+      [742, 743],
+      [744, 745],
+      [746],
+      [747, 748],
+      [749, 750],
+      [751, 752],
+      [753, 754],
+      [755, 756],
+      [757, 758],
+      [759, 760],
+      [761, 762, 763],
+      [764],
+      [765],
+      [766],
+      [767, 768],
+      [769, 770],
+      [771],
+      [772, 773],
+      [774],
+      [775],
+      [776],
+      [777],
+      [778],
+      [779],
+      [780],
+      [781],
+      [782, 783, 784],
+      [785],
+      [786],
+      [787],
+      [788],
+      [789, 790, 791, 792],
+      [793],
+      [794],
+      [795],
+      [796],
+      [797],
+      [798],
+      [799],
+      [800],
+      [801],
+      [802],
+      [803, 804],
+      [805],
+      [806],
+      [807],
       [808, 809],
-    ]
+      [810, 811, 812],
+      [813, 814, 815],
+      [816, 817, 818],
+      [819, 820],
+      [821, 822, 823],
+      [824, 825, 826],
+      [827, 828],
+      [829, 830],
+      [831, 832],
+      [833, 834],
+      [835, 836],
+      [837, 838, 839],
+      [840, 841, 842],
+      [843, 844],
+      [845],
+      [846, 847],
+      [848, 849],
+      [850, 851],
+      [852, 853],
+      [854, 855],
+      [856, 857, 858],
+      [859, 860, 861],
+      [868, 869],
+      [870],
+      [871],
+      [872],
+      [873, 874],
+      [875],
+      [876],
+      [877],
+      [878, 879],
+      [880],
+      [881],
+      [882],
+      [883],
+      [884],
+      [885, 886, 887],
+      [888],
+      [889],
+      [890],
+      [891, 892],
+      [893],
+      [894],
+      [895],
+      [896],
+      [897],
+      [898],
+      [905],
+    ];
   }
 }

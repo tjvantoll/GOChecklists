@@ -1,11 +1,11 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const HeaderContainer = styled.h1`
   display: flex;
   align-items: center;
-  background-color: #445BA1;
+  background-color: #445ba1;
   color: white;
   margin: 0;
   padding: 0;
@@ -28,7 +28,8 @@ const HeaderContainer = styled.h1`
     width: 4em;
     padding: 1em;
     outline: none;
-    filter: invert(100%) sepia(0%) saturate(109%) hue-rotate(329deg) brightness(105%) contrast(102%);
+    filter: invert(100%) sepia(0%) saturate(109%) hue-rotate(329deg)
+      brightness(105%) contrast(102%);
     cursor: pointer;
   }
   .home {
@@ -45,24 +46,26 @@ const HeaderContainer = styled.h1`
   }
 `;
 
-export default function Header({ title, settingsClick}) {
-  const history = useHistory();
+export default function Header({ title, settingsClick }) {
+  const navigate = useNavigate();
 
   const navigateHome = () => {
-    history.push("/");
+    navigate("/");
   };
 
   return (
     <HeaderContainer>
-      {settingsClick &&
-        <button className="home" onClick={navigateHome}>Home</button>
-      }
+      {settingsClick && (
+        <button className="home" onClick={navigateHome}>
+          Home
+        </button>
+      )}
 
       <span className="title">{title}</span>
 
-      {settingsClick &&
+      {settingsClick && (
         <button className="settings" onClick={settingsClick}></button>
-      }
+      )}
     </HeaderContainer>
   );
-};
+}
