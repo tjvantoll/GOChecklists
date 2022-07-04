@@ -2970,13 +2970,13 @@ const pokemon = [
     name: "Pansear",
     id: 513,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Simisear",
     id: 514,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Panpour",
