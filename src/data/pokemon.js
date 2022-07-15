@@ -427,16 +427,19 @@ const pokemon = [
     name: "Geodude",
     id: 74,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Graveler",
     id: 75,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Golem",
     id: 76,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Ponyta",
@@ -2291,16 +2294,19 @@ const pokemon = [
     name: "Shinx",
     id: 403,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Luxio",
     id: 404,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Luxray",
     id: 405,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Budew",
@@ -2917,12 +2923,14 @@ const pokemon = [
     id: 504,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Watchog",
     id: 505,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Lillipup",
@@ -2947,12 +2955,14 @@ const pokemon = [
     id: 509,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Liepard",
     id: 510,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Pansage",
@@ -3373,12 +3383,14 @@ const pokemon = [
     id: 580,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Swanna",
     id: 581,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Vanillite",
@@ -3433,12 +3445,14 @@ const pokemon = [
     id: 590,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Amoonguss",
     id: 591,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Frillish",
