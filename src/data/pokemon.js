@@ -2168,6 +2168,7 @@ const pokemon = [
     id: 381,
     shinyAvailable: true,
     gender: "male",
+    shadow: true,
   },
   {
     name: "Kyogre",
@@ -2366,13 +2367,13 @@ const pokemon = [
     name: "Combee",
     id: 415,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Vespiquen",
     id: 416,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     gender: "female",
   },
   {
@@ -2992,13 +2993,13 @@ const pokemon = [
     name: "Panpour",
     id: 515,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Simipour",
     id: 516,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Munna",
@@ -3444,14 +3445,14 @@ const pokemon = [
     name: "Foongus",
     id: 590,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Amoonguss",
     id: 591,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
@@ -4672,7 +4673,7 @@ const pokemon = [
   {
     name: "Buzzwole",
     id: 794,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
