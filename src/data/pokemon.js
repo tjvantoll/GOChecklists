@@ -1,3 +1,5 @@
+// Hisui sprites from https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/post-9195974
+
 const pokemon = [
   {
     name: "Bulbasaur",
@@ -5326,13 +5328,13 @@ const pokemon = [
   {
     name: "Sneasler",
     id: 903,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Overqwil",
     id: 904,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
