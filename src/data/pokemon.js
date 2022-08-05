@@ -2971,13 +2971,13 @@ const pokemon = [
     name: "Pansage",
     id: 511,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Simisage",
     id: 512,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pansear",
@@ -4015,13 +4015,13 @@ const pokemon = [
     name: "Swirlix",
     id: 684,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Slurpuff",
     id: 685,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Inkay",
@@ -4687,7 +4687,7 @@ const pokemon = [
   {
     name: "Xurkitree",
     id: 796,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
