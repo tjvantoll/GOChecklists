@@ -3169,13 +3169,13 @@ const pokemon = [
     name: "Whirlipede",
     id: 544,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Scolipede",
     id: 545,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cottonee",
