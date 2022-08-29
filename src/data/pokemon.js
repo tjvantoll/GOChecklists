@@ -3007,13 +3007,13 @@ const pokemon = [
     name: "Munna",
     id: 517,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Musharna",
     id: 518,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pidove",
