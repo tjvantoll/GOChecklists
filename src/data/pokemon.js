@@ -3163,19 +3163,19 @@ const pokemon = [
     name: "Venipede",
     id: 543,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Whirlipede",
     id: 544,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Scolipede",
     id: 545,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cottonee",
@@ -4327,19 +4327,19 @@ const pokemon = [
   {
     name: "Grubbin",
     id: 736,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Charjabug",
     id: 737,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Vikavolt",
     id: 738,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
