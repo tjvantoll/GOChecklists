@@ -4027,13 +4027,13 @@ const pokemon = [
     name: "Inkay",
     id: 686,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Malamar",
     id: 687,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Binacle",
