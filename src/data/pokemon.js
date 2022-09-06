@@ -3539,13 +3539,13 @@ const pokemon = [
     name: "Elgyem",
     id: 605,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Beeheeyem",
     id: 606,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Litwick",
@@ -4645,7 +4645,7 @@ const pokemon = [
   {
     name: "Cosmog",
     id: 789,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
