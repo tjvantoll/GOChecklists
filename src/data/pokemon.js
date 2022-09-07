@@ -2256,19 +2256,19 @@ const pokemon = [
   {
     name: "Starly",
     id: 396,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Staravia",
     id: 397,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Staraptor",
     id: 398,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
