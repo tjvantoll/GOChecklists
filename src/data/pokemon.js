@@ -4693,13 +4693,13 @@ const pokemon = [
   {
     name: "Celesteela",
     id: 797,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Kartana",
     id: 798,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
