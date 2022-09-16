@@ -4573,7 +4573,7 @@ const pokemon = [
   {
     name: "Togedemaru",
     id: 777,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
