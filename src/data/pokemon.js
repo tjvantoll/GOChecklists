@@ -4651,7 +4651,7 @@ const pokemon = [
   {
     name: "Cosmoem",
     id: 790,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
