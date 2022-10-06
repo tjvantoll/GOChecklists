@@ -3967,7 +3967,7 @@ const pokemon = [
     name: "Furfrou",
     id: 676,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Espurr",
@@ -4213,7 +4213,7 @@ const pokemon = [
     name: "Yveltal",
     id: 717,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Zygarde",
@@ -4393,13 +4393,13 @@ const pokemon = [
   {
     name: "Mareanie",
     id: 747,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Toxapex",
     id: 748,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
