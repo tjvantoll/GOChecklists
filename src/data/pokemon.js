@@ -2613,13 +2613,13 @@ const pokemon = [
     name: "Finneon",
     id: 456,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Lumineon",
     id: 457,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Mantyke",
@@ -3551,19 +3551,19 @@ const pokemon = [
     name: "Litwick",
     id: 607,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Lampent",
     id: 608,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Chandelure",
     id: 609,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Axew",
@@ -4195,19 +4195,19 @@ const pokemon = [
     name: "Noibat",
     id: 714,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Noivern",
     id: 715,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Xerneas",
     id: 716,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Yveltal",
@@ -4441,13 +4441,13 @@ const pokemon = [
   {
     name: "Morelull",
     id: 755,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Shiinotic",
     id: 756,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5112,7 +5112,7 @@ const pokemon = [
     name: "Runerigus",
     id: 867,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Milcery",
