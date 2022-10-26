@@ -3324,13 +3324,13 @@ const pokemon = [
   {
     name: "Zorua",
     id: 570,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Zoroark",
     id: 571,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
