@@ -2552,7 +2552,7 @@ const pokemon = [
     name: "Munchlax",
     id: 446,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Riolu",
@@ -4171,13 +4171,13 @@ const pokemon = [
     name: "Pumpkaboo",
     id: 710,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Gourgeist",
     id: 711,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Bergmite",
