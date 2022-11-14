@@ -4713,7 +4713,7 @@ const pokemon = [
   {
     name: "Guzzlord",
     id: 799,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
