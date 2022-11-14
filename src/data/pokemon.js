@@ -547,6 +547,7 @@ const pokemon = [
     name: "Onix",
     id: 95,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Drowzee",
@@ -1019,11 +1020,13 @@ const pokemon = [
     name: "Natu",
     id: 177,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Xatu",
     id: 178,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Mareep",
@@ -1195,6 +1198,7 @@ const pokemon = [
     name: "Steelix",
     id: 208,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Snubbull",
@@ -1823,11 +1827,13 @@ const pokemon = [
     name: "Wailmer",
     id: 320,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Wailord",
     id: 321,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Numel",
@@ -3642,12 +3648,14 @@ const pokemon = [
     id: 622,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Golurk",
     id: 623,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Pawniard",
@@ -5316,8 +5324,8 @@ const pokemon = [
   {
     name: "Ursaluna",
     id: 901,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Basculegion",
