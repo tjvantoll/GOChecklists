@@ -2963,14 +2963,14 @@ const pokemon = [
     name: "Purrloin",
     id: 509,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Liepard",
     id: 510,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
@@ -4665,13 +4665,13 @@ const pokemon = [
   {
     name: "Solgaleo",
     id: 791,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Lunala",
     id: 792,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
