@@ -4353,13 +4353,13 @@ const pokemon = [
   {
     name: "Crabrawler",
     id: 739,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Crabominable",
     id: 740,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5114,7 +5114,7 @@ const pokemon = [
     name: "Mr. Rime",
     id: 866,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Runerigus",
