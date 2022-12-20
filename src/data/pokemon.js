@@ -3798,7 +3798,7 @@ const pokemon = [
   {
     name: "Keldeo",
     id: 647,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -3902,19 +3902,19 @@ const pokemon = [
   {
     name: "Scatterbug",
     id: 664,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Spewpa",
     id: 665,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Vivillon",
     id: 666,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -4191,13 +4191,13 @@ const pokemon = [
     name: "Bergmite",
     id: 712,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Avalugg",
     id: 713,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Noibat",
