@@ -2003,7 +2003,7 @@ const pokemon = [
   {
     name: "Kecleon",
     id: 352,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -3819,19 +3819,19 @@ const pokemon = [
     name: "Chespin",
     id: 650,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Quilladin",
     id: 651,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Chesnaught",
     id: 652,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Fennekin",
