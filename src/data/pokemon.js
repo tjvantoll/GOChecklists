@@ -4131,7 +4131,7 @@ const pokemon = [
     name: "Dedenne",
     id: 702,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Carbink",
