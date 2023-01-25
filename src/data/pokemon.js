@@ -4630,7 +4630,7 @@ const pokemon = [
     name: "Tapu Koko",
     id: 785,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tapu Lele",
