@@ -4083,13 +4083,13 @@ const pokemon = [
     name: "Helioptile",
     id: 694,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Heliolisk",
     id: 695,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tyrunt",
