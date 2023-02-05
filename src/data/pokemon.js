@@ -2165,6 +2165,7 @@ const pokemon = [
     id: 379,
     shinyAvailable: true,
     gender: "none",
+    shadow: true,
   },
   {
     name: "Latias",
