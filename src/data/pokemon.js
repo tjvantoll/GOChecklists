@@ -1622,12 +1622,12 @@ const pokemon = [
   {
     name: "Surskit",
     id: 283,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Masquerain",
     id: 284,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Shroomish",
@@ -1804,12 +1804,12 @@ const pokemon = [
   {
     name: "Gulpin",
     id: 316,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Swalot",
     id: 317,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Carvanha",
@@ -1850,7 +1850,7 @@ const pokemon = [
   {
     name: "Torkoal",
     id: 324,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Spoink",
@@ -1890,13 +1890,13 @@ const pokemon = [
   {
     name: "Cacnea",
     id: 331,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Cacturne",
     id: 332,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
@@ -2006,7 +2006,7 @@ const pokemon = [
     name: "Kecleon",
     id: 352,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Shuppet",
@@ -2035,7 +2035,7 @@ const pokemon = [
   {
     name: "Tropius",
     id: 357,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Chimecho",
@@ -2102,7 +2102,7 @@ const pokemon = [
   {
     name: "Relicanth",
     id: 369,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Luvdisc",
@@ -2203,7 +2203,7 @@ const pokemon = [
     name: "Jirachi",
     id: 385,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     gender: "none",
     tradable: false,
   },
@@ -3475,13 +3475,13 @@ const pokemon = [
     name: "Frillish",
     id: 592,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Jellicent",
     id: 593,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Alomomola",
@@ -4646,7 +4646,7 @@ const pokemon = [
     name: "Tapu Lele",
     id: 786,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tapu Bulu",
