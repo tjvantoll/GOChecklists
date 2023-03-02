@@ -4134,7 +4134,7 @@ const pokemon = [
   {
     name: "Hawlucha",
     id: 701,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5359,6 +5359,18 @@ const pokemon = [
     name: "Enamorus",
     id: 905,
     available: false,
+    shinyAvailable: false,
+  },
+  {
+    name: "Gimmighoul",
+    id: 999,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Gholdengo",
+    id: 1000,
+    available: true,
     shinyAvailable: false,
   },
 ];

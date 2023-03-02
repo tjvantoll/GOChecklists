@@ -600,6 +600,7 @@ export default class PokemonService {
       [897],
       [898],
       [905],
+      [999, 1000],
     ];
   }
 }
