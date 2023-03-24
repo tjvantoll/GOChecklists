@@ -4603,7 +4603,7 @@ const pokemon = [
   {
     name: "Bruxish",
     id: 779,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5298,7 +5298,7 @@ const pokemon = [
   {
     name: "Regidrago",
     id: 895,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
