@@ -2166,6 +2166,7 @@ const pokemon = [
     name: "Regice",
     id: 378,
     shinyAvailable: true,
+    shadow: true,
     gender: "none",
   },
   {
