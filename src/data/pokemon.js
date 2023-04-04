@@ -1328,11 +1328,13 @@ const pokemon = [
     name: "Phanpy",
     id: 231,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Donphan",
     id: 232,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Porygon2",
@@ -1457,31 +1459,37 @@ const pokemon = [
     name: "Treecko",
     id: 252,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Grovyle",
     id: 253,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Sceptile",
     id: 254,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Torchic",
     id: 255,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Combusken",
     id: 256,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Blaziken",
     id: 257,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Mudkip",
@@ -2437,11 +2445,13 @@ const pokemon = [
     name: "Drifloon",
     id: 425,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Drifblim",
     id: 426,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Buneary",
@@ -4381,13 +4391,13 @@ const pokemon = [
   {
     name: "Cutiefly",
     id: 742,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Ribombee",
     id: 743,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
