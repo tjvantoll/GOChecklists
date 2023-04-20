@@ -3104,13 +3104,13 @@ const pokemon = [
     name: "Drilbur",
     id: 529,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Excadrill",
     id: 530,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Audino",
@@ -3644,7 +3644,7 @@ const pokemon = [
     name: "Stunfisk",
     id: 618,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Mienfoo",
@@ -4506,19 +4506,19 @@ const pokemon = [
   {
     name: "Bounsweet",
     id: 761,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Steenee",
     id: 762,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Tsareena",
     id: 763,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5303,7 +5303,7 @@ const pokemon = [
   {
     name: "Regieleki",
     id: 894,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
