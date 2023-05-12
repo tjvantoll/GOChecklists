@@ -2645,7 +2645,7 @@ const pokemon = [
     name: "Mantyke",
     id: 458,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Snover",
@@ -3753,13 +3753,13 @@ const pokemon = [
   {
     name: "Larvesta",
     id: 636,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Volcarona",
     id: 637,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -4663,13 +4663,13 @@ const pokemon = [
     name: "Tapu Bulu",
     id: 787,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tapu Fini",
     id: 788,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cosmog",
@@ -5339,8 +5339,8 @@ const pokemon = [
   {
     name: "Kleavor",
     id: 900,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Ursaluna",
