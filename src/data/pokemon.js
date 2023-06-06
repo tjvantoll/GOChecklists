@@ -3860,19 +3860,19 @@ const pokemon = [
     name: "Fennekin",
     id: 653,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Braixen",
     id: 654,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Delphox",
     id: 655,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Froakie",
