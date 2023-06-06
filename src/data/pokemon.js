@@ -3159,12 +3159,14 @@ const pokemon = [
     id: 538,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Sawk",
     id: 539,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Sewaddle",
@@ -4092,13 +4094,13 @@ const pokemon = [
     name: "Clauncher",
     id: 692,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Clawitzer",
     id: 693,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Helioptile",
@@ -4554,13 +4556,13 @@ const pokemon = [
   {
     name: "Sandygast",
     id: 769,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Palossand",
     id: 770,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
