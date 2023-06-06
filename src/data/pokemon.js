@@ -5349,6 +5349,7 @@ const pokemon = [
     id: 901,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Basculegion",
