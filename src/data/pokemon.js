@@ -959,11 +959,13 @@ const pokemon = [
     name: "Ledyba",
     id: 165,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Ledian",
     id: 166,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Spinarak",
@@ -1366,6 +1368,7 @@ const pokemon = [
     id: 237,
     shinyAvailable: true,
     gender: "male",
+    shadow: true,
   },
   {
     name: "Smoochum",
@@ -2161,6 +2164,7 @@ const pokemon = [
     id: 377,
     shinyAvailable: true,
     gender: "none",
+    shadow: true,
   },
   {
     name: "Regice",
@@ -2481,12 +2485,14 @@ const pokemon = [
     id: 431,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Purugly",
     id: 432,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Chingling",
@@ -2555,18 +2561,21 @@ const pokemon = [
     id: 443,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Gabite",
     id: 444,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Garchomp",
     id: 445,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Munchlax",
@@ -3986,13 +3995,13 @@ const pokemon = [
     name: "Pancham",
     id: 674,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pangoro",
     id: 675,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Furfrou",
@@ -4461,13 +4470,13 @@ const pokemon = [
     name: "Fomantis",
     id: 753,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Lurantis",
     id: 754,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Morelull",
@@ -4701,7 +4710,7 @@ const pokemon = [
     name: "Nihilego",
     id: 793,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Buzzwole",
