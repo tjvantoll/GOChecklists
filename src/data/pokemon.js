@@ -4601,7 +4601,7 @@ const pokemon = [
   {
     name: "Komala",
     id: 775,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
