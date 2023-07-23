@@ -4258,7 +4258,7 @@ const pokemon = [
   {
     name: "Zygarde",
     id: 718,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
