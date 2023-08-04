@@ -3229,13 +3229,13 @@ const pokemon = [
     name: "Petilil",
     id: 548,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Lilligant",
     id: 549,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Basculin",
@@ -4264,7 +4264,7 @@ const pokemon = [
   {
     name: "Diancie",
     id: 719,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -4458,13 +4458,13 @@ const pokemon = [
     name: "Dewpider",
     id: 751,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Araquanid",
     id: 752,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Fomantis",
