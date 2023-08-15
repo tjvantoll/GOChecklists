@@ -3295,13 +3295,13 @@ const pokemon = [
     name: "Scraggy",
     id: 559,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Scrafty",
     id: 560,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Sigilyph",
@@ -3887,19 +3887,19 @@ const pokemon = [
     name: "Froakie",
     id: 656,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Frogadier",
     id: 657,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Greninja",
     id: 658,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Bunnelby",
@@ -4547,7 +4547,7 @@ const pokemon = [
   {
     name: "Passimian",
     id: 766,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
