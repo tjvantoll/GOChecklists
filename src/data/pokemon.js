@@ -3679,14 +3679,14 @@ const pokemon = [
     name: "Golett",
     id: 622,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Golurk",
     id: 623,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
@@ -4091,13 +4091,13 @@ const pokemon = [
     name: "Skrelp",
     id: 690,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Dragalge",
     id: 691,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Clauncher",
