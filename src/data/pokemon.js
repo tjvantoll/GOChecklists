@@ -1,4 +1,5 @@
-// Hisui sprites from https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/post-9195974
+// Sprite credit: https://github.com/PokeAPI/sprites
+// Hisui sprites: https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/post-9195974
 
 const pokemon = [
   {
@@ -5383,6 +5384,72 @@ const pokemon = [
     id: 905,
     available: false,
     shinyAvailable: false,
+  },
+  {
+    name: "Sprigatito",
+    id: 906,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Floragato",
+    id: 907,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Meowscarada",
+    id: 908,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Fuecoco",
+    id: 909,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Crocalor",
+    id: 910,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Skeledirge",
+    id: 911,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Quaxly",
+    id: 912,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Quaxwell",
+    id: 913,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Quaquaval",
+    id: 914,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Lechonk",
+    id: 915,
+    available: true,
+    shinyAvailable: true,
+  },
+  {
+    name: "Oinkologne",
+    id: 916,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Gimmighoul",
