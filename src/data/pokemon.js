@@ -3694,13 +3694,13 @@ const pokemon = [
     name: "Pawniard",
     id: 624,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Bisharp",
     id: 625,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Bouffalant",
