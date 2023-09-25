@@ -5482,6 +5482,12 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Bombirdier",
+    id: 962,
+    available: true,
+    shinyAvailable: true,
+  },
+  {
     name: "Frigibax",
     id: 996,
     available: true,
