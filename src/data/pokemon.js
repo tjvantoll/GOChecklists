@@ -3983,13 +3983,13 @@ const pokemon = [
   {
     name: "Skiddo",
     id: 672,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Gogoat",
     id: 673,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -4747,7 +4747,7 @@ const pokemon = [
     name: "Guzzlord",
     id: 799,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Necrozma",
