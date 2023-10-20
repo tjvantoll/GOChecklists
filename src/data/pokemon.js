@@ -4200,13 +4200,13 @@ const pokemon = [
     name: "Phantump",
     id: 708,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Trevenant",
     id: 709,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pumpkaboo",
@@ -5482,10 +5482,40 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Smoliv",
+    id: 928,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Dolliv",
+    id: 929,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Arboliva",
+    id: 930,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Bombirdier",
     id: 962,
     available: true,
     shinyAvailable: true,
+  },
+  {
+    name: "Greavard",
+    id: 971,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Houndstone",
+    id: 972,
+    available: true,
+    shinyAvailable: false,
   },
   {
     name: "Frigibax",
