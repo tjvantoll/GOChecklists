@@ -4504,13 +4504,13 @@ const pokemon = [
     name: "Morelull",
     id: 755,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Shiinotic",
     id: 756,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Salandit",
@@ -5522,6 +5522,18 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Tadbulb",
+    id: 938,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Bellibolt",
+    id: 939,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Bombirdier",
     id: 962,
     available: true,
@@ -5538,6 +5550,12 @@ const pokemon = [
     id: 972,
     available: true,
     shinyAvailable: false,
+  },
+  {
+    name: "Clodsire",
+    id: 980,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Frigibax",
