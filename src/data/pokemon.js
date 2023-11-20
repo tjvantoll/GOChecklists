@@ -3401,19 +3401,19 @@ const pokemon = [
     name: "Gothita",
     id: 574,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Gothorita",
     id: 575,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Gothitelle",
     id: 576,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Solosis",
