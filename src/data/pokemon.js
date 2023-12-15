@@ -3656,7 +3656,7 @@ const pokemon = [
     name: "Cryogonal",
     id: 615,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Shelmet",
@@ -5392,7 +5392,7 @@ const pokemon = [
     name: "Sneasler",
     id: 903,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
