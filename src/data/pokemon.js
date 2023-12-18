@@ -5552,6 +5552,18 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Cetoddle",
+    id: 974,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Cetitan",
+    id: 975,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Clodsire",
     id: 980,
     available: true,
