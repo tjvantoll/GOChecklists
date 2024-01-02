@@ -3451,19 +3451,19 @@ const pokemon = [
     name: "Vanillite",
     id: 582,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Vanillish",
     id: 583,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Vanilluxe",
     id: 584,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Deerling",
@@ -5366,8 +5366,8 @@ const pokemon = [
   {
     name: "Wyrdeer",
     id: 899,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Kleavor",
