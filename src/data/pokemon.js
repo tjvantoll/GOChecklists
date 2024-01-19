@@ -4306,19 +4306,19 @@ const pokemon = [
     name: "Rowlet",
     id: 722,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Dartrix",
     id: 723,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Decidueye",
     id: 724,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Litten",
@@ -4426,13 +4426,13 @@ const pokemon = [
     name: "Cutiefly",
     id: 742,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Ribombee",
     id: 743,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Rockruff",
@@ -5562,6 +5562,12 @@ const pokemon = [
     id: 975,
     available: true,
     shinyAvailable: false,
+  },
+  {
+    name: "Annihilape",
+    id: 979,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Clodsire",
