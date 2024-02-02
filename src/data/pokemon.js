@@ -420,11 +420,13 @@ const pokemon = [
     name: "Tentacool",
     id: 72,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Tentacruel",
     id: 73,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Geodude",
@@ -1964,11 +1966,13 @@ const pokemon = [
     name: "Corphish",
     id: 341,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Crawdaunt",
     id: 342,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Baltoy",
@@ -2076,11 +2080,13 @@ const pokemon = [
     name: "Snorunt",
     id: 361,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Glalie",
     id: 362,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Spheal",
@@ -2207,6 +2213,7 @@ const pokemon = [
     id: 382,
     shinyAvailable: true,
     gender: "none",
+    shadow: true,
   },
   {
     name: "Groudon",
@@ -2257,31 +2264,37 @@ const pokemon = [
     name: "Chimchar",
     id: 390,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Monferno",
     id: 391,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Infernape",
     id: 392,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Piplup",
     id: 393,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Prinplup",
     id: 394,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Empoleon",
     id: 395,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Starly",
@@ -2638,12 +2651,14 @@ const pokemon = [
     id: 453,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Toxicroak",
     id: 454,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Carnivine",
@@ -2797,6 +2812,7 @@ const pokemon = [
     available: true,
     shinyAvailable: true,
     gender: "female",
+    shadow: true,
   },
   {
     name: "Rotom",
@@ -3300,12 +3316,14 @@ const pokemon = [
     id: 557,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Crustle",
     id: 558,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Scraggy",
@@ -3546,12 +3564,14 @@ const pokemon = [
     id: 597,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Ferrothorn",
     id: 598,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Klink",
@@ -5574,6 +5594,18 @@ const pokemon = [
     id: 980,
     available: true,
     shinyAvailable: true,
+  },
+  {
+    name: "Varoom",
+    id: 965,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Revaroom",
+    id: 966,
+    available: true,
+    shinyAvailable: false,
   },
   {
     name: "Frigibax",
