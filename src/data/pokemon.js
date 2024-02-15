@@ -4440,7 +4440,7 @@ const pokemon = [
     name: "Oricorio",
     id: 741,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cutiefly",
@@ -5424,7 +5424,7 @@ const pokemon = [
   {
     name: "Enamorus",
     id: 905,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
