@@ -2428,7 +2428,7 @@ const pokemon = [
   {
     name: "Pachirisu",
     id: 417,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Buizel",
@@ -2528,13 +2528,13 @@ const pokemon = [
   {
     name: "Stunky",
     id: 434,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Skuntank",
     id: 435,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
@@ -2574,7 +2574,7 @@ const pokemon = [
     name: "Chatot",
     id: 441,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Spiritomb",
@@ -2663,7 +2663,7 @@ const pokemon = [
   {
     name: "Carnivine",
     id: 455,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Finneon",
@@ -2818,7 +2818,7 @@ const pokemon = [
     name: "Rotom",
     id: 479,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     gender: "none",
   },
   {
@@ -2908,7 +2908,7 @@ const pokemon = [
     name: "Shaymin",
     id: 492,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     tradable: false,
     gender: "none",
   },
@@ -3273,7 +3273,7 @@ const pokemon = [
     name: "Basculin",
     id: 550,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Sandile",
@@ -5419,7 +5419,7 @@ const pokemon = [
     name: "Overqwil",
     id: 904,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Enamorus",
