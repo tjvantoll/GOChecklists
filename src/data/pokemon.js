@@ -2523,7 +2523,7 @@ const pokemon = [
     name: "Chingling",
     id: 433,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Stunky",
