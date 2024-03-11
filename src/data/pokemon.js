@@ -5542,6 +5542,24 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Charcadet",
+    id: 935,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Armarouge",
+    id: 936,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Ceruledge",
+    id: 937,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Tadbulb",
     id: 938,
     available: true,
