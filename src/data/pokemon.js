@@ -4344,19 +4344,19 @@ const pokemon = [
     name: "Litten",
     id: 725,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Torracat",
     id: 726,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Incineroar",
     id: 727,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Popplio",
