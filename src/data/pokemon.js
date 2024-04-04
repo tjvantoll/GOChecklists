@@ -4608,13 +4608,13 @@ const pokemon = [
     name: "Wimpod",
     id: 767,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Golisopod",
     id: 768,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Sandygast",
@@ -4788,13 +4788,13 @@ const pokemon = [
     name: "Celesteela",
     id: 797,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Kartana",
     id: 798,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Guzzlord",
