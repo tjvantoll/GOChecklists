@@ -5584,10 +5584,34 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Wiglett",
+    id: 960,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Wugtrio",
+    id: 961,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Bombirdier",
     id: 962,
     available: true,
     shinyAvailable: true,
+  },
+  {
+    name: "Varoom",
+    id: 965,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Revaroom",
+    id: 966,
+    available: true,
+    shinyAvailable: false,
   },
   {
     name: "Greavard",
@@ -5624,18 +5648,6 @@ const pokemon = [
     id: 980,
     available: true,
     shinyAvailable: true,
-  },
-  {
-    name: "Varoom",
-    id: 965,
-    available: true,
-    shinyAvailable: false,
-  },
-  {
-    name: "Revaroom",
-    id: 966,
-    available: true,
-    shinyAvailable: false,
   },
   {
     name: "Frigibax",
