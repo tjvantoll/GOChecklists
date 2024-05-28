@@ -4488,13 +4488,13 @@ const pokemon = [
     name: "Mareanie",
     id: 747,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Toxapex",
     id: 748,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Mudbray",
@@ -4572,19 +4572,19 @@ const pokemon = [
     name: "Bounsweet",
     id: 761,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Steenee",
     id: 762,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tsareena",
     id: 763,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Comfey",
@@ -4829,19 +4829,19 @@ const pokemon = [
   {
     name: "Naganadel",
     id: 804,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Stakataka",
     id: 805,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Blacephalon",
     id: 806,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
