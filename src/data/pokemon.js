@@ -3511,7 +3511,7 @@ const pokemon = [
     name: "Emolga",
     id: 587,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Karrablast",
@@ -4782,7 +4782,7 @@ const pokemon = [
     name: "Xurkitree",
     id: 796,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Celesteela",
@@ -4805,8 +4805,8 @@ const pokemon = [
   {
     name: "Necrozma",
     id: 800,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Magearna",
@@ -4817,7 +4817,7 @@ const pokemon = [
   {
     name: "Marshadow",
     id: 802,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
