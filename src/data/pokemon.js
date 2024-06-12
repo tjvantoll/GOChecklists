@@ -4656,7 +4656,7 @@ const pokemon = [
     name: "Komala",
     id: 775,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Turtonator",
