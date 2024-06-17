@@ -4440,13 +4440,13 @@ const pokemon = [
     name: "Crabrawler",
     id: 739,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Crabominable",
     id: 740,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Oricorio",
@@ -4776,7 +4776,7 @@ const pokemon = [
     name: "Pheromosa",
     id: 795,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Xurkitree",
