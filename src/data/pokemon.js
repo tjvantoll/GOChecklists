@@ -3816,13 +3816,13 @@ const pokemon = [
     name: "Larvesta",
     id: 636,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Volcarona",
     id: 637,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cobalion",
