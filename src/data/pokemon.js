@@ -4770,7 +4770,7 @@ const pokemon = [
     name: "Buzzwole",
     id: 794,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pheromosa",
