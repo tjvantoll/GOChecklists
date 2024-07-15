@@ -3467,14 +3467,14 @@ const pokemon = [
     name: "Ducklett",
     id: 580,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
     name: "Swanna",
     id: 581,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     shadow: true,
   },
   {
