@@ -4698,19 +4698,19 @@ const pokemon = [
     name: "Jangmo-o",
     id: 782,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Hakamo-o",
     id: 783,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Kommo-o",
     id: 784,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tapu Koko",
