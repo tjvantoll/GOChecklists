@@ -5536,6 +5536,18 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Tandemaus",
+    id: 924,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Maushold",
+    id: 925,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Smoliv",
     id: 928,
     available: true,
