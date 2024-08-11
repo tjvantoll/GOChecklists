@@ -2885,6 +2885,7 @@ const pokemon = [
     id: 488,
     shinyAvailable: true,
     gender: "female",
+    shadow: true,
   },
   {
     name: "Phione",
@@ -3168,18 +3169,21 @@ const pokemon = [
     id: 532,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Gurdurr",
     id: 533,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Conkeldurr",
     id: 534,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Tympole",
@@ -3366,24 +3370,28 @@ const pokemon = [
     id: 564,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Carracosta",
     id: 565,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Archen",
     id: 566,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Archeops",
     id: 567,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Trubbish",
@@ -4668,7 +4676,7 @@ const pokemon = [
     name: "Togedemaru",
     id: 777,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Mimikyu",
