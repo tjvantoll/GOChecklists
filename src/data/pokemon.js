@@ -3615,19 +3615,19 @@ const pokemon = [
     name: "Tynamo",
     id: 602,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Eelektrik",
     id: 603,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Eelektross",
     id: 604,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Elgyem",
