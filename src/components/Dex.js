@@ -91,12 +91,15 @@ export default function Dex() {
   const settingsService = new SettingsService();
   const pageMode = pokemonService.getPageMode();
 
+  console.log(pokemonService.getLocalStorageInformation())
+
   const getSortOrder = () => {
     return settingsService.readSortOrder(pageMode) ||
       DexModes.getDefaultSortOrder(pageMode);
   };
 
   const [mons, setMons] = React.useState([]);
+  console.log(mons[0])
   const [groupedMons, setGroupedMons] = React.useState([]);
   const [owned, setOwned] = React.useState(0);
   const [showSettings, setShowSettings] = React.useState(false);
@@ -104,7 +107,6 @@ export default function Dex() {
 
   React.useEffect(() => {
     document.title = "GOChecklists: " + DexModes.getPageTitle(pageMode);
-
     const mons = pokemonService.getMons(pageMode);
     const sortedMons = pokemonService.sort(mons, sortOrder);
     setMons(sortedMons);

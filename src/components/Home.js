@@ -59,6 +59,12 @@ function Home() {
             <li>Track how many shadow Pokémon you have.</li>
           </ul>
         </li>
+        <li>
+          <Link to="/download">Download</Link>
+          <ul>
+            <li>Download your Pokémon history.</li>
+          </ul>
+        </li>
       </List>
     </React.Fragment>
   )
