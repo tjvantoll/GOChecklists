@@ -99,7 +99,6 @@ export default function Dex() {
   };
 
   const [mons, setMons] = React.useState([]);
-  console.log(mons[0])
   const [groupedMons, setGroupedMons] = React.useState([]);
   const [owned, setOwned] = React.useState(0);
   const [showSettings, setShowSettings] = React.useState(false);
