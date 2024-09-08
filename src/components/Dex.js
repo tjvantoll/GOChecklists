@@ -91,8 +91,6 @@ export default function Dex() {
   const settingsService = new SettingsService();
   const pageMode = pokemonService.getPageMode();
 
-  console.log(pokemonService.getLocalStorageInformation())
-
   const getSortOrder = () => {
     return settingsService.readSortOrder(pageMode) ||
       DexModes.getDefaultSortOrder(pageMode);
