@@ -5232,7 +5232,7 @@ const pokemon = [
     name: "Falinks",
     id: 870,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pincurchin",
