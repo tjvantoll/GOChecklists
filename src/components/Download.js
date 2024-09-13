@@ -1,4 +1,3 @@
-import React from "react";
 import PokemonService from "../services/pokemon";
 
 export default function Download() {
