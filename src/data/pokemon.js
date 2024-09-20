@@ -5147,19 +5147,19 @@ const pokemon = [
   {
     name: "Hatenna",
     id: 856,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Hattrem",
     id: 857,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Hatterene",
     id: 858,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
