@@ -4610,7 +4610,7 @@ const pokemon = [
     name: "Passimian",
     id: 766,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Wimpod",
