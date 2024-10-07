@@ -3221,19 +3221,19 @@ const pokemon = [
     name: "Sewaddle",
     id: 540,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Swadloon",
     id: 541,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Leavanny",
     id: 542,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Venipede",
@@ -5346,7 +5346,7 @@ const pokemon = [
     name: "Zamazenta",
     id: 889,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Eternatus",
