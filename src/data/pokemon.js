@@ -5201,6 +5201,7 @@ const pokemon = [
     id: 862,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Perrserker",
