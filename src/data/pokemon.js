@@ -60,16 +60,19 @@ const pokemon = [
     name: "Caterpie",
     id: 10,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Metapod",
     id: 11,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Butterfree",
     id: 12,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Weedle",
@@ -329,11 +332,13 @@ const pokemon = [
     name: "Mankey",
     id: 56,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Primeape",
     id: 57,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Growlithe",
@@ -2865,6 +2870,7 @@ const pokemon = [
     id: 485,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Regigigas",
@@ -3119,18 +3125,21 @@ const pokemon = [
     id: 524,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Boldore",
     id: 525,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Gigalith",
     id: 526,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Woobat",
@@ -3240,18 +3249,21 @@ const pokemon = [
     id: 543,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Whirlipede",
     id: 544,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Scolipede",
     id: 545,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Cottonee",
@@ -3526,12 +3538,14 @@ const pokemon = [
     id: 588,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Escavalier",
     id: 589,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Foongus",
@@ -3703,12 +3717,14 @@ const pokemon = [
     id: 616,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Accelgor",
     id: 617,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Stunfisk",
@@ -5662,6 +5678,7 @@ const pokemon = [
     id: 979,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Clodsire",
