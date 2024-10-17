@@ -1544,11 +1544,13 @@ const pokemon = [
     name: "Zigzagoon",
     id: 263,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Linoone",
     id: 264,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Wurmple",
