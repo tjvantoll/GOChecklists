@@ -5578,19 +5578,19 @@ const pokemon = [
     name: "Smoliv",
     id: 928,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Dolliv",
     id: 929,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Arboliva",
     id: 930,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Charcadet",
