@@ -5117,14 +5117,14 @@ const pokemon = [
   {
     name: "Toxel",
     id: 848,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Toxtricity",
     id: 849,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Sizzlipede",
@@ -5292,7 +5292,7 @@ const pokemon = [
   {
     name: "Morpeko",
     id: 877,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
