@@ -5214,7 +5214,7 @@ const pokemon = [
   {
     name: "Cursola",
     id: 864,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5396,13 +5396,13 @@ const pokemon = [
     name: "Regieleki",
     id: 894,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Regidrago",
     id: 895,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Glastrier",
