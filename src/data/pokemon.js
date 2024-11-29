@@ -5215,7 +5215,7 @@ const pokemon = [
     name: "Cursola",
     id: 864,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Sirfetch’d",
