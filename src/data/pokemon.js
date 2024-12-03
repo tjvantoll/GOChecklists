@@ -5153,13 +5153,13 @@ const pokemon = [
   {
     name: "Sinistea",
     id: 854,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Polteageist",
     id: 855,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
