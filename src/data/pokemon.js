@@ -4646,13 +4646,13 @@ const pokemon = [
     name: "Sandygast",
     id: 769,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Palossand",
     id: 770,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pyukumuku",
@@ -5668,13 +5668,13 @@ const pokemon = [
     name: "Cetoddle",
     id: 974,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cetitan",
     id: 975,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Annihilape",
