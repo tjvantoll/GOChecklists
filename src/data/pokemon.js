@@ -5470,19 +5470,19 @@ const pokemon = [
     name: "Sprigatito",
     id: 906,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Floragato",
     id: 907,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Meowscarada",
     id: 908,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Fuecoco",
@@ -5571,6 +5571,18 @@ const pokemon = [
   {
     name: "Maushold",
     id: 925,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Fidough",
+    id: 926,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Dachsbun",
+    id: 927,
     available: true,
     shinyAvailable: false,
   },
