@@ -4971,19 +4971,19 @@ const pokemon = [
   {
     name: "Rookidee",
     id: 821,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Corvisquire",
     id: 822,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Corviknight",
     id: 823,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
