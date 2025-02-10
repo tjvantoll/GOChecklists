@@ -5552,13 +5552,13 @@ const pokemon = [
     name: "Nymble",
     id: 919,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Lokix",
     id: 920,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pawmi",
