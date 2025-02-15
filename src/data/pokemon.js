@@ -4733,7 +4733,7 @@ const pokemon = [
   {
     name: "Dhelmise",
     id: 781,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
