@@ -3535,13 +3535,13 @@ const pokemon = [
     name: "Deerling",
     id: 585,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Sawsbuck",
     id: 586,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Emolga",
