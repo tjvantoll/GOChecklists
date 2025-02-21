@@ -3345,7 +3345,7 @@ const pokemon = [
     name: "Maractus",
     id: 556,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Dwebble",
@@ -3377,7 +3377,7 @@ const pokemon = [
     name: "Sigilyph",
     id: 561,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Yamask",
@@ -3796,7 +3796,7 @@ const pokemon = [
     name: "Bouffalant",
     id: 626,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Rufflet",
@@ -4029,19 +4029,19 @@ const pokemon = [
     name: "Scatterbug",
     id: 664,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Spewpa",
     id: 665,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Vivillon",
     id: 666,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Litleo",
