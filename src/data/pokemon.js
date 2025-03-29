@@ -4541,14 +4541,14 @@ const pokemon = [
   {
     name: "Mudbray",
     id: 749,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Mudsdale",
     id: 750,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Dewpider",
