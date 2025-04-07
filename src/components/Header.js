@@ -1,70 +1,62 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const HeaderContainer = styled.h1`
+const HeaderContainer = styled.header`
+  background: linear-gradient(to right, #2196f3, #1976d2);
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
-  background-color: #445ba1;
-  color: white;
-  margin: 0;
-  padding: 0;
-  font-size: 1.5em;
-  text-align: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;
 
-  span {
-    display: inline-block;
-    margin: 0.4em 0;
+const Title = styled(Link)`
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
   }
-  button {
-    text-indent: -9999px;
-    white-space: nowrap;
-    border: none;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 2.5em;
-    background-position: 0.7em 0.3em;
-    height: 3em;
-    width: 4em;
-    padding: 1em;
-    outline: none;
-    filter: invert(100%) sepia(0%) saturate(109%) hue-rotate(329deg)
-      brightness(105%) contrast(102%);
-    cursor: pointer;
+`;
+
+const SettingsButton = styled.button`
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
   }
-  .home {
-    background-image: url(/images/home.svg);
-  }
-  .settings {
-    background-image: url(/images/settings.svg);
-  }
-  .title {
-    flex-grow: 2;
-  }
-  .filler {
-    width: 2em;
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: currentColor;
   }
 `;
 
 export default function Header({ title, settingsClick }) {
-  const navigate = useNavigate();
-
-  const navigateHome = () => {
-    navigate("/");
-  };
-
   return (
     <HeaderContainer>
+      <Title to="/">{title}</Title>
       {settingsClick && (
-        <button className="home" onClick={navigateHome}>
-          Home
-        </button>
-      )}
-
-      <span className="title">{title}</span>
-
-      {settingsClick && (
-        <button className="settings" onClick={settingsClick}></button>
+        <SettingsButton onClick={settingsClick}>
+          <svg viewBox="0 0 24 24">
+            <path d="M12 8a4 4 0 100 8 4 4 0 000-8zm0-6a2 2 0 012 2v1.09a7.007 7.007 0 013.9 1.56l.77-.77a2 2 0 112.83 2.83l-.77.77A7.007 7.007 0 0120.91 12H22a2 2 0 110 4h-1.09a7.007 7.007 0 01-1.56 3.9l.77.77a2 2 0 11-2.83 2.83l-.77-.77A7.007 7.007 0 0112 20.91V22a2 2 0 11-4 0v-1.09a7.007 7.007 0 01-3.9-1.56l-.77.77a2 2 0 11-2.83-2.83l.77-.77A7.007 7.007 0 013.09 16H2a2 2 0 110-4h1.09a7.007 7.007 0 011.56-3.9l-.77-.77a2 2 0 112.83-2.83l.77.77A7.007 7.007 0 0112 3.09V2a2 2 0 012-2z" />
+          </svg>
+        </SettingsButton>
       )}
     </HeaderContainer>
   );
