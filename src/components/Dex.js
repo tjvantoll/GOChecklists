@@ -38,7 +38,7 @@ const MonList = styled.div`
   .card {
     width: 9em;
     margin: 0.25em;
-    border: 1px solid #DCE7DC;
+    border: 1px solid #dce7dc;
     border-radius: 10px;
     cursor: pointer;
     height: 7em;
@@ -46,13 +46,17 @@ const MonList = styled.div`
     font-size: 0.8em;
   }
   @media (max-width: 500px) {
-    .card { font-size: 0.75em; }
+    .card {
+      font-size: 0.75em;
+    }
   }
   @media (max-width: 370px) {
-    .card { font-size: 0.70em; }
+    .card {
+      font-size: 0.7em;
+    }
   }
   .selected {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
   }
   .card span {
     position: absolute;
@@ -92,8 +96,10 @@ export default function Dex() {
   const pageMode = pokemonService.getPageMode();
 
   const getSortOrder = () => {
-    return settingsService.readSortOrder(pageMode) ||
-      DexModes.getDefaultSortOrder(pageMode);
+    return (
+      settingsService.readSortOrder(pageMode) ||
+      DexModes.getDefaultSortOrder(pageMode)
+    );
   };
 
   const [mons, setMons] = React.useState([]);
@@ -110,15 +116,15 @@ export default function Dex() {
     setMons(sortedMons);
     setGroupedMons(pokemonService.getGroupedMons(sortedMons));
     setOwned(() => {
-      return mons.filter(mon => mon.owned).length;
+      return mons.filter((mon) => mon.owned).length;
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageMode, sortOrder]);
 
   const sort = () => {
     const sortedMons = pokemonService.sort(mons, getSortOrder());
     setMons(sortedMons);
-  }
+  };
 
   const toggleOwned = (mon) => {
     if (showSettings) {
@@ -126,21 +132,23 @@ export default function Dex() {
     }
 
     mon.owned = !mon.owned;
-    setOwned(mon.owned ? (owned + 1) : (owned - 1));
+    setOwned(mon.owned ? owned + 1 : owned - 1);
     setMons([...mons]);
     pokemonService.save(mons, pageMode);
-    setTimeout(() => { sort() }, 100);
-  }
+    setTimeout(() => {
+      sort();
+    }, 100);
+  };
 
   const getImagePath = (mon) => {
-    const basePath = (pageMode === DexModes.SHINY) ? "shiny-sprites" : "sprites";
+    const basePath = pageMode === DexModes.SHINY ? "shiny-sprites" : "sprites";
 
     if (pageMode === DexModes.UNOWN) {
       const name = mon.name === "?" ? "question" : mon.name.toLowerCase();
       return `/images/${basePath}/201-${name}.png`;
     }
     return `/images/${basePath}/${mon.id}.png`;
-  }
+  };
 
   const buildListItem = (mon) => {
     return (
@@ -150,52 +158,50 @@ export default function Dex() {
         onClick={() => toggleOwned(mon)}
       >
         <span>{mon.name}</span>
-        <img className="checkbox unchecked" src="/images/unchecked.png" alt="Unselect" />
-        <img className="checkbox checked" src="/images/checked.png" alt="Select" />
         <img
-          className="sprite"
-          alt=""
-          src={getImagePath(mon)}
+          className="checkbox unchecked"
+          src="/images/unchecked.png"
+          alt="Unselect"
         />
+        <img
+          className="checkbox checked"
+          src="/images/checked.png"
+          alt="Select"
+        />
+        <img className="sprite" alt="" src={getImagePath(mon)} />
       </div>
-    )
-  }
+    );
+  };
 
   const buildList = () => {
-    return (
-      <MonList>
-        {mons.map((mon) => (
-          buildListItem(mon)
-        ))}
-      </MonList>
-    );
-  }
+    return <MonList>{mons.map((mon) => buildListItem(mon))}</MonList>;
+  };
 
   const buildPokedexSortedList = () => {
     return (
       <MonList>
         {groupedMons.map((group, index) => (
           <div className="card-group" key={index}>
-            {group.map(mon => {
+            {group.map((mon) => {
               return buildListItem(mon);
             })}
           </div>
         ))}
       </MonList>
-    )
-  }
+    );
+  };
 
   const toggleSettings = () => {
     setShowSettings(!showSettings);
-  }
+  };
   const onSortOrderChange = (newSortOrder) => {
     setSortOrder(newSortOrder);
     settingsService.writeSortOrder(newSortOrder, pageMode);
     sort();
-  }
+  };
   const onVisibleChange = (newVisible) => {
     setShowSettings(newVisible);
-  }
+  };
 
   return (
     <React.Fragment>
@@ -211,9 +217,7 @@ export default function Dex() {
         <Render if={sortOrder === SortModes.ID}>
           {buildPokedexSortedList()}
         </Render>
-        <Render if={sortOrder !== SortModes.ID}>
-          {buildList()}
-        </Render>
+        <Render if={sortOrder !== SortModes.ID}>{buildList()}</Render>
       </div>
 
       <Settings
@@ -221,7 +225,8 @@ export default function Dex() {
         visible={showSettings}
         onVisibleChange={onVisibleChange}
         sortOrder={sortOrder}
-        onSortOrderChange={onSortOrderChange} />
+        onSortOrderChange={onSortOrderChange}
+      />
     </React.Fragment>
   );
 }
