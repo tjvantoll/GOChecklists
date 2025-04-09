@@ -4878,13 +4878,13 @@ const pokemon = [
     name: "Stakataka",
     id: 805,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Blacephalon",
     id: 806,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Zeraora",
@@ -5019,13 +5019,13 @@ const pokemon = [
   {
     name: "Gossifleur",
     id: 829,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Eldegoss",
     id: 830,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
