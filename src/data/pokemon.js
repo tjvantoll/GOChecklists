@@ -5663,6 +5663,24 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Tinkatink",
+    id: 957,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Tinkatuff",
+    id: 958,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Tinkaton",
+    id: 959,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Wiglett",
     id: 960,
     available: true,
