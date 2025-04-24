@@ -5085,19 +5085,19 @@ const pokemon = [
   {
     name: "Applin",
     id: 840,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Flapple",
     id: 841,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Appletun",
     id: 842,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
