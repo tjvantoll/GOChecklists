@@ -5564,19 +5564,19 @@ const pokemon = [
     name: "Pawmi",
     id: 921,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pawmo",
     id: 922,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pawmot",
     id: 923,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tandemaus",
@@ -5744,6 +5744,12 @@ const pokemon = [
   {
     name: "Clodsire",
     id: 980,
+    available: true,
+    shinyAvailable: true,
+  },
+  {
+    name: "Kingambit",
+    id: 983,
     available: true,
     shinyAvailable: true,
   },
