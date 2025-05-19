@@ -1674,16 +1674,19 @@ const pokemon = [
     name: "Slakoth",
     id: 287,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Vigoroth",
     id: 288,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Slaking",
     id: 289,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Nincada",
@@ -2860,6 +2863,7 @@ const pokemon = [
     id: 483,
     available: true,
     shinyAvailable: true,
+    shadow: true,
     gender: "none",
   },
   {
@@ -4162,12 +4166,14 @@ const pokemon = [
     id: 686,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Malamar",
     id: 687,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Binacle",
@@ -4222,12 +4228,14 @@ const pokemon = [
     id: 696,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Tyrantrum",
     id: 697,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Amaura",
