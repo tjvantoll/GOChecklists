@@ -4242,12 +4242,14 @@ const pokemon = [
     id: 698,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Aurorus",
     id: 699,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Sylveon",
