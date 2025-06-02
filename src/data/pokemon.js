@@ -4273,7 +4273,7 @@ const pokemon = [
     name: "Carbink",
     id: 703,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Goomy",
@@ -4383,7 +4383,7 @@ const pokemon = [
   {
     name: "Volcanion",
     id: 721,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5767,19 +5767,19 @@ const pokemon = [
     name: "Frigibax",
     id: 996,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Arctibax",
     id: 997,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Baxcalibur",
     id: 998,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Gimmighoul",
