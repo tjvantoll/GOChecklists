@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import DexModes from "../services/DexModes";
 import SortModes from "../services/SortModes";
@@ -10,81 +9,6 @@ import Render from "./Render";
 import Header from "./Header";
 import Progressbar from "./Progressbar";
 import Settings from "./Settings";
-
-const FixedContainer = styled.div`
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: white;
-  z-index: 2;
-`;
-
-const MonList = styled.div`
-  padding: 5.7em 0 0.5em 0;
-  margin: 0.25em;
-  touch-action: manipulation;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .card-group {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: middle;
-    margin: 0em 0.25em;
-  }
-
-  .card {
-    width: 9em;
-    margin: 0.25em;
-    border: 1px solid #DCE7DC;
-    border-radius: 10px;
-    cursor: pointer;
-    height: 7em;
-    position: relative;
-    font-size: 0.8em;
-  }
-  @media (max-width: 500px) {
-    .card { font-size: 0.75em; }
-  }
-  @media (max-width: 370px) {
-    .card { font-size: 0.70em; }
-  }
-  .selected {
-    background-color: #F5F5F5;
-  }
-  .card span {
-    position: absolute;
-    top: 0.5em;
-    left: 0.5em;
-  }
-  .checkbox {
-    position: absolute;
-    top: 0.5em;
-    right: 0.25em;
-    width: 1.75em;
-  }
-  .card .gender {
-    top: auto;
-    bottom: 0.5em;
-  }
-  .checked {
-    display: none;
-  }
-  .selected .checked {
-    display: inline;
-  }
-  .sprite {
-    position: absolute;
-    top: 1.25em;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    width: 6em;
-  }
-`;
 
 export default function Dex() {
   const pokemonService = new PokemonService();
@@ -146,14 +70,22 @@ export default function Dex() {
     return (
       <div
         key={mon.id || mon.name}
-        className={"card " + (mon.owned ? "selected" : "")}
+        className={`${mon.owned ? "bg-[#F5F5F5]" : ""} w-[9em] m-1 border border-[#DCE7DC] rounded-lg cursor-pointer h-[7em] relative text-[0.8em] max-[500px]:text-[0.75em] max-[370px]:text-[0.70em]`}
         onClick={() => toggleOwned(mon)}
       >
-        <span>{mon.name}</span>
-        <img className="checkbox unchecked" src="/images/unchecked.png" alt="Unselect" />
-        <img className="checkbox checked" src="/images/checked.png" alt="Select" />
+        <span className="absolute top-[0.5em] left-[0.5em]">{mon.name}</span>
         <img
-          className="sprite"
+          className={`checkbox unchecked absolute top-[0.5em] right-[0.25em] w-[1.75em] ${mon.owned ? "hidden" : "inline"}`}
+          src="/images/unchecked.png"
+          alt="Unselect"
+        />
+        <img
+          className={`checkbox checked absolute top-[0.5em] right-[0.25em] w-[1.75em] ${mon.owned ? "inline" : "hidden"}`}
+          src="/images/checked.png"
+          alt="Select"
+        />
+        <img
+          className="sprite absolute top-[1.25em] left-0 right-0 text-center m-auto w-[6em]"
           alt=""
           src={getImagePath(mon)}
         />
@@ -163,25 +95,25 @@ export default function Dex() {
 
   const buildList = () => {
     return (
-      <MonList>
+      <div className="pt-[5.7em] pb-[0.5em] m-1 touch-manipulation flex flex-wrap justify-center">
         {mons.map((mon) => (
           buildListItem(mon)
         ))}
-      </MonList>
+      </div>
     );
   }
 
   const buildPokedexSortedList = () => {
     return (
-      <MonList>
+      <div className="pt-[5.7em] pb-[0.5em] m-1 touch-manipulation flex flex-wrap justify-center">
         {groupedMons.map((group, index) => (
-          <div className="card-group" key={index}>
+          <div className="inline-flex flex-wrap justify-center items-center mx-1" key={index}>
             {group.map(mon => {
               return buildListItem(mon);
             })}
           </div>
         ))}
-      </MonList>
+      </div>
     )
   }
 
@@ -200,13 +132,13 @@ export default function Dex() {
   return (
     <React.Fragment>
       <div style={{ opacity: showSettings ? 0.2 : 1 }}>
-        <FixedContainer>
+        <div className="fixed w-full top-0 bg-white z-20">
           <Header
             title={DexModes.getPageTitle(pageMode)}
             settingsClick={toggleSettings}
           />
           <Progressbar value={owned} max={mons.length} />
-        </FixedContainer>
+        </div>
 
         <Render if={sortOrder === SortModes.ID}>
           {buildPokedexSortedList()}

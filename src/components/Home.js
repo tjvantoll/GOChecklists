@@ -1,23 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 
 import Header from "./Header";
 
-const List = styled.ul`
-  font-size: 1.25em;
-
-  li {
-    margin: 20px;
-  }
-  ul {
-    font-size: 0.8em;
-    margin: 0;
-  }
-  ul li {
-    margin: 0;
-  }
-`;
 
 function Home() {
   React.useEffect(() => {
@@ -28,38 +13,38 @@ function Home() {
     <React.Fragment>
       <Header title="GO Checklists"></Header>
 
-      <List>
-        <li>
+      <ul className="text-[1.25em]">
+        <li className="m-5">
           <Link to="/dex">Dex</Link>
-          <ul>
-            <li>Track your main Pokédex completion in Pokémon GO.</li>
+          <ul className="text-[0.8em] m-0">
+            <li className="m-0">Track your main Pokédex completion in Pokémon GO.</li>
           </ul>
         </li>
-        <li>
+        <li className="m-5">
           <Link to="/shiny">ShinyDex</Link>
-          <ul>
-            <li>Track which of the available shinies you’ve caught.</li>
+          <ul className="text-[0.8em] m-0">
+            <li className="m-0">Track which of the available shinies you’ve caught.</li>
           </ul>
         </li>
-        <li>
+        <li className="m-5">
           <Link to="/lucky">LuckyDex</Link>
-          <ul>
-            <li>Track how many lucky Pokémon you’ve acquired.</li>
+          <ul className="text-[0.8em] m-0">
+            <li className="m-0">Track how many lucky Pokémon you’ve acquired.</li>
           </ul>
         </li>
-        <li>
+        <li className="m-5">
           <Link to="/unown">UnownDex</Link>
-          <ul>
-            <li>Track how many Unown you own.</li>
+          <ul className="text-[0.8em] m-0">
+            <li className="m-0">Track how many Unown you own.</li>
           </ul>
         </li>
-        <li>
+        <li className="m-5">
           <Link to="/shadow">ShadowDex</Link>
-          <ul>
-            <li>Track how many shadow Pokémon you have.</li>
+          <ul className="text-[0.8em] m-0">
+            <li className="m-0">Track how many shadow Pokémon you have.</li>
           </ul>
         </li>
-      </List>
+      </ul>
     </React.Fragment>
   )
 }

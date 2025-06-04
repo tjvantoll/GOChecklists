@@ -1,5 +1,5 @@
 import React from "react";
-import { render, waitForElement } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 import Dex from "./Dex";
 
@@ -7,23 +7,16 @@ import PokemonService from "../services/pokemon";
 import DexModes from "../services/DexModes";
 
 jest.mock("react-router-dom", () => ({
-  useHistory: () => {
-    push: jest.fn()
-  }
+  useNavigate: () => jest.fn(),
 }));
 
-test("Test out default rendering", async (done) => {
+test("Test out default rendering", async () => {
   const mockGetPageMode = jest.fn(() => {
     return DexModes.DEX;
   });
   PokemonService.prototype.getPageMode = mockGetPageMode;
 
-  const { container, queryByText } = render(<Dex />);
-  const text = await waitForElement(() => {
-    setTimeout(() => {
-      const text = queryByText(/Bulbasaur/i);
-      expect(text).toBeTruthy();
-      done();
-    });
-  });
+  const { findByText } = render(<Dex />);
+  const text = await findByText(/Bulbasaur/i);
+  expect(text).toBeTruthy();
 });
