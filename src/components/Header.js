@@ -5,12 +5,13 @@ import styled from "styled-components";
 const HeaderContainer = styled.h1`
   display: flex;
   align-items: center;
-  background-color: #445ba1;
+  background: linear-gradient(45deg, #fd5f00, #fca15c);
   color: white;
   margin: 0;
   padding: 0;
   font-size: 1.5em;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   span {
     display: inline-block;
@@ -38,6 +39,11 @@ const HeaderContainer = styled.h1`
   .settings {
     background-image: url(/images/settings.svg);
   }
+  .logo {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.3em;
+  }
   .title {
     flex-grow: 2;
   }
@@ -61,6 +67,7 @@ export default function Header({ title, settingsClick }) {
         </button>
       )}
 
+      <img className="logo" src="/images/app-logo.svg" alt="App logo" />
       <span className="title">{title}</span>
 
       {settingsClick && (

@@ -1,7 +1,7 @@
 {
   "name": "GOChecklists",
   "short_name": "GOChecklists",
-  "theme_color": "#445BA1",
+  "theme_color": "#fd5f00",
   "background_color": "#000000",
   "display": "standalone",
   "scope": "/",

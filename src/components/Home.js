@@ -4,8 +4,16 @@ import styled from "styled-components";
 
 import Header from "./Header";
 
+const Wrapper = styled.div`
+  padding: 1em;
+  background: #f5f5f7;
+  min-height: 100vh;
+`;
+
 const List = styled.ul`
   font-size: 1.25em;
+  list-style: none;
+  padding: 0;
 
   li {
     margin: 20px;
@@ -28,6 +36,7 @@ function Home() {
     <React.Fragment>
       <Header title="GO Checklists"></Header>
 
+      <Wrapper>
       <List>
         <li>
           <Link to="/dex">Dex</Link>
@@ -60,6 +69,7 @@ function Home() {
           </ul>
         </li>
       </List>
+      </Wrapper>
     </React.Fragment>
   )
 }
