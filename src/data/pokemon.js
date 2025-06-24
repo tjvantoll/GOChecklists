@@ -3934,7 +3934,7 @@ const pokemon = [
     id: 648,
     available: true,
     tradable: false,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Genesect",
@@ -5065,13 +5065,13 @@ const pokemon = [
   {
     name: "Yamper",
     id: 835,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Boltund",
     id: 836,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
