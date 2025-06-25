@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Dex from "./components/Dex";
 import Home from "./components/Home";
+import Download from "./components/Download";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/lucky" element={<Dex />} />
           <Route exact path="/unown" element={<Dex />} />
           <Route exact path="/shadow" element={<Dex />} />
+          <Route exact path="/download" element={<Download />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

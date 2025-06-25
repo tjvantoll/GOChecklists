@@ -104,7 +104,6 @@ export default function Dex() {
 
   React.useEffect(() => {
     document.title = "GOChecklists: " + DexModes.getPageTitle(pageMode);
-
     const mons = pokemonService.getMons(pageMode);
     const sortedMons = pokemonService.sort(mons, sortOrder);
     setMons(sortedMons);

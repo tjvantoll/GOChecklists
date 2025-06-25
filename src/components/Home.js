@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Header from "./Header";
+import Download from "./Download";
 
 const List = styled.ul`
   font-size: 1.25em;
@@ -16,6 +17,35 @@ const List = styled.ul`
   }
   ul li {
     margin: 0;
+  }
+
+`;
+
+const StyledButton = styled.button`
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  font-size: 14px;
+  width: 130px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  &:active {
+    background-color: #004494;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
   }
 `;
 
@@ -57,6 +87,12 @@ function Home() {
           <Link to="/shadow">ShadowDex</Link>
           <ul>
             <li>Track how many shadow Pokémon you have.</li>
+          </ul>
+        </li>
+        <li>
+          <StyledButton onClick={Download}>Download</StyledButton>
+          <ul>
+            <li>Download your Pokémon history.</li>
           </ul>
         </li>
       </List>
