@@ -4081,13 +4081,13 @@ const pokemon = [
     name: "Skiddo",
     id: 672,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Gogoat",
     id: 673,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Pancham",
