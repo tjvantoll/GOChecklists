@@ -5746,7 +5746,7 @@ const pokemon = [
   },
   {
     name: "Tatsugiri",
-    id: 976,
+    id: 978,
     available: true,
     shinyAvailable: false,
   },
