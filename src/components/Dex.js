@@ -15,12 +15,17 @@ const FixedContainer = styled.div`
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: white;
   z-index: 2;
 `;
 
+const ProgressSection = styled.div`
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+`;
+
 const MonList = styled.div`
-  padding: 5.7em 0 0.5em 0;
+  padding: 8.5em 0 0.5em 0;
   margin: 0.25em;
   touch-action: manipulation;
   display: flex;
@@ -38,21 +43,34 @@ const MonList = styled.div`
   .card {
     width: 9em;
     margin: 0.25em;
-    border: 1px solid #DCE7DC;
+    border: 2px solid #e2e8f0;
     border-radius: 10px;
     cursor: pointer;
     height: 7em;
     position: relative;
     font-size: 0.8em;
+    background-color: white;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
   @media (max-width: 500px) {
-    .card { font-size: 0.75em; }
+    .card {
+      font-size: 0.75em;
+    }
   }
   @media (max-width: 370px) {
-    .card { font-size: 0.70em; }
+    .card {
+      font-size: 0.7em;
+    }
   }
   .selected {
-    background-color: #F5F5F5;
+    background-color: #dbeafe;
+    border-color: #3b82f6;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+  }
+  .card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
   }
   .card span {
     position: absolute;
@@ -92,8 +110,10 @@ export default function Dex() {
   const pageMode = pokemonService.getPageMode();
 
   const getSortOrder = () => {
-    return settingsService.readSortOrder(pageMode) ||
-      DexModes.getDefaultSortOrder(pageMode);
+    return (
+      settingsService.readSortOrder(pageMode) ||
+      DexModes.getDefaultSortOrder(pageMode)
+    );
   };
 
   const [mons, setMons] = React.useState([]);
@@ -110,15 +130,15 @@ export default function Dex() {
     setMons(sortedMons);
     setGroupedMons(pokemonService.getGroupedMons(sortedMons));
     setOwned(() => {
-      return mons.filter(mon => mon.owned).length;
+      return mons.filter((mon) => mon.owned).length;
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageMode, sortOrder]);
 
   const sort = () => {
     const sortedMons = pokemonService.sort(mons, getSortOrder());
     setMons(sortedMons);
-  }
+  };
 
   const toggleOwned = (mon) => {
     if (showSettings) {
@@ -126,76 +146,88 @@ export default function Dex() {
     }
 
     mon.owned = !mon.owned;
-    setOwned(mon.owned ? (owned + 1) : (owned - 1));
+    setOwned(mon.owned ? owned + 1 : owned - 1);
     setMons([...mons]);
     pokemonService.save(mons, pageMode);
-    setTimeout(() => { sort() }, 100);
-  }
+    setTimeout(() => {
+      sort();
+    }, 100);
+  };
 
   const getImagePath = (mon) => {
-    const basePath = (pageMode === DexModes.SHINY) ? "shiny-sprites" : "sprites";
+    const basePath = pageMode === DexModes.SHINY ? "shiny-sprites" : "sprites";
 
     if (pageMode === DexModes.UNOWN) {
       const name = mon.name === "?" ? "question" : mon.name.toLowerCase();
       return `/images/${basePath}/201-${name}.png`;
     }
     return `/images/${basePath}/${mon.id}.png`;
-  }
+  };
 
   const buildListItem = (mon) => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleOwned(mon);
+      }
+    };
+
     return (
       <div
         key={mon.id || mon.name}
         className={"card " + (mon.owned ? "selected" : "")}
         onClick={() => toggleOwned(mon)}
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+        role="button"
+        aria-label={`${mon.owned ? "Uncheck" : "Check"} ${mon.name}`}
+        aria-pressed={mon.owned}
       >
         <span>{mon.name}</span>
-        <img className="checkbox unchecked" src="/images/unchecked.png" alt="Unselect" />
-        <img className="checkbox checked" src="/images/checked.png" alt="Select" />
         <img
-          className="sprite"
-          alt=""
-          src={getImagePath(mon)}
+          className="checkbox unchecked"
+          src="/images/unchecked.png"
+          alt="Unselect"
         />
+        <img
+          className="checkbox checked"
+          src="/images/checked.png"
+          alt="Select"
+        />
+        <img className="sprite" alt="" src={getImagePath(mon)} />
       </div>
-    )
-  }
+    );
+  };
 
   const buildList = () => {
-    return (
-      <MonList>
-        {mons.map((mon) => (
-          buildListItem(mon)
-        ))}
-      </MonList>
-    );
-  }
+    return <MonList>{mons.map((mon) => buildListItem(mon))}</MonList>;
+  };
 
   const buildPokedexSortedList = () => {
     return (
       <MonList>
         {groupedMons.map((group, index) => (
           <div className="card-group" key={index}>
-            {group.map(mon => {
+            {group.map((mon) => {
               return buildListItem(mon);
             })}
           </div>
         ))}
       </MonList>
-    )
-  }
+    );
+  };
 
   const toggleSettings = () => {
     setShowSettings(!showSettings);
-  }
+  };
   const onSortOrderChange = (newSortOrder) => {
     setSortOrder(newSortOrder);
     settingsService.writeSortOrder(newSortOrder, pageMode);
     sort();
-  }
+  };
   const onVisibleChange = (newVisible) => {
     setShowSettings(newVisible);
-  }
+  };
 
   return (
     <React.Fragment>
@@ -205,15 +237,15 @@ export default function Dex() {
             title={DexModes.getPageTitle(pageMode)}
             settingsClick={toggleSettings}
           />
-          <Progressbar value={owned} max={mons.length} />
+          <ProgressSection>
+            <Progressbar value={owned} max={mons.length} />
+          </ProgressSection>
         </FixedContainer>
 
         <Render if={sortOrder === SortModes.ID}>
           {buildPokedexSortedList()}
         </Render>
-        <Render if={sortOrder !== SortModes.ID}>
-          {buildList()}
-        </Render>
+        <Render if={sortOrder !== SortModes.ID}>{buildList()}</Render>
       </div>
 
       <Settings
@@ -221,7 +253,8 @@ export default function Dex() {
         visible={showSettings}
         onVisibleChange={onVisibleChange}
         sortOrder={sortOrder}
-        onSortOrderChange={onSortOrderChange} />
+        onSortOrderChange={onSortOrderChange}
+      />
     </React.Fragment>
   );
 }

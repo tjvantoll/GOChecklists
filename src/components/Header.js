@@ -2,47 +2,73 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-const HeaderContainer = styled.h1`
+const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
-  background-color: #445ba1;
-  color: white;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   margin: 0;
   padding: 0;
-  font-size: 1.5em;
-  text-align: center;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
   span {
     display: inline-block;
-    margin: 0.4em 0;
+    margin: 0;
   }
+
   button {
     text-indent: -9999px;
     white-space: nowrap;
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: 2.5em;
-    background-position: 0.7em 0.3em;
-    height: 3em;
-    width: 4em;
-    padding: 1em;
+    background-size: 24px;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 12px;
+    margin: 0 8px;
     outline: none;
-    filter: invert(100%) sepia(0%) saturate(109%) hue-rotate(329deg)
-      brightness(105%) contrast(102%);
+    filter: brightness(0) invert(1);
     cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
   }
+
   .home {
     background-image: url(/images/home.svg);
   }
+
   .settings {
     background-image: url(/images/settings.svg);
   }
+
   .title {
-    flex-grow: 2;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
+
   .filler {
-    width: 2em;
+    width: 48px;
+    margin: 0 8px;
   }
 `;
 
@@ -64,7 +90,11 @@ export default function Header({ title, settingsClick }) {
       <span className="title">{title}</span>
 
       {settingsClick && (
-        <button className="settings" onClick={settingsClick}></button>
+        <button
+          className="settings"
+          onClick={settingsClick}
+          aria-label="Settings"
+        ></button>
       )}
     </HeaderContainer>
   );
