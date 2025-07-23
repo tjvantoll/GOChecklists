@@ -68,10 +68,14 @@ const MonList = styled.div`
     border-color: #3b82f6;
     box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
   }
-  .card:hover {
-    border-color: #3b82f6;
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+  @media (hover: hover) {
+    .card:hover,
+    .card:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+    }
   }
+
   .card span {
     position: absolute;
     top: 0.5em;
