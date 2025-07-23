@@ -17,8 +17,9 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #f5f5f5;
     overflow-x: hidden;
+    font-size: 16px;
+    background-color: #f5f5f5;
   }
 
   body {
@@ -27,19 +28,6 @@ const GlobalStyle = createGlobalStyle`
 
   #root {
     min-height: 100vh;
-  }
-
-  /* Mobile-first responsive design */
-  @media (max-width: 768px) {
-    html {
-      font-size: 14px;
-    }
-  }
-
-  @media (min-width: 769px) {
-    html {
-      font-size: 16px;
-    }
   }
 
   /* Smooth scrolling */

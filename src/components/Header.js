@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   margin: 0;
   padding: 0;
-  height: 70px;
+  height: 60px;
   position: sticky;
   top: 0;
   z-index: 100;

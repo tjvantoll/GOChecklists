@@ -25,7 +25,7 @@ const ProgressSection = styled.div`
 `;
 
 const MonList = styled.div`
-  padding: 8.5em 0 0.5em 0;
+  padding: 7.5em 0 0.5em 0;
   margin: 0.25em;
   touch-action: manipulation;
   display: flex;
