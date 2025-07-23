@@ -73,6 +73,52 @@ export default class PokemonService {
     localStorage.setItem(key, JSON.stringify(valuesToSave));
   }
 
+  exportAllData() {
+    const allData = {};
+    const modes = [
+      DexModes.DEX,
+      DexModes.SHINY,
+      DexModes.LUCKY,
+      DexModes.UNOWN,
+      DexModes.SHADOW,
+    ];
+
+    modes.forEach((mode) => {
+      const key = DexModes.getSaveKey(mode);
+      const data = localStorage.getItem(key);
+      if (data) {
+        allData[key] = JSON.parse(data);
+      }
+    });
+
+    return JSON.stringify(allData);
+  }
+
+  importAllData(dataString) {
+    try {
+      const data = JSON.parse(dataString);
+      const modes = [
+        DexModes.DEX,
+        DexModes.SHINY,
+        DexModes.LUCKY,
+        DexModes.UNOWN,
+        DexModes.SHADOW,
+      ];
+
+      modes.forEach((mode) => {
+        const key = DexModes.getSaveKey(mode);
+        if (data[key]) {
+          localStorage.setItem(key, JSON.stringify(data[key]));
+        }
+      });
+
+      return true;
+    } catch (error) {
+      console.error("Import failed:", error);
+      return false;
+    }
+  }
+
   sort(mons, sortOrder) {
     const idBasedSort = (a, b) => {
       return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1 : -1;
