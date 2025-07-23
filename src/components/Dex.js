@@ -152,6 +152,11 @@ export default function Dex() {
     setTimeout(() => {
       sort();
     }, 100);
+
+    // Remove focus from the clicked element to prevent scrolling
+    if (document.activeElement) {
+      document.activeElement.blur();
+    }
   };
 
   const getImagePath = (mon) => {
