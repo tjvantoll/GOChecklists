@@ -5673,6 +5673,18 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Toedscool",
+    id: 948,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Toedscruel",
+    id: 949,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Tinkatink",
     id: 957,
     available: true,
