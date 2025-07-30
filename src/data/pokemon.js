@@ -5706,13 +5706,13 @@ const pokemon = [
     name: "Wiglett",
     id: 960,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Wugtrio",
     id: 961,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Bombirdier",
