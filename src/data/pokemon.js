@@ -5532,19 +5532,19 @@ const pokemon = [
     name: "Quaxly",
     id: 912,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Quaxwell",
     id: 913,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Quaquaval",
     id: 914,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Lechonk",
