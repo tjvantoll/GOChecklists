@@ -5288,13 +5288,13 @@ const pokemon = [
   {
     name: "Snom",
     id: 872,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Frosmoth",
     id: 873,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
