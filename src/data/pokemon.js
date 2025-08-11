@@ -711,12 +711,14 @@ const pokemon = [
     id: 120,
     shinyAvailable: true,
     gender: "none",
+    shadow: true,
   },
   {
     name: "Starmie",
     id: 121,
     shinyAvailable: true,
     gender: "none",
+    shadow: true,
   },
   {
     name: "Mr. Mime",
@@ -2894,6 +2896,7 @@ const pokemon = [
     id: 487,
     shinyAvailable: true,
     gender: "none",
+    shadow: true,
   },
   {
     name: "Cresselia",
@@ -4016,18 +4019,21 @@ const pokemon = [
     id: 661,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Fletchinder",
     id: 662,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Talonflame",
     id: 663,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Scatterbug",
@@ -4445,18 +4451,21 @@ const pokemon = [
     id: 731,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Trumbeak",
     id: 732,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Toucannon",
     id: 733,
     available: true,
     shinyAvailable: false,
+    shadow: true,
   },
   {
     name: "Yungoos",
@@ -4475,18 +4484,21 @@ const pokemon = [
     id: 736,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Charjabug",
     id: 737,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Vikavolt",
     id: 738,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Crabrawler",
