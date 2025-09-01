@@ -5769,6 +5769,12 @@ const pokemon = [
     shinyAvailable: true,
   },
   {
+    name: "Dondozo",
+    id: 977,
+    available: true,
+    shinyAvailable: true,
+  },
+  {
     name: "Tatsugiri",
     id: 978,
     available: true,
