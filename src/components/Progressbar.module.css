@@ -1,0 +1,25 @@
+.progressbarContainer {
+  display: flex;
+  padding: 0.75em;
+  background: white;
+}
+
+.progressbar {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+  background: white;
+}
+
+.progressbarContents {
+  height: 25px;
+}
+
+.progressbarContainer > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 5.5em;
+  text-align: center;
+  font-size: 0.8em;
+}

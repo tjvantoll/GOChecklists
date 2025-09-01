@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Home from '../components/Home.jsx';
+---
+
+<BaseLayout title="GOChecklists: Up-to-date checklists for Pokémon GO">
+  <Home client:only="react" />
+</BaseLayout>
