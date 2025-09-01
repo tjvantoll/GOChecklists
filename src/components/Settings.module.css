@@ -85,7 +85,7 @@
   }
 }
 
-.dialog button {
+.dialog button:not(.closeButton) {
   width: 100%;
   padding: 0.75em 1em;
   border: 2px solid #3b82f6;
@@ -99,12 +99,12 @@
   margin-bottom: 0.5em;
 }
 
-.dialog button:hover {
+.dialog button:not(.closeButton):hover {
   background: #3b82f6;
   color: white;
 }
 
-.dialog button:active {
+.dialog button:not(.closeButton):active {
   transform: translateY(1px);
 }
 

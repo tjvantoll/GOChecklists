@@ -11,7 +11,28 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3e3e3e" />
+    <meta name="background-color" content="#f5f5f5" />
+    
+    <!-- iOS PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="GOChecklists" />
+    <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="application-name" content="GOChecklists" />
+    <meta name="msapplication-TileColor" content="#3e3e3e" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
     <title>{title}</title>
     
     <!-- Preload critical UI images -->
