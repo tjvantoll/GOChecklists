@@ -5324,8 +5324,8 @@ const pokemon = [
   {
     name: "Indeedee",
     id: 876,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Morpeko",
