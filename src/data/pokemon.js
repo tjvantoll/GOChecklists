@@ -1236,6 +1236,7 @@ const pokemon = [
     name: "Qwilfish",
     id: 211,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Scizor",
@@ -1939,11 +1940,13 @@ const pokemon = [
     name: "Swablu",
     id: 333,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Altaria",
     id: 334,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Zangoose",
@@ -1995,12 +1998,14 @@ const pokemon = [
     name: "Baltoy",
     id: 343,
     shinyAvailable: true,
+    shadow: true,
     gender: "none",
   },
   {
     name: "Claydol",
     id: 344,
     shinyAvailable: true,
+    shadow: true,
     gender: "none",
   },
   {
@@ -3846,18 +3851,21 @@ const pokemon = [
     id: 633,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Zwelious",
     id: 634,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Hydreigon",
     id: 635,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Larvesta",
@@ -3894,6 +3902,7 @@ const pokemon = [
     id: 641,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Thundurus",
