@@ -5794,6 +5794,12 @@ const pokemon = [
     shinyAvailable: true,
   },
   {
+    name: "Dudunsparce",
+    id: 982,
+    available: true,
+    shinyAvailable: true,
+  },
+  {
     name: "Kingambit",
     id: 983,
     available: true,
