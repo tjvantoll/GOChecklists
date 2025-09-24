@@ -2036,11 +2036,13 @@ const pokemon = [
     name: "Feebas",
     id: 349,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Milotic",
     id: 350,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Castform",
