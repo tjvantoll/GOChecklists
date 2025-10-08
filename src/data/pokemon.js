@@ -5383,8 +5383,8 @@ const pokemon = [
   {
     name: "Duraludon",
     id: 884,
-    available: false,
-    shinyAvailable: false,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Dreepy",
