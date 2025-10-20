@@ -5846,6 +5846,18 @@ const pokemon = [
     available: true,
     shinyAvailable: true,
   },
+  {
+    name: "Dipplin",
+    id: 1011,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Hydrapple",
+    id: 1019,
+    available: true,
+    shinyAvailable: false,
+  },
 ];
 
 export default pokemon;
