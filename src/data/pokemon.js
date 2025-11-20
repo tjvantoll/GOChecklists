@@ -5347,7 +5347,7 @@ const pokemon = [
     name: "Morpeko",
     id: 877,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cufant",
@@ -5728,19 +5728,19 @@ const pokemon = [
     name: "Tinkatink",
     id: 957,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tinkatuff",
     id: 958,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Tinkaton",
     id: 959,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Wiglett",
