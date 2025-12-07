@@ -5671,6 +5671,24 @@ const pokemon = [
     shinyAvailable: true,
   },
   {
+    name: "Nacli",
+    id: 932,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Naclstack",
+    id: 933,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Garganacl",
+    id: 934,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Charcadet",
     id: 935,
     available: true,
