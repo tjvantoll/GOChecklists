@@ -5105,19 +5105,19 @@ const pokemon = [
   {
     name: "Rolycoly",
     id: 837,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Carkol",
     id: 838,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Coalossal",
     id: 839,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
