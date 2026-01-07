@@ -4772,7 +4772,7 @@ const pokemon = [
     name: "Dhelmise",
     id: 781,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Jangmo-o",
@@ -5739,6 +5739,12 @@ const pokemon = [
   {
     name: "Toedscruel",
     id: 949,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Klawf",
+    id: 950,
     available: true,
     shinyAvailable: false,
   },
