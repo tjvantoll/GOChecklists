@@ -5809,6 +5809,18 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
+    name: "Glimmet",
+    id: 969,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Glimmora",
+    id: 970,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Greavard",
     id: 971,
     available: true,

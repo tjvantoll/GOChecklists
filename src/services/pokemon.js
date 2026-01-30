@@ -68,7 +68,7 @@ export default class PokemonService {
     const key = DexModes.getSaveKey(pageMode);
     const owned = data.filter((mon) => mon.owned);
     const valuesToSave = owned.map((mon) =>
-      pageMode === DexModes.UNOWN ? mon.name : mon.id
+      pageMode === DexModes.UNOWN ? mon.name : mon.id,
     );
     localStorage.setItem(key, JSON.stringify(valuesToSave));
   }
@@ -667,6 +667,7 @@ export default class PokemonService {
       [960, 961],
       [962],
       [965, 966],
+      [969, 970],
       [971, 972],
       [974, 975],
       [977],
