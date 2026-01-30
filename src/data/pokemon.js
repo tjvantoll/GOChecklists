@@ -579,11 +579,13 @@ const pokemon = [
     name: "Krabby",
     id: 98,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Kingler",
     id: 99,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Voltorb",
