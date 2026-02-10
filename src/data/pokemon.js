@@ -3946,7 +3946,7 @@ const pokemon = [
     name: "Keldeo",
     id: 647,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     tradable: false,
   },
   {
