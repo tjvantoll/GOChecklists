@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { BookOpen, Sparkles, Clover, Puzzle, Zap } from "lucide-react";
 
 import Header from "./Header";
 
@@ -65,8 +66,7 @@ const CardIcon = styled.div`
   justify-content: center;
   margin-right: 16px;
   color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
+  flex-shrink: 0;
 `;
 
 const CardTitle = styled.h3`
@@ -93,31 +93,31 @@ function Home() {
       path: "/dex",
       title: "Dex",
       description: "Track your main Pokédex completion in Pokémon GO",
-      icon: "📚",
+      icon: BookOpen,
     },
     {
       path: "/shiny",
       title: "ShinyDex",
       description: "Track which of the available shinies you've caught",
-      icon: "✨",
+      icon: Sparkles,
     },
     {
       path: "/lucky",
       title: "LuckyDex",
       description: "Track how many lucky Pokémon you've acquired",
-      icon: "🍀",
+      icon: Clover,
     },
     {
       path: "/unown",
       title: "UnownDex",
       description: "Track how many Unown you own",
-      icon: "🔤",
+      icon: Puzzle,
     },
     {
       path: "/shadow",
       title: "ShadowDex",
       description: "Track how many shadow Pokémon you have",
-      icon: "😈",
+      icon: Zap,
     },
   ];
 
@@ -130,7 +130,7 @@ function Home() {
           {navigationItems.map((item, index) => (
             <NavigationCard key={index} to={item.path}>
               <CardHeader>
-                <CardIcon>{item.icon}</CardIcon>
+                <CardIcon><item.icon size={24} /></CardIcon>
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
               <CardDescription>{item.description}</CardDescription>
