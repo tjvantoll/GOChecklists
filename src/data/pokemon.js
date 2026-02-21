@@ -4155,19 +4155,19 @@ const pokemon = [
     name: "Honedge",
     id: 679,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Doublade",
     id: 680,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Aegislash",
     id: 681,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Spritzee",
@@ -4293,7 +4293,7 @@ const pokemon = [
     name: "Hawlucha",
     id: 701,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Dedenne",
@@ -4329,7 +4329,7 @@ const pokemon = [
     name: "Klefki",
     id: 707,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Phantump",
