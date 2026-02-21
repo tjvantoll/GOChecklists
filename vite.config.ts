@@ -13,7 +13,4 @@ export default defineConfig({
     tsconfigPaths({ projects: ["./tsconfig.json"] }),
     viteReact(),
   ],
-  ssr: {
-    noExternal: ["styled-components"],
-  },
 });

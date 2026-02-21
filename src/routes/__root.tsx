@@ -4,59 +4,7 @@ import {
   Outlet,
   Scripts,
 } from "@tanstack/react-router";
-import { createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: "Varela";
-    src: url("/fonts/varela-regular.ttf");
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-    font-size: 16px;
-    background-color: #f5f5f5;
-  }
-
-  body {
-    line-height: 1.6;
-  }
-
-  #root {
-    min-height: 100vh;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  button {
-    font-family: inherit;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  @media (max-width: 768px) {
-    button, a {
-      min-height: 44px;
-      min-width: 44px;
-    }
-  }
-`;
+import "../global.css";
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -102,7 +50,6 @@ function RootComponent() {
         <HeadContent />
       </head>
       <body>
-        <GlobalStyle />
         <Outlet />
         <Scripts />
       </body>

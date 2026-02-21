@@ -8,8 +8,7 @@
     "@tanstack/react-start": "1.161.4",
     "lucide-react": "0.575.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "styled-components": "6.3.11"
+    "react-dom": "19.2.4"
   },
   "scripts": {
     "dev": "vite",
@@ -24,7 +23,6 @@
     "@types/jest": "^30.0.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@types/styled-components": "5.1.36",
     "@vitejs/plugin-react": "5.1.4",
     "jsdom": "^28.1.0",
     "typescript": "5.9.3",

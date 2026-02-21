@@ -1,28 +1,4 @@
-import styled from "styled-components";
-
-const ProgressbarContainer = styled.div`
-  display: flex;
-  padding: 0.75em;
-  background: white;
-
-  .progressbar {
-    border: 1px solid gray;
-    border-radius: 5px;
-    width: 100%;
-    background: white;
-  }
-  .progressbar-contents {
-    height: 25px;
-  }
-  & > span {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 5.5em;
-    text-align: center;
-    font-size: 0.8em;
-  }
-`;
+import styles from "./Progressbar.module.css";
 
 interface ProgressbarProps {
   value: number;
@@ -74,10 +50,10 @@ export default function Progressbar({ value, max }: ProgressbarProps) {
   };
 
   return (
-    <ProgressbarContainer>
-      <div className="progressbar">
+    <div className={styles.container}>
+      <div className={styles.progressbar}>
         <div
-          className="progressbar-contents"
+          className={styles.progressbarContents}
           style={{
             width: getWidth(),
             backgroundColor: getBackgroundColor(),
@@ -85,6 +61,6 @@ export default function Progressbar({ value, max }: ProgressbarProps) {
         ></div>
       </div>
       {!!max && <span>{`${value} / ${max}`}</span>}
-    </ProgressbarContainer>
+    </div>
   );
 }

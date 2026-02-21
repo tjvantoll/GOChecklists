@@ -1,135 +1,9 @@
 import React from "react";
-import styled from "styled-components";
+import styles from "./Settings.module.css";
 
 import DexModes from "../services/DexModes";
 import SortModes from "../services/SortModes";
 import PokemonService from "../services/pokemon";
-
-const Dialog = styled.div`
-  position: fixed;
-  top: 5em;
-  border-color: black;
-  border-width: 1px 0;
-  border-style: solid;
-  padding: 2em;
-  width: 100%;
-  background: white;
-  box-sizing: border-box;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-
-  @media (max-width: 768px) {
-    bottom: 0;
-  }
-
-  @media (min-width: 769px) {
-    max-height: 80vh;
-    bottom: auto;
-  }
-
-  h2 {
-    margin: 0em;
-    font-size: 1.75em;
-  }
-  p {
-    margin: 0 0 1.5em 0;
-  }
-  > div {
-    margin: 2em 0;
-    display: flex;
-    align-items: center;
-  }
-  label {
-    margin-right: 10px;
-    min-width: 10em;
-    display: flex;
-    align-items: center;
-  }
-  select {
-    flex: 2;
-    font-size: 16px;
-    padding: 0.5em;
-    border: 2px solid #e2e8f0;
-    border-radius: 6px;
-    background: white;
-    color: #333;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 0.75em center;
-    background-size: 1em;
-    padding-right: 2.5em;
-  }
-  select:hover {
-    border-color: #3b82f6;
-  }
-  select:focus {
-    outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-  }
-  @media (max-width: 768px) {
-    select {
-      font-size: 16px; /* Prevents zoom on iOS */
-      padding: 1em;
-      padding-right: 2.5em;
-    }
-  }
-  button {
-    width: 100%;
-    padding: 0.75em 1em;
-    border: 2px solid #3b82f6;
-    background: white;
-    color: #3b82f6;
-    font-size: 0.9em;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    margin-bottom: 0.5em;
-  }
-  button:hover {
-    background: #3b82f6;
-    color: white;
-  }
-  button:active {
-    transform: translateY(1px);
-  }
-  .primary {
-    background-color: #3b82f6;
-    color: white;
-    border: 2px solid #3b82f6;
-  }
-  .primary:hover {
-    background: #2563eb;
-    border-color: #2563eb;
-  }
-  .closeButton {
-    background: transparent;
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0;
-    font-size: 1.75em;
-    font-weight: bold;
-    line-height: 1;
-    border: none;
-    color: #666;
-    cursor: pointer;
-    margin: 0;
-    border-radius: 50%;
-  }
-  .closeButton:hover {
-    background: #e0e0e0;
-    color: #333;
-  }
-`;
 
 interface SettingsProps {
   visible: boolean;
@@ -227,9 +101,9 @@ export default function Settings({
   };
 
   return (
-    <Dialog style={{ display: visible ? "block" : "none" }}>
+    <div className={styles.dialog} style={{ display: visible ? "block" : "none" }}>
       <button
-        className="closeButton"
+        className={styles.closeButton}
         onClick={hideSettings}
         aria-label="Close settings"
       >
@@ -253,7 +127,7 @@ export default function Settings({
         <p>Export or import your data to sync across devices.</p>
 
         <div style={{ marginBottom: "1em" }}>
-          <button onClick={() => void handleExport()} className="primary">
+          <button onClick={() => void handleExport()} className={styles.primary}>
             Export Data
           </button>
           {importMessage && importMessage.includes("export") && (
@@ -298,7 +172,7 @@ export default function Settings({
               boxSizing: "border-box",
             }}
           />
-          <button onClick={handleImport} className="primary">
+          <button onClick={handleImport} className={styles.primary}>
             Import Data
           </button>
           {importMessage && !importMessage.includes("export") && (
@@ -321,6 +195,6 @@ export default function Settings({
           )}
         </div>
       </div>
-    </Dialog>
+    </div>
   );
 }
