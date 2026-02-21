@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 import styled from "styled-components";
 import { BookOpen, Sparkles, Clover, Puzzle, Zap } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 import Header from "./Header";
 
@@ -83,12 +84,19 @@ const CardDescription = styled.p`
   line-height: 1.5;
 `;
 
+interface NavItem {
+  path: string;
+  title: string;
+  description: string;
+  icon: LucideIcon;
+}
+
 function Home() {
   React.useEffect(() => {
     document.title = "GOChecklists: Up-to-date checklists for Pokémon GO";
   }, []);
 
-  const navigationItems = [
+  const navigationItems: NavItem[] = [
     {
       path: "/dex",
       title: "Dex",
@@ -130,7 +138,9 @@ function Home() {
           {navigationItems.map((item, index) => (
             <NavigationCard key={index} to={item.path}>
               <CardHeader>
-                <CardIcon><item.icon size={24} /></CardIcon>
+                <CardIcon>
+                  <item.icon size={24} />
+                </CardIcon>
                 <CardTitle>{item.title}</CardTitle>
               </CardHeader>
               <CardDescription>{item.description}</CardDescription>

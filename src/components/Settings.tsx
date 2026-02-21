@@ -131,10 +131,21 @@ const Dialog = styled.div`
   }
 `;
 
-export default function Settings(props) {
-  const { visible, onVisibleChange, sortOrder, onSortOrderChange, pageMode } =
-    props;
+interface SettingsProps {
+  visible: boolean;
+  onVisibleChange: (visible: boolean) => void;
+  sortOrder: string;
+  onSortOrderChange: (sortOrder: string) => void;
+  pageMode: string;
+}
 
+export default function Settings({
+  visible,
+  onVisibleChange,
+  sortOrder,
+  onSortOrderChange,
+  pageMode,
+}: SettingsProps) {
   const [importData, setImportData] = React.useState("");
   const [importMessage, setImportMessage] = React.useState("");
   const pokemonService = new PokemonService();
@@ -143,7 +154,7 @@ export default function Settings(props) {
     onVisibleChange(false);
   };
 
-  const changeSortOrder = (e) => {
+  const changeSortOrder = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newSortOrder = e.target.value;
     onSortOrderChange(newSortOrder);
   };
@@ -177,10 +188,9 @@ export default function Settings(props) {
           document.execCommand("copy");
           setImportMessage("export: Data exported to clipboard!");
           setTimeout(() => setImportMessage(""), 3000);
-        } catch (fallbackError) {
-          // If copy fails, show the data for manual copy
+        } catch {
           setImportMessage(
-            "export: Copy failed. Data is shown below - please copy manually."
+            "export: Copy failed. Data is shown below - please copy manually.",
           );
           setTimeout(() => setImportMessage(""), 5000);
         }
@@ -192,7 +202,7 @@ export default function Settings(props) {
           }
         }, 100);
       }
-    } catch (error) {
+    } catch {
       setImportMessage("export: Export failed. Please try again.");
       setTimeout(() => setImportMessage(""), 3000);
     }
@@ -243,7 +253,7 @@ export default function Settings(props) {
         <p>Export or import your data to sync across devices.</p>
 
         <div style={{ marginBottom: "1em" }}>
-          <button onClick={handleExport} className="primary">
+          <button onClick={() => void handleExport()} className="primary">
             Export Data
           </button>
           {importMessage && importMessage.includes("export") && (

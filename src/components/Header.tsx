@@ -1,5 +1,4 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@tanstack/react-router";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
@@ -72,11 +71,16 @@ const HeaderContainer = styled.header`
   }
 `;
 
-export default function Header({ title, settingsClick }) {
+interface HeaderProps {
+  title: string;
+  settingsClick?: () => void;
+}
+
+export default function Header({ title, settingsClick }: HeaderProps) {
   const navigate = useNavigate();
 
   const navigateHome = () => {
-    navigate("/");
+    void navigate({ to: "/" });
   };
 
   return (

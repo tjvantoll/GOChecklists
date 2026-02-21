@@ -1,21 +1,40 @@
 import DexModes from "./DexModes";
 import SortModes from "./SortModes";
 
-import pokemon from "../data/pokemon";
+import pokemonData from "../data/pokemon";
+
+export interface Pokemon {
+  name: string;
+  id: number;
+  shinyAvailable?: boolean;
+  available?: boolean;
+  tradable?: boolean;
+  shadow?: boolean;
+  gender?: string;
+  owned?: boolean;
+}
+
+export interface UnownMon {
+  name: string;
+  owned: boolean;
+}
+
+export type Mon = Pokemon | UnownMon;
+
 const UNOWN_VALUES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?";
 
 export default class PokemonService {
-  getPageMode() {
+  getPageMode(): string {
     return window.location.pathname.replace("/", "");
   }
 
-  getMons(pageMode) {
+  getMons(pageMode: string): Mon[] {
     return pageMode === DexModes.UNOWN
       ? this.filterUnown()
-      : this.filter(pokemon, pageMode);
+      : this.filter(pokemonData, pageMode);
   }
 
-  filter(allMons, pageMode) {
+  filter(allMons: Pokemon[], pageMode: string): Pokemon[] {
     const ownedMons = this.read(pageMode) || [];
     const availableMons = allMons.filter((mon) => {
       switch (pageMode) {
@@ -33,20 +52,20 @@ export default class PokemonService {
     });
 
     // Reset the data from previous runs
-    pokemon.forEach((mon) => {
+    pokemonData.forEach((mon) => {
       mon.owned = false;
     });
     availableMons.forEach((mon) => {
-      if (ownedMons.includes(mon.id)) {
+      if ((ownedMons as number[]).includes(mon.id)) {
         mon.owned = true;
       }
     });
     return availableMons;
   }
 
-  filterUnown() {
-    const ownedMons = this.read(DexModes.UNOWN) || [];
-    const unownToReturn = [];
+  filterUnown(): UnownMon[] {
+    const ownedMons = (this.read(DexModes.UNOWN) || []) as string[];
+    const unownToReturn: UnownMon[] = [];
 
     Array.from(UNOWN_VALUES).forEach((unown) => {
       unownToReturn.push({
@@ -58,23 +77,24 @@ export default class PokemonService {
     return unownToReturn;
   }
 
-  read(pageMode) {
+  read(pageMode: string): (number | string)[] | null {
+    if (typeof localStorage === "undefined") return null;
     const key = DexModes.getSaveKey(pageMode);
     const mons = localStorage.getItem(key);
-    return JSON.parse(mons);
+    return JSON.parse(mons ?? "null");
   }
 
-  save(data, pageMode) {
+  save(data: Mon[], pageMode: string): void {
     const key = DexModes.getSaveKey(pageMode);
     const owned = data.filter((mon) => mon.owned);
     const valuesToSave = owned.map((mon) =>
-      pageMode === DexModes.UNOWN ? mon.name : mon.id,
+      pageMode === DexModes.UNOWN ? mon.name : (mon as Pokemon).id,
     );
     localStorage.setItem(key, JSON.stringify(valuesToSave));
   }
 
-  exportAllData() {
-    const allData = {};
+  exportAllData(): string {
+    const allData: Record<string, unknown> = {};
     const modes = [
       DexModes.DEX,
       DexModes.SHINY,
@@ -94,9 +114,9 @@ export default class PokemonService {
     return JSON.stringify(allData);
   }
 
-  importAllData(dataString) {
+  importAllData(dataString: string): boolean {
     try {
-      const data = JSON.parse(dataString);
+      const data = JSON.parse(dataString) as Record<string, unknown>;
       const modes = [
         DexModes.DEX,
         DexModes.SHINY,
@@ -119,9 +139,9 @@ export default class PokemonService {
     }
   }
 
-  sort(mons, sortOrder) {
-    const idBasedSort = (a, b) => {
-      return parseInt(a.id, 10) > parseInt(b.id, 10) ? 1 : -1;
+  sort(mons: Mon[], sortOrder: string): Mon[] {
+    const idBasedSort = (a: Mon, b: Mon): number => {
+      return (a as Pokemon).id > (b as Pokemon).id ? 1 : -1;
     };
 
     return mons.sort((a, b) => {
@@ -150,20 +170,12 @@ export default class PokemonService {
     });
   }
 
-  getHeaders() {
-    return {
-      "Content-Type": "application/json",
-      Authorization:
-        "Basic a2lkX0gxX2NLMURXUTozZjExNTVhOGY5ODE0MDBlYTYyMWFkYTczMmViZTFjMQ==",
-    };
-  }
-
-  getGroupedMons(mons) {
-    const groups = [];
+  getGroupedMons(mons: Mon[]): Mon[][] {
+    const groups: Mon[][] = [];
     this.getGroups().forEach((group) => {
-      const monsForGroup = [];
+      const monsForGroup: Mon[] = [];
       group.forEach((id) => {
-        const mon = mons.filter((mon) => mon.id === id)[0];
+        const mon = mons.filter((mon) => (mon as Pokemon).id === id)[0];
         if (mon) {
           monsForGroup.push(mon);
         }
@@ -176,7 +188,7 @@ export default class PokemonService {
     return groups;
   }
 
-  getGroups() {
+  getGroups(): number[][] {
     return [
       [1, 2, 3],
       [4, 5, 6],

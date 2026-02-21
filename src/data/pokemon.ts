@@ -1,7 +1,9 @@
 // Sprite credit: https://github.com/PokeAPI/sprites
 // Hisui sprites: https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/post-9195974
 
-const pokemon = [
+import type { Pokemon } from "../services/pokemon";
+
+const pokemon: Pokemon[] = [
   {
     name: "Bulbasaur",
     id: 1,

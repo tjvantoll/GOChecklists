@@ -4,6 +4,7 @@ import styled from "styled-components";
 import DexModes from "../services/DexModes";
 import SortModes from "../services/SortModes";
 import PokemonService from "../services/pokemon";
+import type { Mon, Pokemon } from "../services/pokemon";
 import SettingsService from "../services/settings";
 import Render from "./Render";
 
@@ -108,10 +109,13 @@ const MonList = styled.div`
   }
 `;
 
-export default function Dex() {
+interface DexProps {
+  pageMode: string;
+}
+
+export default function Dex({ pageMode }: DexProps) {
   const pokemonService = new PokemonService();
   const settingsService = new SettingsService();
-  const pageMode = pokemonService.getPageMode();
 
   const getSortOrder = () => {
     return (
@@ -120,8 +124,8 @@ export default function Dex() {
     );
   };
 
-  const [mons, setMons] = React.useState([]);
-  const [groupedMons, setGroupedMons] = React.useState([]);
+  const [mons, setMons] = React.useState<Mon[]>([]);
+  const [groupedMons, setGroupedMons] = React.useState<Mon[][]>([]);
   const [owned, setOwned] = React.useState(0);
   const [showSettings, setShowSettings] = React.useState(false);
   const [sortOrder, setSortOrder] = React.useState(getSortOrder());
@@ -144,7 +148,7 @@ export default function Dex() {
     setMons(sortedMons);
   };
 
-  const toggleOwned = (mon) => {
+  const toggleOwned = (mon: Mon) => {
     if (showSettings) {
       return;
     }
@@ -158,23 +162,23 @@ export default function Dex() {
     }, 100);
 
     // Remove focus from the clicked element to prevent scrolling
-    if (document.activeElement) {
+    if (document.activeElement instanceof HTMLElement) {
       document.activeElement.blur();
     }
   };
 
-  const getImagePath = (mon) => {
+  const getImagePath = (mon: Mon) => {
     const basePath = pageMode === DexModes.SHINY ? "shiny-sprites" : "sprites";
 
     if (pageMode === DexModes.UNOWN) {
       const name = mon.name === "?" ? "question" : mon.name.toLowerCase();
       return `/images/${basePath}/201-${name}.png`;
     }
-    return `/images/${basePath}/${mon.id}.png`;
+    return `/images/${basePath}/${(mon as Pokemon).id}.png`;
   };
 
-  const buildListItem = (mon) => {
-    const handleKeyDown = (event) => {
+  const buildListItem = (mon: Mon) => {
+    const handleKeyDown = (event: React.KeyboardEvent) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
         toggleOwned(mon);
@@ -183,7 +187,7 @@ export default function Dex() {
 
     return (
       <div
-        key={mon.id || mon.name}
+        key={(mon as Pokemon).id ?? mon.name}
         className={"card " + (mon.owned ? "selected" : "")}
         onClick={() => toggleOwned(mon)}
         onKeyDown={handleKeyDown}
@@ -229,12 +233,12 @@ export default function Dex() {
   const toggleSettings = () => {
     setShowSettings(!showSettings);
   };
-  const onSortOrderChange = (newSortOrder) => {
+  const onSortOrderChange = (newSortOrder: string) => {
     setSortOrder(newSortOrder);
     settingsService.writeSortOrder(newSortOrder, pageMode);
     sort();
   };
-  const onVisibleChange = (newVisible) => {
+  const onVisibleChange = (newVisible: boolean) => {
     setShowSettings(newVisible);
   };
 

@@ -7,7 +7,7 @@ export default class DexModes {
   static UNOWN = "unown";
   static SHADOW = "shadow";
 
-  static getPageTitle(mode) {
+  static getPageTitle(mode: string): string {
     switch (mode) {
       case DexModes.DEX:
         return "Dex";
@@ -24,7 +24,7 @@ export default class DexModes {
     }
   }
 
-  static getSaveKey(mode) {
+  static getSaveKey(mode: string): string {
     switch (mode) {
       case DexModes.DEX:
         return "dex";
@@ -41,7 +41,7 @@ export default class DexModes {
     }
   }
 
-  static getDefaultSortOrder(mode) {
+  static getDefaultSortOrder(mode: string): string {
     return mode === DexModes.UNOWN ? SortModes.NAME : SortModes.ID;
   }
 }

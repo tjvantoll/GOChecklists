@@ -2,34 +2,34 @@
   "name": "gochecklists",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
-    "lucide-react": "^0.575.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "@tanstack/react-router": "1.161.4",
+    "@tanstack/react-start": "1.161.4",
+    "lucide-react": "0.575.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "styled-components": "6.3.11"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@netlify/vite-plugin-tanstack-start": "1.2.12",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/jest": "^30.0.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/styled-components": "5.1.36",
+    "@vitejs/plugin-react": "5.1.4",
+    "jsdom": "^28.1.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^4.0.18"
   }
 }
