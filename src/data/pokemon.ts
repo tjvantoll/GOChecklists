@@ -4406,7 +4406,7 @@ const pokemon: Pokemon[] = [
     name: "Diancie",
     id: 719,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
     tradable: false,
   },
   {
