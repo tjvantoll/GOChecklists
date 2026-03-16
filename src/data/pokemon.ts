@@ -4976,19 +4976,19 @@ const pokemon: Pokemon[] = [
     name: "Scorbunny",
     id: 813,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Raboot",
     id: 814,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cinderace",
     id: 815,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Sobble",
