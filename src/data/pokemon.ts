@@ -5041,19 +5041,19 @@ const pokemon: Pokemon[] = [
   {
     name: "Blipbug",
     id: 824,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Dottler",
     id: 825,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Orbeetle",
     id: 826,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5198,13 +5198,13 @@ const pokemon: Pokemon[] = [
     name: "Sizzlipede",
     id: 850,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Centiskorch",
     id: 851,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Clobbopus",
