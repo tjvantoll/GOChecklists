@@ -5155,13 +5155,13 @@ const pokemon: Pokemon[] = [
   {
     name: "Silicobra",
     id: 843,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Sandaconda",
     id: 844,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
@@ -5760,13 +5760,13 @@ const pokemon: Pokemon[] = [
     name: "Toedscool",
     id: 948,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Toedscruel",
     id: 949,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Klawf",
