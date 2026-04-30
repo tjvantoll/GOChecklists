@@ -3937,6 +3937,7 @@ const pokemon: Pokemon[] = [
     id: 645,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Kyurem",
@@ -4250,12 +4251,14 @@ const pokemon: Pokemon[] = [
     id: 694,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Heliolisk",
     id: 695,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Tyrunt",
@@ -4607,12 +4610,14 @@ const pokemon: Pokemon[] = [
     id: 751,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Araquanid",
     id: 752,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Fomantis",
@@ -4631,12 +4636,14 @@ const pokemon: Pokemon[] = [
     id: 755,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Shiinotic",
     id: 756,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Salandit",
@@ -4655,12 +4662,14 @@ const pokemon: Pokemon[] = [
     id: 759,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Bewear",
     id: 760,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Bounsweet",
@@ -5821,6 +5830,12 @@ const pokemon: Pokemon[] = [
     id: 966,
     available: true,
     shinyAvailable: false,
+  },
+  {
+    name: "Orthworm",
+    id: 968,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Glimmet",
