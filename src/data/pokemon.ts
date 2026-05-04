@@ -5823,13 +5823,13 @@ const pokemon: Pokemon[] = [
     name: "Varoom",
     id: 965,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Revaroom",
     id: 966,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Orthworm",
