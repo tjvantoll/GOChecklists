@@ -5784,6 +5784,18 @@ const pokemon: Pokemon[] = [
     shinyAvailable: false,
   },
   {
+    name: "Flittle",
+    id: 955,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Espathra",
+    id: 956,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Tinkatink",
     id: 957,
     available: true,
