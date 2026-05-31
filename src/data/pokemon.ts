@@ -4950,7 +4950,7 @@ const pokemon: Pokemon[] = [
   {
     name: "Zeraora",
     id: 807,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
