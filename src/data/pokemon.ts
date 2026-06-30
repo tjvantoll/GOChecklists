@@ -460,11 +460,13 @@ const pokemon: Pokemon[] = [
     name: "Ponyta",
     id: 77,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Rapidash",
     id: 78,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Slowpoke",
@@ -834,11 +836,13 @@ const pokemon: Pokemon[] = [
     name: "Kabuto",
     id: 140,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Kabutops",
     id: 141,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Aerodactyl",
@@ -3722,18 +3726,21 @@ const pokemon: Pokemon[] = [
     id: 610,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Fraxure",
     id: 611,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Haxorus",
     id: 612,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Cubchoo",
