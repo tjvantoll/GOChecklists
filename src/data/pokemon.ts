@@ -511,11 +511,13 @@ const pokemon: Pokemon[] = [
     name: "Seel",
     id: 86,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Dewgong",
     id: 87,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Grimer",
@@ -971,11 +973,13 @@ const pokemon: Pokemon[] = [
     name: "Hoothoot",
     id: 163,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Noctowl",
     id: 164,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Ledyba",
@@ -3925,6 +3929,7 @@ const pokemon: Pokemon[] = [
     id: 643,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Zekrom",
@@ -4379,12 +4384,14 @@ const pokemon: Pokemon[] = [
     id: 714,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Noivern",
     id: 715,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Xerneas",
@@ -5034,18 +5041,21 @@ const pokemon: Pokemon[] = [
     id: 821,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Corvisquire",
     id: 822,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Corviknight",
     id: 823,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Blipbug",
@@ -5692,6 +5702,12 @@ const pokemon: Pokemon[] = [
     id: 930,
     available: true,
     shinyAvailable: true,
+  },
+  {
+    name: "Squawkabilly",
+    id: 931,
+    available: true,
+    shinyAvailable: false,
   },
   {
     name: "Nacli",
