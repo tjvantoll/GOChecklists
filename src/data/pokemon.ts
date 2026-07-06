@@ -5017,19 +5017,19 @@ const pokemon: Pokemon[] = [
     name: "Sobble",
     id: 816,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Drizzile",
     id: 817,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Inteleon",
     id: 818,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Skwovet",
