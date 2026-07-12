@@ -4438,6 +4438,7 @@ const pokemon: Pokemon[] = [
     id: 721,
     available: true,
     shinyAvailable: false,
+    tradable: false,
   },
   {
     name: "Rowlet",
@@ -4966,6 +4967,7 @@ const pokemon: Pokemon[] = [
     id: 807,
     available: true,
     shinyAvailable: false,
+    tradable: false,
   },
   {
     name: "Meltan",
