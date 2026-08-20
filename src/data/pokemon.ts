@@ -5088,13 +5088,13 @@ const pokemon: Pokemon[] = [
     name: "Nickit",
     id: 827,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Thievul",
     id: 828,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Gossifleur",
@@ -5195,19 +5195,19 @@ const pokemon: Pokemon[] = [
   {
     name: "Cramorant",
     id: 845,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Arrokuda",
     id: 846,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
     name: "Barraskewda",
     id: 847,
-    available: false,
+    available: true,
     shinyAvailable: false,
   },
   {
