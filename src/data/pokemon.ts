@@ -4876,7 +4876,7 @@ const pokemon: Pokemon[] = [
     name: "Lunala",
     id: 792,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Nihilego",
