@@ -5779,6 +5779,18 @@ const pokemon: Pokemon[] = [
     shinyAvailable: false,
   },
   {
+    name: "Maschiff",
+    id: 942,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
+    name: "Mabosstiff",
+    id: 943,
+    available: true,
+    shinyAvailable: false,
+  },
+  {
     name: "Shroodle",
     id: 944,
     available: true,
@@ -5902,7 +5914,7 @@ const pokemon: Pokemon[] = [
     name: "Flamigo",
     id: 973,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Cetoddle",
