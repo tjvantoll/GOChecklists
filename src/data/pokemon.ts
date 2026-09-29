@@ -5166,19 +5166,19 @@ const pokemon: Pokemon[] = [
     name: "Applin",
     id: 840,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Flapple",
     id: 841,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Appletun",
     id: 842,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Silicobra",
@@ -6017,7 +6017,7 @@ const pokemon: Pokemon[] = [
     name: "Hydrapple",
     id: 1019,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
 ];
 
