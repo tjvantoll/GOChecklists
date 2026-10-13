@@ -4142,12 +4142,14 @@ const pokemon: Pokemon[] = [
     id: 674,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Pangoro",
     id: 675,
     available: true,
     shinyAvailable: true,
+    shadow: true,
   },
   {
     name: "Furfrou",
